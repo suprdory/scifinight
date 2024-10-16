@@ -89,22 +89,6 @@ body {
     color: #B0B0B0;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    .film-list {
-        border-right: none;
-        border-bottom: 1px solid #333;
-    }
-
-    .film-details {
-        padding: 10px;
-    }
-}
 
 /* Scrollbar styling for Webkit browsers (Chrome, Safari) */
 .film-list::-webkit-scrollbar {
@@ -133,7 +117,10 @@ body {
     width: 100%;
     justify-content: flex-end;
     margin-bottom: 5px;
-    margin-top:5px; ;
+    margin-top: 5px;
+    ;
+    margin-right: 20px;
+    ;
     /* border:5px; */
 }
 
@@ -169,6 +156,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     color: white;
+
 }
 
 #backdrop-container {
@@ -202,7 +190,32 @@ body {
 #details-content {
     margin-top: 20px;
     padding: 10px;
+    max-height: 400px;
+    /* Set a maximum height */
+    overflow-y: auto;
 }
+
+/* Scrollbar styling for Webkit browsers (Chrome, Safari) */
+#details-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+#details-content::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+#details-content::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* Scrollbar styling for Firefox */
+#details-content {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #1E1E1E;
+}
+
+
 
 h2 {
     margin-bottom: 10px;
@@ -210,4 +223,54 @@ h2 {
 
 p {
     margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        padding: 2px;
+        /* Keep the layout as row */
+        /* height: auto; */
+        /* Adjust height to auto */
+    }
+
+    .left-panel {
+        flex: 1;
+        /* Allow it to take a smaller space */
+        max-width: 130px;
+        /* Set a maximum width for the film list */
+        padding: 10px;
+        /* Adjust padding for smaller devices */
+    }
+
+    .film-list {
+        padding: 5px;
+    }
+
+    .film-details {
+        flex: 2;
+        padding: 10px;
+        height: auto;
+    }
+
+    #details-content {
+        margin-top: 20px;
+        padding: 10px;
+        max-height: 300px;
+        /* Set a maximum height */
+        overflow-y: auto;
+    }
+
+    .control-group {
+        /* display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        ; */
+        margin-right: 10px;
+        ;
+        /* border:5px; */
+    }
 }
