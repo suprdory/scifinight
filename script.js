@@ -21,20 +21,23 @@ async function showFilmDetails(film) {
     poster.alt = "${film.Title} poster";
 
 
-    // console.log(film,posterUrl)
+    // Function to safely get score values or return a default message
+    const getScoreValue = (score) => (score ? score : 'N/A');
+
     const detailsContent = document.getElementById('details-content');
     detailsContent.innerHTML = `
         <h2>${film.Title} (${film.Year})</h2>
-        <p><strong>Director:</strong> ${film.Director}</p>
-        <p><strong>Summary:</strong> ${film.Plot}</p>
-        <p><strong>Run time:</strong> ${film.Runtime} mins</p>
-        <p><strong>Rotten Tomatoes Score:</strong> ${film.RT}%</p>
-        <p><strong>IMDb Score:</strong> ${film.IMDb}/10</p>
-        <p><strong>MetaCritic Score:</strong> ${film.Meta}%</p>
-        <p><strong>Actors:</strong> ${film.Actors}</p>
+        <p><strong>Director:</strong> ${film.Director || 'N/A'}</p>
+        <p><strong>Summary:</strong> ${film.Plot || 'N/A'}</p>
+        <p><strong>Runtime:</strong> ${film.Runtime || 'N/A'} mins</p>
+        <p><strong>Rotten Tomatoes Score:</strong> ${getScoreValue(film.RT)}%</p>
+        <p><strong>IMDb Score:</strong> ${getScoreValue(film.IMDb)}/10</p>
+        <p><strong>MetaCritic Score:</strong> ${getScoreValue(film.Meta)}%</p>
+        <p><strong>Actors:</strong> ${film.Actors || 'N/A'}</p>
         <p><strong>Box Office:</strong> ${formatCurrency(film.BoxOffice)}</p>
-        <p><strong>Rating:</strong> ${film.Rated}</p>
-        <p><strong>Language:</strong> ${film.Language}</p>
+        <p><strong>Rating:</strong> ${film.Rated || 'N/A'}</p>
+        <p><strong>Language:</strong> ${film.Language || 'N/A'}</p>
+        <p><strong>Watched:</strong> ${film.Watched ? "Yes":"No"}</p>
     `;
     // Show the details container
     detailsContainer.style.display = 'block';
@@ -44,19 +47,24 @@ function sortFilms(films, criteria) {
     return films.sort((a, b) => {
         if (criteria === 'Title') {
             return a.Title.localeCompare(b.Title);
-        } else if (criteria === 'Year') {
+        } 
+        else if (criteria === 'Year') {
             return b.Year - a.Year; // Sort by year, descending
-        } else if (criteria === 'IMDb') {
+        } 
+        else if (criteria === 'IMDb') {
             return b.IMDb - a.IMDb; // Sort by IMDb score, descending
         }
+        else if (criteria === 'Metacritic') {
+            return b.Meta - a.Meta; // Sort by Metacritic score, descending
+        }
         else if (criteria === 'Runtime') {
-            return a.Runtime - b.Runtime; // Sort by IMDb score, descending
+            return a.Runtime - b.Runtime; // Sort by Runtime score, ascending
         }
         else if (criteria === 'RT') {
-            return b.RT - a.RT; // Sort by IMDb score, descending
+            return b.RT - a.RT; // Sort by Rotten toms score, descending
         }
         else if (criteria === 'Boxoffice') {
-            return b.BoxOffice - a.BoxOffice; // Sort by IMDb score, descending
+            return b.BoxOffice - a.BoxOffice; // Sort by Boxoffice score, descending
         }
 
     });
@@ -66,7 +74,13 @@ function filterFilms(films, filter) {
     if (filter === 'all') {
         return films; // No filtering
     }
-    return films.filter(film => film.Rated === filter);
+    else if (filter === "watched"){
+        return films.filter(film => film.Watched === 1);
+    }
+    else {
+        return films.filter(film => film.Watched === 0);
+    }
+
 }
 // Function to format Box Office numbers
 function formatCurrency(amount) {
