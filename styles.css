@@ -1,0 +1,177 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    background-color: #1E1E1E;
+    overflow: hidden;
+}
+
+.film-list {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #333;
+}
+
+.film-list h1 {
+    margin-bottom: 10px;
+}
+
+.film-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.film-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s ease;
+}
+
+.film-list li:hover {
+    background-color: #333;
+}
+
+.film-details {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+
+.film-details h2 {
+    margin-bottom: 15px;
+    color: #FFF;
+}
+
+.film-details p {
+    margin-bottom: 10px;
+}
+
+#details-content {
+    padding-top: 20px;
+    color: #B0B0B0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .film-list {
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+
+    .film-details {
+        padding: 10px;
+    }
+}
+/* Custom scrollbar for film list */
+.film-list {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #333;
+}
+
+/* Scrollbar styling for Webkit browsers (Chrome, Safari) */
+.film-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.film-list::-webkit-scrollbar-track {
+    background: #1E1E1E;
+    /* Dark background for the scrollbar track */
+}
+
+.film-list::-webkit-scrollbar-thumb {
+    background-color: #333;
+    /* Darker thumb */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Scrollbar styling for Firefox */
+.film-list {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #1E1E1E;
+}
+
+#details-container {
+    display: none;
+        /* Hide the details container by default */
+    position: relative;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+#backdrop-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* Adjust height as needed */
+}
+
+#backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    /* Darken the backdrop */
+    border-radius: 10px;
+}
+
+#poster {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    /* Adjust this value to control left alignment */
+    transform: translateY(-50%);
+    /* Vertically center poster */
+    width: 150px;
+    /* Adjust poster size */
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Optional: Add shadow to poster */
+}
+
+#details-content {
+    margin-top: 20px;
+    /* Spacing between backdrop and text */
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
