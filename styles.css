@@ -18,13 +18,30 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     background-color: #1E1E1E;
-    overflow: hidden;
+}
+
+/* Film List Styles */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    /* Stack controls and film list */
+    flex: 1;
+    /* Allow it to grow */
+}
+
+.film-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .film-list {
     flex: 1;
+    /* Allow film list to take remaining space */
     padding: 20px;
     overflow-y: auto;
+    /* Enable vertical scrolling */
     border-right: 1px solid #333;
 }
 
@@ -48,6 +65,7 @@ body {
     background-color: #333;
 }
 
+/* Film Details Styles */
 .film-details {
     flex: 2;
     padding: 20px;
@@ -71,6 +89,7 @@ body {
     color: #B0B0B0;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -86,13 +105,6 @@ body {
         padding: 10px;
     }
 }
-/* Custom scrollbar for film list */
-.film-list {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    border-right: 1px solid #333;
-}
 
 /* Scrollbar styling for Webkit browsers (Chrome, Safari) */
 .film-list::-webkit-scrollbar {
@@ -101,14 +113,11 @@ body {
 
 .film-list::-webkit-scrollbar-track {
     background: #1E1E1E;
-    /* Dark background for the scrollbar track */
 }
 
 .film-list::-webkit-scrollbar-thumb {
     background-color: #333;
-    /* Darker thumb */
     border-radius: 10px;
-    /* Rounded corners */
 }
 
 /* Scrollbar styling for Firefox */
@@ -117,9 +126,43 @@ body {
     scrollbar-color: #333 #1E1E1E;
 }
 
+/* Film Controls Styles */
+.control-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    margin-top:5px; ;
+    /* border:5px; */
+}
+
+.control-group label {
+    margin-right: 10px;
+}
+
+.control-group select {
+    width: 50%;
+    height: 30px;
+    background-color: #333;
+    color: #E0E0E0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px;
+    appearance: none;
+    cursor: pointer;
+    /* padding:10px; */
+}
+
+.control-group select:hover,
+.control-group select:focus {
+    border-color: #888;
+    outline: none;
+}
+
+/* Details Container Styles */
 #details-container {
     display: none;
-        /* Hide the details container by default */
     position: relative;
     padding: 20px;
     background-color: #121212;
@@ -132,7 +175,6 @@ body {
     position: relative;
     width: 100%;
     height: 300px;
-    /* Adjust height as needed */
 }
 
 #backdrop {
@@ -143,7 +185,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(50%);
-    /* Darken the backdrop */
     border-radius: 10px;
 }
 
@@ -151,20 +192,15 @@ body {
     position: absolute;
     top: 50%;
     left: 20px;
-    /* Adjust this value to control left alignment */
     transform: translateY(-50%);
-    /* Vertically center poster */
     width: 150px;
-    /* Adjust poster size */
     z-index: 1;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    /* Optional: Add shadow to poster */
 }
 
 #details-content {
     margin-top: 20px;
-    /* Spacing between backdrop and text */
     padding: 10px;
 }
 

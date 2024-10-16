@@ -4,18 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sci-Fi Film Night</title>
+    <title>Sci-Fi Night - The Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- Film List -->
-        <div class="film-list">
-            <h1>Films</h1>
-            <ul id="films">
-                <!-- Films will be dynamically inserted here -->
-            </ul>
+        <div class="left-panel">
+            <div class="film-controls">
+                <div class="control-group">
+                    <label for="sort-options">Sort:</label>
+                    <select id="sort-options">
+                        <option value="Title">Title</option>
+                        <option value="Runtime">Runtime</option>
+                        <option value="Year">Year</option>
+                        <option value="IMDb">IMDb Score</option>
+                        <option value="RT">Rotten Tomatoes</option>
+                        <option value="Meta">Metacritic</option>
+                        <option value="Boxoffice">Box Office</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="filter-options">Filter:</label>
+                    <select id="filter-options">
+                        <option value="all">All</option>
+                        <option value="watched">Watched</option>
+                        <option value="unwatched">Unwatched</option>
+                    </select>
+                </div>
+            </div>
+            <div class="film-list">
+                <ul id="films">
+                    <!-- Films will be dynamically inserted here -->
+                </ul>
+            </div>
         </div>
 
         <!-- Film Details Panel -->
@@ -30,7 +52,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="script.js"></script>
