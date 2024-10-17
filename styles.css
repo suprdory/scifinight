@@ -9,6 +9,14 @@ body {
   align-items: center;
   height: 100vh;
 }
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+  padding-bottom: 5px;;
+}
 
 .container {
   display: flex;
@@ -20,28 +28,51 @@ body {
   background-color: #1e1e1e;
 }
 
-/* Film List Styles */
-.left-panel {
+#left-panel {
+      flex: 1;
   display: flex;
   flex-direction: column;
-  /* Stack controls and film list */
-  flex: 1;
-  /* Allow it to grow */
 }
-
 .film-controls {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
+
+#right-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  padding: 20px;
+  overflow: hidden;
+}
+#backdrop-container {
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+#film-details {
+  color: #b0b0b0;
+  margin-top: 20px;
+  padding: 10px;
+  max-height: 70%;
+  overflow-y: auto;
+}
+
+#films{
+    margin-top: 0%;
+}
+
+
 
 .film-list {
   flex: 1;
-  /* Allow film list to take remaining space */
   padding: 20px;
+  /* padding-top: 5px; */
   overflow-y: auto;
-  /* Enable vertical scrolling */
+  /* overflow:hidden; */
   border-right: 1px solid #333;
 }
 
@@ -52,6 +83,8 @@ body {
 .film-list ul {
   list-style-type: none;
   padding: 0;
+  /* margin-top: 0%; */
+  /* border-top: 0%; */
 }
 
 .film-list li {
@@ -65,42 +98,31 @@ body {
   background-color: #333;
 }
 
-/* Film Details Styles */
-.film-details {
-  flex: 2;
-  height:100%;
-  /* padding: 20px; */
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  background-color: #1e1e1e;
-}
-
-.film-details h2 {
+.right-panel h2 {
   margin-bottom: 15px;
   color: #fff;
 }
 
-.film-details p {
+.right-panel h2 p {
   margin-bottom: 10px;
 }
 
 /* Scrollbar styling for Webkit browsers (Chrome, Safari) */
-.film-list::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
   width: 8px;
 }
 
-.film-list::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track {
   background: #1e1e1e;
 }
 
-.film-list::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
   background-color: #333;
   border-radius: 10px;
 }
 
 /* Scrollbar styling for Firefox */
-.film-list {
+.scroll {
   scrollbar-width: thin;
   scrollbar-color: #333 #1e1e1e;
 }
@@ -140,23 +162,7 @@ body {
   outline: none;
 }
 
-/* Details Container Styles */
-#details-container {
-  display: none;
-  position: relative;
-  padding: 20px;
-  background-color: #121212;
-  border-radius: 10px;
-  overflow: hidden;
-  color: white;
-  height:100%
-}
 
-#backdrop-container {
-  position: relative;
-  width: 100%;
-  height: 30%;
-}
 
 #backdrop {
   position: absolute;
@@ -180,49 +186,22 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-#details-content {
-  /* padding-top: 20px; */
-  color: #b0b0b0;
-  margin-top: 20px;
-  padding: 10px;
-  /* height: 30vh; */
-  max-height: 70%;
-  /* Set a maximum height */
-  overflow-y: auto;
+@media (max-width: 768px) {
+    .container {
+    /* flex-direction: row;
+    display: flex; */
+    width: 95%;
+    /* max-width: 1200px; */
+    height: 95vh;
+    /* border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    background-color: #1e1e1e; */
+  }
 }
-
-/* Scrollbar styling for Webkit browsers (Chrome, Safari) */
-#details-content::-webkit-scrollbar {
-  width: 8px;
-}
-
-#details-content::-webkit-scrollbar-track {
-  background: #1e1e1e;
-}
-
-#details-content::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 10px;
-}
-
-/* Scrollbar styling for Firefox */
-#details-content {
-  scrollbar-width: thin;
-  scrollbar-color: #333 #1e1e1e;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-p {
-  margin: 5px 0;
-}
-
+/* 
 @media (max-width: 768px) {
   .container {
     flex-direction: row;
-    /* padding: 2px; */
     display: flex;
     width: 95%;
     max-width: 1200px;
@@ -238,25 +217,25 @@ p {
     background-color: #121212;
     border-radius: 10px;
     overflow: hidden;
-    color: white; */
+    color: white; 
     height: 100%;
   }
   #details-content {
-    /* margin-top: 20px; */
+    /* margin-top: 20px;
     padding: 10px;
     /* height: 100%; */
     /* max-height: 500px; */
     /* Set a maximum height */
-    /* overflow-y: auto; */
+    /* overflow-y: auto; 
   }
 
   .left-panel {
     flex: 1;
-    /* Allow it to take a smaller space */
+    /* Allow it to take a smaller space 
     max-width: 130px;
-    /* Set a maximum width for the film list */
+    /* Set a maximum width for the film list 
     padding: 10px;
-    /* Adjust padding for smaller devices */
+    /* Adjust padding for smaller devices 
   }
 
   .film-list {
@@ -276,8 +255,8 @@ p {
         justify-content: flex-end;
         margin-bottom: 5px;
         margin-top: 5px;
-        ; */
+        ; 
     margin-right: 10px;
-    /* border:5px; */
+    /* border:5px; 
   }
 }

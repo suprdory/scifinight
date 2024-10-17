@@ -5,7 +5,7 @@ let filmsData = []; // Store loaded films data globally
 async function showFilmDetails(film) {
 
     // Set the backdrop image
-    const detailsContainer = document.getElementById('details-container');
+    const detailsContainer = document.getElementById('right-panel');
     // detailsContainer.style.backgroundImage = `url(${backdropUrl})`;
 
     const posterUrl = film.poster_path ? `https://image.tmdb.org/t/p/w500${film.poster_path}` : '';
@@ -24,7 +24,7 @@ async function showFilmDetails(film) {
     // Function to safely get score values or return a default message
     const getScoreValue = (score) => (score ? score : 'N/A');
 
-    const detailsContent = document.getElementById('details-content');
+    const detailsContent = document.getElementById('film-details');
     detailsContent.innerHTML = `
         <h2>${film.Title} (${film.Year})</h2>
         <p><strong>Director:</strong> ${film.Director || 'N/A'}</p>
