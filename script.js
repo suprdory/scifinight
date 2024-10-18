@@ -5,7 +5,7 @@ let filmsData = []; // Store loaded films data globally
 async function showFilmDetails(film) {
 
     // Set the backdrop image
-    const detailsContainer = document.getElementById('right-panel');
+    const rightPanel = document.getElementById('right-panel');
     // detailsContainer.style.backgroundImage = `url(${backdropUrl})`;
 
     const posterUrl = film.poster_path ? `https://image.tmdb.org/t/p/w500${film.poster_path}` : '';
@@ -23,10 +23,12 @@ async function showFilmDetails(film) {
 
     // Function to safely get score values or return a default message
     const getScoreValue = (score) => (score ? score : 'N/A');
+    
+    const filmTitle = document.getElementById('film-title');
+    filmTitle.innerHTML=`<h2>${film.Title} (${film.Year})</h2>`
 
-    const detailsContent = document.getElementById('film-details');
-    detailsContent.innerHTML = `
-        <h2>${film.Title} (${film.Year})</h2>
+    const filmDetails = document.getElementById('film-details');
+    filmDetails.innerHTML = ` 
         <p><strong>Director:</strong> ${film.Director || 'N/A'}</p>
         <p><strong>Summary:</strong> ${film.Plot || 'N/A'}</p>
         <p><strong>Runtime:</strong> ${film.Runtime || 'N/A'} mins</p>
@@ -40,7 +42,7 @@ async function showFilmDetails(film) {
         <p><strong>Watched:</strong> ${film.Watched ? "Yes":"No"}</p>
     `;
     // Show the details container
-    detailsContainer.style.display = 'flex';
+    rightPanel.style.display = 'flex';
 }
 // Function to sort films based on selected criteria
 function sortFilms(films, criteria) {

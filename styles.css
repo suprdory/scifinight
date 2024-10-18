@@ -52,6 +52,11 @@ body {
 
 #right-panel h2 {
   margin-top: 0;
+  margin-bottom: 0;
+}
+#right-panel p{
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 #backdrop-container {
@@ -77,7 +82,16 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
+.film-title {
+  color: #b0b0b0;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  overflow-y: hidden;
+  /* border-right: 1px solid #333; */
+  padding-right: 10px;
+}
 .film-details {
   color: #b0b0b0;
   margin: 20px;
