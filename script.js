@@ -15,7 +15,7 @@ async function showFilmDetails(film) {
     const backdrop = document.getElementById('backdrop');
     backdrop.style.backgroundImage = `url(${backdropUrl})`;
 
-    // Set the poster image
+    // // Set the poster image
     const poster = document.getElementById('poster');
     poster.src = posterUrl;
     poster.alt = "${film.Title} poster";
@@ -40,7 +40,7 @@ async function showFilmDetails(film) {
         <p><strong>Watched:</strong> ${film.Watched ? "Yes":"No"}</p>
     `;
     // Show the details container
-    detailsContainer.style.display = 'block';
+    detailsContainer.style.display = 'flex';
 }
 // Function to sort films based on selected criteria
 function sortFilms(films, criteria) {
