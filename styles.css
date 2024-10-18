@@ -180,7 +180,7 @@ body {
   .container {
     display: flex;
     width: 95%;
-    height: 95dvh;
+    height: 95svh;
   }
 
   #left-panel {
@@ -200,10 +200,10 @@ body {
     margin: 10px;
     padding-right: 5px;
   }
-/* Film Controls Styles */
-.control-group {
-  margin-right: 10px;
 
-}
+  .control-group {
+    margin-right: 10px;
+
+  }
 
 }
