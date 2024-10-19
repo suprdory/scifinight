@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sci-fi Night - The Website</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- <h1>Sci-fi Night</h1> -->
-    <div class="container">
-        <!-- Film list panel -->
-      <div class="left-panel" id="left-panel">
-        <div class="film-controls">
-          <div class="control-group">
-            <label for="sort-options">Sort:</label>
-            <select id="sort-options">
-              <option value="Title">Title</option>
-              <option value="Runtime">Runtime</option>
-              <option value="Year">Year</option>
-              <option value="IMDb">IMDb Score</option>
-              <option value="RT">Rotten Tomatoes</option>
-              <option value="Metacritic">Metacritic</option>
-              <option value="Boxoffice">Box Office</option>
-            </select>
-          </div>
-          <div class="control-group">
-            <label for="filter-options">Filter:</label>
-            <select id="filter-options">
-              <option value="all">All</option>
-              <option value="watched">Watched</option>
-              <option value="unwatched">Unwatched</option>
-            </select>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sci-fi Night - The Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZZK3T19RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-PZZK3T19RQ');
+</script>
+
+<body>
+  <!-- <h1>Sci-fi Night</h1> -->
+  <div class="container">
+    <!-- Film list panel -->
+    <div class="left-panel" id="left-panel">
+      <div class="film-controls">
+        <div class="control-group">
+          <label for="sort-options">Sort:</label>
+          <select id="sort-options">
+            <option value="Title">Title</option>
+            <option value="Runtime">Runtime</option>
+            <option value="Year">Year</option>
+            <option value="IMDb">IMDb Score</option>
+            <option value="RT">Rotten Tomatoes</option>
+            <option value="Metacritic">Metacritic</option>
+            <option value="Boxoffice">Box Office</option>
+          </select>
         </div>
-        <div class="film-list scroll">
-          <ul id="films">
-            <!-- Films will be dynamically inserted here -->
-          </ul>
+        <div class="control-group">
+          <label for="filter-options">Filter:</label>
+          <select id="filter-options">
+            <option value="all">All</option>
+            <option value="watched">Watched</option>
+            <option value="unwatched">Unwatched</option>
+          </select>
         </div>
       </div>
-
-      <!-- Film Info Panel -->
-      <div class="right-panel" id="right-panel">
-        <div id="backdrop-container">
-          <div id="backdrop"></div>
-          <!-- Backdrop -->
-          <img id="poster"/>
-          <!-- Poster on top of the backdrop -->
-        </div>
-        <div class="film-title" id="film-title"></div>
-        <div class="film-details scroll" id="film-details">
-          <!-- Initially empty; content will be added when a film is selected -->
-        </div>
+      <div class="film-list scroll">
+        <ul id="films">
+          <!-- Films will be dynamically inserted here -->
+        </ul>
       </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- Film Info Panel -->
+    <div class="right-panel" id="right-panel">
+      <div id="backdrop-container">
+        <div id="backdrop"></div>
+        <!-- Backdrop -->
+        <img id="poster" />
+        <!-- Poster on top of the backdrop -->
+      </div>
+      <div class="film-title" id="film-title"></div>
+      <div class="film-details scroll" id="film-details">
+        <!-- Initially empty; content will be added when a film is selected -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
