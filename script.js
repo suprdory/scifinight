@@ -40,6 +40,7 @@ async function showFilmDetails(film) {
         <p><strong>Rating:</strong> ${film.Rated || 'N/A'}</p>
         <p><strong>Language:</strong> ${film.Language || 'N/A'}</p>
         <p><strong>Watched:</strong> ${film.Watched ? "Yes":"No"}</p>
+        <p><strong>Season:</strong> ${film.Season ? film.Season : "N/A"}</p>
     `;
     // Show the details container
     rightPanel.style.display = 'flex';
@@ -68,7 +69,10 @@ function sortFilms(films, criteria) {
         else if (criteria === 'Boxoffice') {
             return b.BoxOffice - a.BoxOffice; // Sort by Boxoffice score, descending
         }
-
+        else if (criteria === 'Season') {
+            return (a.Season === null) - (b.Season === null) || +(a.Season > b.Season) || -(a.Season < b.Season);
+            // return a.Season - b.Season; // Sort by Season score, ascending
+        }
     });
 }
 // Function to filter films based on rating
