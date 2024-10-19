@@ -147,7 +147,7 @@ document.getElementById('filter-options').addEventListener('change', () => {
 
 // Set the backdrop image
 const backdrop = document.getElementById('backdrop');
-backdrop.style.backgroundImage = 'url(/SFV1_crop.jpg)';
+backdrop.style.backgroundImage = 'url(SFV1_crop.jpg)';
 backdrop.style.filter= 'brightness(100%)';
 // // // Set the poster image
 // const poster = document.getElementById('poster');
