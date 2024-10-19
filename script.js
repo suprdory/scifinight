@@ -14,6 +14,7 @@ async function showFilmDetails(film) {
     // Set the backdrop image
     const backdrop = document.getElementById('backdrop');
     backdrop.style.backgroundImage = `url(${backdropUrl})`;
+    backdrop.style.filter = 'brightness(50%)';
 
     // // Set the poster image
     const poster = document.getElementById('poster');
@@ -142,6 +143,24 @@ document.getElementById('filter-options').addEventListener('change', () => {
     const filteredFilms = filterFilms(sortedFilms, document.getElementById('filter-options').value);
     displayFilms(filteredFilms);
 });
+
+
+// Set the backdrop image
+const backdrop = document.getElementById('backdrop');
+backdrop.style.backgroundImage = 'url(/SFV1_crop.jpg)';
+backdrop.style.filter= 'brightness(100%)';
+// // // Set the poster image
+// const poster = document.getElementById('poster');
+// poster.src = '/SFV1_crop.jpg';
+
+
+const rightPanel = document.getElementById('right-panel');
+rightPanel.style.display = 'flex';
+const filmTitle = document.getElementById('film-title');
+filmTitle.innerHTML = `<h2>Welcome to Sci-fi Night!</h2>`
+const filmDetails = document.getElementById('film-details');
+filmDetails.innerHTML = `<p><strong></strong></p>`
+
 
 // Run this when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadFilms);

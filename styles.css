@@ -79,6 +79,7 @@ body {
 #poster {
   height: 90%;
   transform: translate(5%, -105%);
+  /* max-width: 100%; */
   z-index: 1;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
