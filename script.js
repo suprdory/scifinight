@@ -34,7 +34,7 @@ async function showFilmDetails(film) {
         <p><strong>Summary:</strong> ${film.Plot || 'N/A'}</p>
         <p><strong>Runtime:</strong> ${film.Runtime || 'N/A'} mins</p>
         <p><strong>Rotten Tomatoes Score:</strong> ${getScoreValue(film.RT)}%</p>
-        <p><strong>IMDb Score:</strong> ${getScoreValue(film.IMDb)}/10</p>
+        <p><strong><a href=${film.IMDb_link ? film.IMDb_link : "N/A"}><strong>IMDb</strong></a> Score:</strong> ${getScoreValue(film.IMDb)}/10</p>
         <p><strong>MetaCritic Score:</strong> ${getScoreValue(film.Meta)}%</p>
         <p><strong>Actors:</strong> ${film.Actors || 'N/A'}</p>
         <p><strong>Box Office:</strong> ${formatCurrency(film.BoxOffice)}</p>
