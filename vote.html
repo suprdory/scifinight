@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Vote</title>
+    <link rel="stylesheet" href="vote_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id='title'>
+            <h1>Film Vote</h1>
+        </div>
+
+        <div id="filters" class="filters">
+            <label for="watched-filter">Filter:</label>
+            <select id="watched-filter">
+                <option value="all">All</option>
+                <option value="watched">Watched</option>
+                <option value="unwatched">Unwatched</option>
+            </select>
+        </div>
+
+        <div id="film-container" class="film-container">
+        </div>
+
+        <div id="bottom-panel" class="bottom-panel">
+            <div id="progress" class="progress"></div>
+            <button id="start-btn" class="start-btn">Start Vote</button>
+        </div>
+    </div>
+
+    <script src="vote_script.js"></script>
+</body>
+
+</html>
