@@ -54,7 +54,7 @@ function displayFilmGroups() {
 
     // Update progress
     let remainingDecisions = Math.ceil(Math.log2(remainingFilms.length));
-    progressElement.textContent = `${remainingDecisions} decisions, ${remainingFilms.length} films remaining`;
+    progressElement.textContent = `< ${remainingDecisions+1} decisions, ${remainingFilms.length} films remaining`;
 
     
 }

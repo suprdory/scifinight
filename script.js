@@ -159,7 +159,7 @@ rightPanel.style.display = 'flex';
 const filmTitle = document.getElementById('film-title');
 filmTitle.innerHTML = `<h2>Welcome to Sci-fi Night!</h2>`
 const filmDetails = document.getElementById('film-details');
-filmDetails.innerHTML = `<p><strong></strong></p>`
+filmDetails.innerHTML = `<p><strong></strong></p><a href='vote.html'>Vote!</a>`
 
 
 // Run this when the DOM is fully loaded
