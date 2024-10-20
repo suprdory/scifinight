@@ -71,7 +71,7 @@ function sortFilms(films, criteria) {
             return b.BoxOffice - a.BoxOffice; // Sort by Boxoffice score, descending
         }
         else if (criteria === 'Season') {
-            return (a.Season === null) - (b.Season === null) || +(a.Season > b.Season) || -(a.Season < b.Season);
+            return (a.Season === null) - (b.Season === null) || +(b.Season > a.Season) || -(b.Season < a.Season);
             // return a.Season - b.Season; // Sort by Season score, ascending
         }
     });
