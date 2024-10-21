@@ -108,7 +108,10 @@ df_new=pd.DataFrame(filmDats)
 # %%
 df=pd.concat((df_new,df_old))
 df=df.reset_index(drop=True)
-df
+df=df.iloc[:,:-3]
+#%%
+df.Watched=df.Watched==1
+#%%
 df.to_csv('scifi_data_241024.csv')
 # df.to_json('films.json', orient='records', indent=4)
 df.to_json('../films.json', orient='records', indent=4)

@@ -82,10 +82,10 @@ function filterFilms(films, filter) {
         return films; // No filtering
     }
     else if (filter === "watched"){
-        return films.filter(film => film.Watched === 1);
+        return films.filter(film => film.Watched == true);
     }
     else {
-        return films.filter(film => film.Watched === 0);
+        return films.filter(film => film.Watched != true);
     }
 
 }
