@@ -9,7 +9,7 @@ omdb_api_key = config['omdb_api_key']
 #%%
 
 # df_old=pd.read_pickle('df_scfi_db_181024_posters.pkl')
-df_old = pd.read_csv('scifi_data_231024.csv')
+df_old = pd.read_csv('scifi_data_241024.csv')
 # %%
 newData=pd.read_csv('to_add.csv')
 
@@ -112,6 +112,13 @@ df=df.iloc[:,:-3]
 #%%
 df.Watched=df.Watched==1
 #%%
+# df=df_old.sort_values('Title')
+# df.loc[df.Title=="Asteroid City","Season"]=9.0
+#%%
+
+
+
+
 df.to_csv('scifi_data_241024.csv')
 # df.to_json('films.json', orient='records', indent=4)
 df.to_json('../films.json', orient='records', indent=4)

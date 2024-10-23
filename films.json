@@ -1,405 +1,6 @@
 [
     {
-        "Title":"Android Apocalypse",
-        "imdbID":"tt0470023",
-        "Year":"2006",
-        "Rated":"PG-13",
-        "Director":"Paul Ziller",
-        "Actors":"Wendy Anderson, Scott Bairstow, Ian Black",
-        "Language":"English",
-        "Plot":"In an age when Machines dominate the world, the fate of man rests in the hands of an outlaw and an android.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0470023",
-        "Runtime":95,
-        "BoxOffice":null,
-        "IMDb":4.0,
-        "RT":null,
-        "Meta":null,
-        "poster_path":"\/h6DkAZAcDgoJQbKlkC4ZNgrdh9J.jpg",
-        "backdrop_path":"\/uxlYQKsoOkBgR9PxgeZDUh1GbhZ.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"Colossal",
-        "imdbID":"tt4680182",
-        "Year":"2016",
-        "Rated":"R",
-        "Director":"Nacho Vigalondo",
-        "Actors":"Anne Hathaway, Jason Sudeikis, Austin Stowell",
-        "Language":"English, Korean",
-        "Plot":"Gloria is an out-of-work party girl forced to leave her life in New York City and move back home. When reports surface that a giant creature is destroying Seoul, she gradually comes to the realization that she is somehow connected...",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt4680182",
-        "Runtime":109,
-        "BoxOffice":"3029287",
-        "IMDb":6.2,
-        "RT":82.0,
-        "Meta":70.0,
-        "poster_path":"\/4VOyofBd1pexblxtDZYtYIk7NI4.jpg",
-        "backdrop_path":"\/1ddf2Kq1hC7SgV02E3pyLAC26lq.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"The Island of Dr. Moreau",
-        "imdbID":"tt0116654",
-        "Year":"1996",
-        "Rated":"PG-13",
-        "Director":"John Frankenheimer, Richard Stanley",
-        "Actors":"David Thewlis, Marlon Brando, Val Kilmer",
-        "Language":"English, Indonesian",
-        "Plot":"After being rescued and brought to an island, a man discovers that its inhabitants are experimental animals being turned into strange-looking humans, all of it the work of a visionary doctor.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0116654",
-        "Runtime":96,
-        "BoxOffice":"27663982",
-        "IMDb":4.6,
-        "RT":22.0,
-        "Meta":37.0,
-        "poster_path":"\/hOJeQXve8W9rNRhdgC1WV3GQJyA.jpg",
-        "backdrop_path":"\/5kAeJB8wR1Be0EFG7QjKdwFfHx7.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"Earth Girls Are Easy",
-        "imdbID":"tt0097257",
-        "Year":1988,
-        "Rated":"PG",
-        "Director":"Julien Temple",
-        "Actors":"Geena Davis, Jeff Goldblum, Jim Carrey",
-        "Language":"English",
-        "Plot":"A Southern California girl befriends three furry aliens after their spaceship lands in her swimming pool.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0097257",
-        "Runtime":100,
-        "BoxOffice":3916303.0,
-        "IMDb":5.5,
-        "RT":68.0,
-        "Meta":66.0,
-        "poster_path":"\/pO9Edq8mgp9kD3N6EkCGYLnIVaA.jpg",
-        "backdrop_path":"\/6qQZ54iVgQWOFaVWss77yHy8YHu.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"The Island of Dr. Moreau",
-        "imdbID":"tt0076210",
-        "Year":1977,
-        "Rated":"PG",
-        "Director":"Don Taylor",
-        "Actors":"Burt Lancaster, Michael York, Nigel Davenport",
-        "Language":"English",
-        "Plot":"A shipwrecked survivor discovers a remote island owned by a crazed scientist who is carrying out sinister experiments on the island's inhabitants.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0076210",
-        "Runtime":99,
-        "BoxOffice":null,
-        "IMDb":5.9,
-        "RT":54.0,
-        "Meta":null,
-        "poster_path":"\/q5kWAWxb3eWCkxFNT6WCipAnpQe.jpg",
-        "backdrop_path":"\/t4d80bW4Vn86EVIQW0eV2NjhFBh.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"The Similars",
-        "imdbID":"tt3949658",
-        "Year":2015,
-        "Rated":null,
-        "Director":"Isaac Ezban",
-        "Actors":"Gustavo S\u00e1nchez Parra, Cassandra Ciangherotti, Fernando Becerril",
-        "Language":"Spanish",
-        "Plot":"On the rainy night of October 2, 1968, eight characters waiting on a remote bus station for a bus heading to Mexico City start experiencing a strange phenomenon.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt3949658",
-        "Runtime":89,
-        "BoxOffice":null,
-        "IMDb":5.8,
-        "RT":95.0,
-        "Meta":null,
-        "poster_path":"\/gFySRlyCiay9wsqPUcIIyXf2VwL.jpg",
-        "backdrop_path":"\/egVHpPXhD0cy5UZlgiFy2Zpy1tB.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"G.O.R.A.",
-        "imdbID":"tt0384116",
-        "Year":2004,
-        "Rated":null,
-        "Director":"\u00d6mer Faruk Sorak",
-        "Actors":"Cem Yilmaz, \u00d6zge \u00d6zberk, Ozan G\u00fcven",
-        "Language":"Turkish, English",
-        "Plot":"A slick young Turk kidnapped by extraterrestrials shows his great \u00ab humanitarian spirit \u00bb by outwitting the evil commander-in-chief of the planet of G.O.R.A.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0384116",
-        "Runtime":127,
-        "BoxOffice":null,
-        "IMDb":8.0,
-        "RT":null,
-        "Meta":null,
-        "poster_path":"\/e73adWbjLnPW2rzmG7lLYv1qxvp.jpg",
-        "backdrop_path":"\/g90Hlbaj8OofowG9hDg9ScD5fqG.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"Jubilee",
-        "imdbID":"tt0076240",
-        "Year":1978,
-        "Rated":"Not Rated",
-        "Director":"Derek Jarman",
-        "Actors":"Adam Ant, Richard O'Brien, Ian Charleson",
-        "Language":"English",
-        "Plot":"Queen Elizabeth I travels 400 years into the future to witness the appalling revelation of a dystopian London overrun by corruption and a vicious gang of punk guerrilla girls led by the new Monarch of Punk.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0076240",
-        "Runtime":106,
-        "BoxOffice":null,
-        "IMDb":5.9,
-        "RT":100.0,
-        "Meta":79.0,
-        "poster_path":"\/8HtAaaDZDCCx2F73n41xMDWDhwU.jpg",
-        "backdrop_path":"\/iBFVJDDhuhSe1JeoMrNzSKeuqTJ.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"Valerian and the City of a Thousand Planets",
-        "imdbID":"tt2239822",
-        "Year":2017,
-        "Rated":"PG-13",
-        "Director":"Luc Besson",
-        "Actors":"Dane DeHaan, Cara Delevingne, Clive Owen",
-        "Language":"English, French, Hindi",
-        "Plot":"A dark force threatens Alpha, a vast metropolis and home to species from a thousand planets. Special operatives Valerian and Laureline must race to identify the marauding menace and safeguard not just Alpha, but the future of the ...",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt2239822",
-        "Runtime":136,
-        "BoxOffice":41189488.0,
-        "IMDb":6.4,
-        "RT":47.0,
-        "Meta":51.0,
-        "poster_path":"\/jfIpMh79fGRqYJ6PwZLCntzgxlF.jpg",
-        "backdrop_path":"\/5rYnygKCkmqWuMv1O5yAnzGF8gV.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"Threads",
-        "imdbID":"tt0090163",
-        "Year":1984,
-        "Rated":"TV-MA",
-        "Director":"Mick Jackson",
-        "Actors":"Karen Meagher, Reece Dinsdale, David Brierly",
-        "Language":"English",
-        "Plot":"The effects of a nuclear holocaust on the working class city of Sheffield, England and the eventual long-term effects of nuclear war on civilization.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0090163",
-        "Runtime":112,
-        "BoxOffice":null,
-        "IMDb":8.0,
-        "RT":100.0,
-        "Meta":92.0,
-        "poster_path":"\/szefDW6E7DiZGivuu1U0ITsIT4s.jpg",
-        "backdrop_path":"\/xCoWt5obm6UYNyxmnGr253ADU6M.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"The Man from Earth",
-        "imdbID":"tt0756683",
-        "Year":2007,
-        "Rated":"Not Rated",
-        "Director":"Richard Schenkman",
-        "Actors":"David Lee Smith, Tony Todd, John Billingsley",
-        "Language":"English",
-        "Plot":"An impromptu goodbye party for Professor John Oldman becomes a mysterious interrogation after the retiring scholar reveals to his colleagues he has a longer and stranger past than they can imagine.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0756683",
-        "Runtime":87,
-        "BoxOffice":null,
-        "IMDb":7.8,
-        "RT":100.0,
-        "Meta":null,
-        "poster_path":"\/V086R82gNgWrotaXZFO4JhdgB1.jpg",
-        "backdrop_path":"\/gt4EnUGbbGbNOX0q47YII3WxB48.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"Slipstream",
-        "imdbID":"tt0098350",
-        "Year":1989,
-        "Rated":"PG-13",
-        "Director":"Steven Lisberger",
-        "Actors":"Bob Peck, Mark Hamill, Kitty Aldridge",
-        "Language":"English",
-        "Plot":"In the near future, where Earth has been devastated by man's pollution and giant winds rule the planet, bounty hunter Matt kidnaps a murderer out of the hands of two police officers, planning to get the bounty himself.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0098350",
-        "Runtime":102,
-        "BoxOffice":null,
-        "IMDb":4.7,
-        "RT":43.0,
-        "Meta":null,
-        "poster_path":"\/cv5ga1449YmBl7by0sRQmuyzydo.jpg",
-        "backdrop_path":"\/bww604cVWWzDjKCeusNV6fbITKm.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
-        "Title":"I Origins",
-        "imdbID":"tt2884206",
-        "Year":2014,
-        "Rated":"R",
-        "Director":"Mike Cahill",
-        "Actors":"Michael Pitt, Steven Yeun, Astrid Berg\u00e8s-Frisbey",
-        "Language":"English, Hindi",
-        "Plot":"A molecular biologist and his laboratory partner uncover evidence that may fundamentally change society as we know it.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt2884206",
-        "Runtime":106,
-        "BoxOffice":336472.0,
-        "IMDb":7.3,
-        "RT":52.0,
-        "Meta":57.0,
-        "poster_path":"\/2P31jhd1dWUAPD8dmnSrwkQ8CNN.jpg",
-        "backdrop_path":"\/x8qNQSvvqd2PE15Pm6tmnXH0584.jpg",
-        "Watched":false,
-        "Season":9.0
-    },
-    {
-        "Title":"Mars Attacks!",
-        "imdbID":"tt0116996",
-        "Year":1996,
-        "Rated":"PG-13",
-        "Director":"Tim Burton",
-        "Actors":"Jack Nicholson, Pierce Brosnan, Sarah Jessica Parker",
-        "Language":"English, French",
-        "Plot":"Earth is invaded by Martians with unbeatable weapons and a cruel sense of humor.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0116996",
-        "Runtime":106,
-        "BoxOffice":37781197.0,
-        "IMDb":6.4,
-        "RT":56.0,
-        "Meta":52.0,
-        "poster_path":"\/hll4O5vSAfnZDb6JbnP06GPtz7b.jpg",
-        "backdrop_path":"\/rxwbgJKuglsUfcMUJG7oer1fLAy.jpg",
-        "Watched":false,
-        "Season":9.0
-    },
-    {
-        "Title":"The Faculty",
-        "imdbID":"tt0133751",
-        "Year":1998,
-        "Rated":"R",
-        "Director":"Robert Rodriguez",
-        "Actors":"Jordana Brewster, Clea DuVall, Laura Harris",
-        "Language":"English",
-        "Plot":"When Casey Connor, Herrington High School's newspaper photographer, witnesses the murder of a nurse and sees her alive again, he decides to investigate the bizarre happenings.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0133751",
-        "Runtime":104,
-        "BoxOffice":40283321.0,
-        "IMDb":6.6,
-        "RT":58.0,
-        "Meta":61.0,
-        "poster_path":"\/5XetJwmAiDC0EtH23NIXaqFn3Wl.jpg",
-        "backdrop_path":"\/kswfKIkD0urnHhZK991aRdZ3Z8T.jpg",
-        "Watched":false,
-        "Season":9.0
-    },
-    {
-        "Title":"The Iron Giant",
-        "imdbID":"tt0129167",
-        "Year":1999,
-        "Rated":"PG",
-        "Director":"Brad Bird",
-        "Actors":"Eli Marienthal, Harry Connick Jr., Jennifer Aniston",
-        "Language":"English",
-        "Plot":"A young boy befriends a giant robot from outer space that a paranoid government agent wants to destroy.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0129167",
-        "Runtime":86,
-        "BoxOffice":23315035.0,
-        "IMDb":8.1,
-        "RT":96.0,
-        "Meta":85.0,
-        "poster_path":"\/ct04FCFLPImNG5thcPLRnVsZlmS.jpg",
-        "backdrop_path":"\/gZ78dyRH9hXeH94ASjuvD9Vw4b5.jpg",
-        "Watched":false,
-        "Season":9.0
-    },
-    {
-        "Title":"The Right Stuff",
-        "imdbID":"tt0086197",
-        "Year":1983,
-        "Rated":"PG",
-        "Director":"Philip Kaufman",
-        "Actors":"Sam Shepard, Scott Glenn, Ed Harris",
-        "Language":"English, Russian, Spanish",
-        "Plot":"The U.S. space program's development from the breaking of the sound barrier to selection of the Mercury 7 astronauts, from a group of test pilots with a more seat-of-the-pants approach than the program's more cautious engineers pr...",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0086197",
-        "Runtime":193,
-        "BoxOffice":21192102.0,
-        "IMDb":7.8,
-        "RT":96.0,
-        "Meta":91.0,
-        "poster_path":"\/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg",
-        "backdrop_path":"\/w2KUVzeOC1u6cQwvUV0qqi7QYxs.jpg",
-        "Watched":false,
-        "Season":9.0
-    },
-    {
-        "Title":"The Abyss",
-        "imdbID":"tt0096754",
-        "Year":1989,
-        "Rated":"PG-13",
-        "Director":"James Cameron",
-        "Actors":"Ed Harris, Mary Elizabeth Mastrantonio, Michael Biehn",
-        "Language":"English",
-        "Plot":"A civilian diving team is enlisted to search for a lost nuclear submarine and faces danger while encountering an alien aquatic species.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0096754",
-        "Runtime":140,
-        "BoxOffice":54981151.0,
-        "IMDb":7.5,
-        "RT":89.0,
-        "Meta":62.0,
-        "poster_path":"\/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg",
-        "backdrop_path":"\/xLzkWj2C6zCWyFT8Z7tKKtfrwcR.jpg",
-        "Watched":false,
-        "Season":9.0
-    },
-    {
-        "Title":"Aliens",
-        "imdbID":"tt0090605",
-        "Year":1986,
-        "Rated":"R",
-        "Director":"James Cameron",
-        "Actors":"Sigourney Weaver, Michael Biehn, Carrie Henn",
-        "Language":"English, Spanish",
-        "Plot":"Decades after surviving the Nostromo incident, Ellen Ripley is sent out to re-establish contact with a terraforming colony but finds herself battling the Alien Queen and her offspring.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0090605",
-        "Runtime":137,
-        "BoxOffice":85160248.0,
-        "IMDb":8.4,
-        "RT":94.0,
-        "Meta":84.0,
-        "poster_path":"\/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
-        "backdrop_path":"\/jMBpJFRtrtIXymer93XLavPwI3P.jpg",
-        "Watched":false,
-        "Season":7.0
-    },
-    {
-        "Title":"Android Apocalypse",
-        "imdbID":"tt0470023",
-        "Year":2006,
-        "Rated":"PG-13",
-        "Director":"Paul Ziller",
-        "Actors":"Wendy Anderson, Scott Bairstow, Ian Black",
-        "Language":"English",
-        "Plot":"In an age when Machines dominate the world, the fate of man rests in the hands of an outlaw and an android.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0470023",
-        "Runtime":95,
-        "BoxOffice":null,
-        "IMDb":4.0,
-        "RT":null,
-        "Meta":null,
-        "poster_path":"\/h6DkAZAcDgoJQbKlkC4ZNgrdh9J.jpg",
-        "backdrop_path":"\/uxlYQKsoOkBgR9PxgeZDUh1GbhZ.jpg",
-        "Watched":false,
-        "Season":10.0
-    },
-    {
+        "Unnamed: 0":20,
         "Title":"12 Monkeys",
         "imdbID":"tt0114746",
         "Year":1995,
@@ -420,6 +21,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":21,
         "Title":"2001: A Space Odyssey",
         "imdbID":"tt0062622",
         "Year":1968,
@@ -440,6 +42,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":22,
         "Title":"2010: The Year We Make Contact",
         "imdbID":"tt0086837",
         "Year":1984,
@@ -460,6 +63,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":23,
         "Title":"A Boy and His Dog",
         "imdbID":"tt0072730",
         "Year":1975,
@@ -480,6 +84,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":24,
         "Title":"A Scanner Darkly",
         "imdbID":"tt0405296",
         "Year":2006,
@@ -500,6 +105,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":25,
         "Title":"A.I. Artificial Intelligence",
         "imdbID":"tt0212720",
         "Year":2001,
@@ -520,6 +126,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":26,
         "Title":"Ad Astra",
         "imdbID":"tt2935510",
         "Year":2019,
@@ -540,6 +147,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":27,
         "Title":"Akira",
         "imdbID":"tt0094625",
         "Year":1988,
@@ -560,6 +168,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":28,
         "Title":"Alien",
         "imdbID":"tt0078748",
         "Year":1979,
@@ -580,6 +189,28 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":18,
+        "Title":"Aliens",
+        "imdbID":"tt0090605",
+        "Year":1986,
+        "Rated":"R",
+        "Director":"James Cameron",
+        "Actors":"Sigourney Weaver, Michael Biehn, Carrie Henn",
+        "Language":"English, Spanish",
+        "Plot":"Decades after surviving the Nostromo incident, Ellen Ripley is sent out to re-establish contact with a terraforming colony but finds herself battling the Alien Queen and her offspring.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0090605",
+        "Runtime":137,
+        "BoxOffice":85160248.0,
+        "IMDb":8.4,
+        "RT":94.0,
+        "Meta":84.0,
+        "poster_path":"\/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+        "backdrop_path":"\/jMBpJFRtrtIXymer93XLavPwI3P.jpg",
+        "Watched":false,
+        "Season":7.0
+    },
+    {
+        "Unnamed: 0":29,
         "Title":"Alita: Battle Angel",
         "imdbID":"tt0437086",
         "Year":2019,
@@ -600,6 +231,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":30,
         "Title":"Altered States",
         "imdbID":"tt0080360",
         "Year":1980,
@@ -620,6 +252,28 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":0,
+        "Title":"Android Apocalypse",
+        "imdbID":"tt0470023",
+        "Year":2006,
+        "Rated":"PG-13",
+        "Director":"Paul Ziller",
+        "Actors":"Wendy Anderson, Scott Bairstow, Ian Black",
+        "Language":"English",
+        "Plot":"In an age when Machines dominate the world, the fate of man rests in the hands of an outlaw and an android.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0470023",
+        "Runtime":95,
+        "BoxOffice":null,
+        "IMDb":4.0,
+        "RT":null,
+        "Meta":null,
+        "poster_path":"\/h6DkAZAcDgoJQbKlkC4ZNgrdh9J.jpg",
+        "backdrop_path":"\/uxlYQKsoOkBgR9PxgeZDUh1GbhZ.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":31,
         "Title":"Aniara",
         "imdbID":"tt7589524",
         "Year":2018,
@@ -640,6 +294,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":32,
         "Title":"Annihilation",
         "imdbID":"tt2798920",
         "Year":2018,
@@ -660,6 +315,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":33,
         "Title":"Another Earth",
         "imdbID":"tt1549572",
         "Year":2011,
@@ -680,6 +336,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":34,
         "Title":"Arrival",
         "imdbID":"tt2543164",
         "Year":2016,
@@ -700,6 +357,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":35,
         "Title":"Assault Girls",
         "imdbID":"tt1478800",
         "Year":2009,
@@ -720,6 +378,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":36,
         "Title":"Asteroid City",
         "imdbID":"tt14230388",
         "Year":2023,
@@ -737,9 +396,10 @@
         "poster_path":"\/qdq40gRS8xKnpFt5V75t6lUHgpx.jpg",
         "backdrop_path":"\/gcbZ2ZdVzfBsGmfjTy8g7UaZS16.jpg",
         "Watched":true,
-        "Season":10.0
+        "Season":9.0
     },
     {
+        "Unnamed: 0":37,
         "Title":"Attack from Outer Space",
         "imdbID":"tt12658910",
         "Year":1979,
@@ -760,6 +420,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":38,
         "Title":"Avalon",
         "imdbID":"tt0267287",
         "Year":2001,
@@ -780,6 +441,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":39,
         "Title":"Back to the Future",
         "imdbID":"tt0088763",
         "Year":1985,
@@ -800,6 +462,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":40,
         "Title":"Back to the Future Part II",
         "imdbID":"tt0096874",
         "Year":1989,
@@ -820,6 +483,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":41,
         "Title":"Back to the Future Part III",
         "imdbID":"tt0099088",
         "Year":1990,
@@ -840,6 +504,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":42,
         "Title":"Barbarella",
         "imdbID":"tt0062711",
         "Year":1968,
@@ -860,6 +525,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":43,
         "Title":"Battlefield Earth",
         "imdbID":"tt0185183",
         "Year":2000,
@@ -880,6 +546,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":44,
         "Title":"Bill & Ted's Excellent Adventure",
         "imdbID":"tt0096928",
         "Year":1989,
@@ -900,6 +567,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":45,
         "Title":"Blade Runner",
         "imdbID":"tt0083658",
         "Year":1982,
@@ -920,6 +588,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":46,
         "Title":"Blade Runner 2049",
         "imdbID":"tt1856101",
         "Year":2017,
@@ -940,6 +609,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":47,
         "Title":"Born in Flames",
         "imdbID":"tt0085267",
         "Year":1983,
@@ -960,6 +630,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":48,
         "Title":"Brazil",
         "imdbID":"tt0088846",
         "Year":1985,
@@ -980,6 +651,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":49,
         "Title":"Brian and Charles",
         "imdbID":"tt13270424",
         "Year":2022,
@@ -1000,6 +672,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":50,
         "Title":"Casshern",
         "imdbID":"tt0405821",
         "Year":2004,
@@ -1020,6 +693,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":51,
         "Title":"Chappie",
         "imdbID":"tt1823672",
         "Year":2015,
@@ -1040,6 +714,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":52,
         "Title":"Cherry 2000",
         "imdbID":"tt0092746",
         "Year":1987,
@@ -1060,6 +735,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":53,
         "Title":"Children of Men",
         "imdbID":"tt0206634",
         "Year":2006,
@@ -1080,6 +756,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":54,
         "Title":"Chronicle",
         "imdbID":"tt1706593",
         "Year":2012,
@@ -1100,6 +777,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":55,
         "Title":"Class of 1999",
         "imdbID":"tt0099277",
         "Year":1990,
@@ -1120,6 +798,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":56,
         "Title":"Close Encounters of the Third Kind",
         "imdbID":"tt0075860",
         "Year":1977,
@@ -1140,6 +819,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":57,
         "Title":"Cloud Atlas",
         "imdbID":"tt1371111",
         "Year":2012,
@@ -1160,6 +840,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":58,
         "Title":"Cloverfield",
         "imdbID":"tt1060277",
         "Year":2008,
@@ -1180,6 +861,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":59,
         "Title":"Coherence",
         "imdbID":"tt2866360",
         "Year":2013,
@@ -1200,6 +882,28 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":1,
+        "Title":"Colossal",
+        "imdbID":"tt4680182",
+        "Year":2016,
+        "Rated":"R",
+        "Director":"Nacho Vigalondo",
+        "Actors":"Anne Hathaway, Jason Sudeikis, Austin Stowell",
+        "Language":"English, Korean",
+        "Plot":"Gloria is an out-of-work party girl forced to leave her life in New York City and move back home. When reports surface that a giant creature is destroying Seoul, she gradually comes to the realization that she is somehow connected...",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt4680182",
+        "Runtime":109,
+        "BoxOffice":3029287.0,
+        "IMDb":6.2,
+        "RT":82.0,
+        "Meta":70.0,
+        "poster_path":"\/4VOyofBd1pexblxtDZYtYIk7NI4.jpg",
+        "backdrop_path":"\/1ddf2Kq1hC7SgV02E3pyLAC26lq.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":60,
         "Title":"Colossus: The Forbin Project",
         "imdbID":"tt0064177",
         "Year":1970,
@@ -1220,6 +924,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":61,
         "Title":"Coneheads",
         "imdbID":"tt0106598",
         "Year":1993,
@@ -1240,6 +945,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":62,
         "Title":"Contact",
         "imdbID":"tt0118884",
         "Year":1997,
@@ -1260,6 +966,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":63,
         "Title":"Crimes of the Future",
         "imdbID":"tt14549466",
         "Year":2022,
@@ -1280,6 +987,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":64,
         "Title":"Cube",
         "imdbID":"tt0123755",
         "Year":1997,
@@ -1300,6 +1008,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":65,
         "Title":"Cypher",
         "imdbID":"tt0284978",
         "Year":2002,
@@ -1320,6 +1029,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":66,
         "Title":"D.A.R.Y.L.",
         "imdbID":"tt0088979",
         "Year":1985,
@@ -1340,6 +1050,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":67,
         "Title":"Dark City",
         "imdbID":"tt0118929",
         "Year":1998,
@@ -1360,6 +1071,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":68,
         "Title":"Dark Star",
         "imdbID":"tt0069945",
         "Year":1974,
@@ -1380,6 +1092,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":69,
         "Title":"Das Millionenspiel",
         "imdbID":"tt0066079",
         "Year":1970,
@@ -1400,6 +1113,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":70,
         "Title":"Dead Man's Letters",
         "imdbID":"tt0091759",
         "Year":1986,
@@ -1420,6 +1134,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":71,
         "Title":"Death Race 2000",
         "imdbID":"tt0072856",
         "Year":1975,
@@ -1440,6 +1155,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":72,
         "Title":"Demolition Man",
         "imdbID":"tt0106697",
         "Year":1993,
@@ -1460,6 +1176,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":73,
         "Title":"Demon Seed",
         "imdbID":"tt0075931",
         "Year":1977,
@@ -1480,6 +1197,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":74,
         "Title":"Diamantino",
         "imdbID":"tt6522668",
         "Year":2018,
@@ -1500,6 +1218,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":75,
         "Title":"District 9",
         "imdbID":"tt1136608",
         "Year":2009,
@@ -1520,6 +1239,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":76,
         "Title":"Dr. Goldfoot and the Bikini Machine",
         "imdbID":"tt0059124",
         "Year":1965,
@@ -1540,6 +1260,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":77,
         "Title":"Dreamscape",
         "imdbID":"tt0087175",
         "Year":1984,
@@ -1560,6 +1281,7 @@
         "Season":10.0
     },
     {
+        "Unnamed: 0":78,
         "Title":"Dredd",
         "imdbID":"tt1343727",
         "Year":2012,
@@ -1580,6 +1302,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":79,
         "Title":"Dune",
         "imdbID":"tt0087182",
         "Year":1984,
@@ -1600,6 +1323,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":80,
         "Title":"E.T. the Extra-Terrestrial",
         "imdbID":"tt0083866",
         "Year":1982,
@@ -1620,6 +1344,28 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":3,
+        "Title":"Earth Girls Are Easy",
+        "imdbID":"tt0097257",
+        "Year":1988,
+        "Rated":"PG",
+        "Director":"Julien Temple",
+        "Actors":"Geena Davis, Jeff Goldblum, Jim Carrey",
+        "Language":"English",
+        "Plot":"A Southern California girl befriends three furry aliens after their spaceship lands in her swimming pool.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0097257",
+        "Runtime":100,
+        "BoxOffice":3916303.0,
+        "IMDb":5.5,
+        "RT":68.0,
+        "Meta":66.0,
+        "poster_path":"\/pO9Edq8mgp9kD3N6EkCGYLnIVaA.jpg",
+        "backdrop_path":"\/6qQZ54iVgQWOFaVWss77yHy8YHu.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":81,
         "Title":"Edge of Tomorrow",
         "imdbID":"tt1631867",
         "Year":2014,
@@ -1640,6 +1386,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":82,
         "Title":"Elysium",
         "imdbID":"tt1535108",
         "Year":2013,
@@ -1660,6 +1407,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":83,
         "Title":"Embers",
         "imdbID":"tt3503460",
         "Year":2015,
@@ -1680,6 +1428,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":84,
         "Title":"Ender's Game",
         "imdbID":"tt1731141",
         "Year":2013,
@@ -1700,6 +1449,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":85,
         "Title":"Enemy Mine",
         "imdbID":"tt0089092",
         "Year":1985,
@@ -1720,6 +1470,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":86,
         "Title":"Equilibrium",
         "imdbID":"tt0238380",
         "Year":2002,
@@ -1740,6 +1491,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":87,
         "Title":"Escape from New York",
         "imdbID":"tt0082340",
         "Year":1981,
@@ -1760,6 +1512,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":88,
         "Title":"Europa Report",
         "imdbID":"tt2051879",
         "Year":2013,
@@ -1780,6 +1533,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":89,
         "Title":"Evil Brain from Outer Space",
         "imdbID":"tt0058072",
         "Year":1966,
@@ -1800,6 +1554,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":90,
         "Title":"Ex Machina",
         "imdbID":"tt0470752",
         "Year":2014,
@@ -1820,6 +1575,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":91,
         "Title":"Fast Color",
         "imdbID":"tt6418778",
         "Year":2018,
@@ -1840,6 +1596,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":92,
         "Title":"Forbidden Planet",
         "imdbID":"tt0049223",
         "Year":1956,
@@ -1860,6 +1617,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":93,
         "Title":"Frequencies",
         "imdbID":"tt2414766",
         "Year":2013,
@@ -1880,6 +1638,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":94,
         "Title":"Fried Barry",
         "imdbID":"tt9102084",
         "Year":2020,
@@ -1900,6 +1659,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":95,
         "Title":"Futureworld",
         "imdbID":"tt0074559",
         "Year":1976,
@@ -1920,6 +1680,28 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":6,
+        "Title":"G.O.R.A.",
+        "imdbID":"tt0384116",
+        "Year":2004,
+        "Rated":null,
+        "Director":"\u00d6mer Faruk Sorak",
+        "Actors":"Cem Yilmaz, \u00d6zge \u00d6zberk, Ozan G\u00fcven",
+        "Language":"Turkish, English",
+        "Plot":"A slick young Turk kidnapped by extraterrestrials shows his great \u00ab humanitarian spirit \u00bb by outwitting the evil commander-in-chief of the planet of G.O.R.A.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0384116",
+        "Runtime":127,
+        "BoxOffice":null,
+        "IMDb":8.0,
+        "RT":null,
+        "Meta":null,
+        "poster_path":"\/e73adWbjLnPW2rzmG7lLYv1qxvp.jpg",
+        "backdrop_path":"\/g90Hlbaj8OofowG9hDg9ScD5fqG.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":96,
         "Title":"Gattaca",
         "imdbID":"tt0119177",
         "Year":1997,
@@ -1940,6 +1722,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":97,
         "Title":"Ghost in the Shell",
         "imdbID":"tt1219827",
         "Year":2017,
@@ -1960,6 +1743,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":98,
         "Title":"Ghost in the Shell",
         "imdbID":"tt0113568",
         "Year":1995,
@@ -1980,6 +1764,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":99,
         "Title":"Gremlins",
         "imdbID":"tt0087363",
         "Year":1984,
@@ -2000,6 +1785,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":100,
         "Title":"Hackers",
         "imdbID":"tt0113243",
         "Year":1995,
@@ -2020,6 +1806,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":101,
         "Title":"Hard to Be a God",
         "imdbID":"tt2328813",
         "Year":2013,
@@ -2040,6 +1827,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":102,
         "Title":"High Life",
         "imdbID":"tt4827558",
         "Year":2018,
@@ -2060,6 +1848,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":103,
         "Title":"High-Rise",
         "imdbID":"tt0462335",
         "Year":2015,
@@ -2080,6 +1869,28 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":12,
+        "Title":"I Origins",
+        "imdbID":"tt2884206",
+        "Year":2014,
+        "Rated":"R",
+        "Director":"Mike Cahill",
+        "Actors":"Michael Pitt, Steven Yeun, Astrid Berg\u00e8s-Frisbey",
+        "Language":"English, Hindi",
+        "Plot":"A molecular biologist and his laboratory partner uncover evidence that may fundamentally change society as we know it.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt2884206",
+        "Runtime":106,
+        "BoxOffice":336472.0,
+        "IMDb":7.3,
+        "RT":52.0,
+        "Meta":57.0,
+        "poster_path":"\/2P31jhd1dWUAPD8dmnSrwkQ8CNN.jpg",
+        "backdrop_path":"\/x8qNQSvvqd2PE15Pm6tmnXH0584.jpg",
+        "Watched":false,
+        "Season":9.0
+    },
+    {
+        "Unnamed: 0":104,
         "Title":"Inception",
         "imdbID":"tt1375666",
         "Year":2010,
@@ -2100,6 +1911,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":105,
         "Title":"Innerspace",
         "imdbID":"tt0093260",
         "Year":1987,
@@ -2120,6 +1932,7 @@
         "Season":10.0
     },
     {
+        "Unnamed: 0":106,
         "Title":"Interstellar",
         "imdbID":"tt0816692",
         "Year":2014,
@@ -2140,6 +1953,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":107,
         "Title":"Invasion of the Body Snatchers",
         "imdbID":"tt0077745",
         "Year":1978,
@@ -2160,6 +1974,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":108,
         "Title":"Iron Sky",
         "imdbID":"tt1034314",
         "Year":2012,
@@ -2180,6 +1995,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":109,
         "Title":"Ivan Vasilyevich Changes His Profession",
         "imdbID":"tt0070233",
         "Year":1973,
@@ -2200,6 +2016,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":110,
         "Title":"Johnny Mnemonic",
         "imdbID":"tt0113481",
         "Year":1995,
@@ -2220,6 +2037,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":111,
         "Title":"Journey to the Center of the Earth",
         "imdbID":"tt0052948",
         "Year":1959,
@@ -2240,6 +2058,28 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":7,
+        "Title":"Jubilee",
+        "imdbID":"tt0076240",
+        "Year":1978,
+        "Rated":"Not Rated",
+        "Director":"Derek Jarman",
+        "Actors":"Adam Ant, Richard O'Brien, Ian Charleson",
+        "Language":"English",
+        "Plot":"Queen Elizabeth I travels 400 years into the future to witness the appalling revelation of a dystopian London overrun by corruption and a vicious gang of punk guerrilla girls led by the new Monarch of Punk.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0076240",
+        "Runtime":106,
+        "BoxOffice":null,
+        "IMDb":5.9,
+        "RT":100.0,
+        "Meta":79.0,
+        "poster_path":"\/8HtAaaDZDCCx2F73n41xMDWDhwU.jpg",
+        "backdrop_path":"\/iBFVJDDhuhSe1JeoMrNzSKeuqTJ.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":112,
         "Title":"Judge Dredd",
         "imdbID":"tt0113492",
         "Year":1995,
@@ -2260,6 +2100,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":113,
         "Title":"Jupiter Ascending",
         "imdbID":"tt1617661",
         "Year":2015,
@@ -2280,6 +2121,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":114,
         "Title":"Jurassic World",
         "imdbID":"tt0369610",
         "Year":2015,
@@ -2300,6 +2142,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":115,
         "Title":"Kung Fury",
         "imdbID":"tt3472226",
         "Year":2015,
@@ -2320,6 +2163,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":116,
         "Title":"La Jet\u00e9e",
         "imdbID":"tt0056119",
         "Year":1962,
@@ -2340,6 +2184,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":117,
         "Title":"Lapsis",
         "imdbID":"tt11540272",
         "Year":2020,
@@ -2360,6 +2205,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":118,
         "Title":"Last and First Men",
         "imdbID":"tt8015444",
         "Year":2020,
@@ -2380,6 +2226,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":119,
         "Title":"Lifeforce",
         "imdbID":"tt0089489",
         "Year":1985,
@@ -2400,6 +2247,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":120,
         "Title":"Little Joe",
         "imdbID":"tt9204204",
         "Year":2019,
@@ -2420,6 +2268,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":121,
         "Title":"Logan's Run",
         "imdbID":"tt0074812",
         "Year":1976,
@@ -2440,6 +2289,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":122,
         "Title":"Lola",
         "imdbID":"tt11366674",
         "Year":2022,
@@ -2460,6 +2310,7 @@
         "Season":10.0
     },
     {
+        "Unnamed: 0":123,
         "Title":"Love",
         "imdbID":"tt1541874",
         "Year":2011,
@@ -2480,6 +2331,28 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":13,
+        "Title":"Mars Attacks!",
+        "imdbID":"tt0116996",
+        "Year":1996,
+        "Rated":"PG-13",
+        "Director":"Tim Burton",
+        "Actors":"Jack Nicholson, Pierce Brosnan, Sarah Jessica Parker",
+        "Language":"English, French",
+        "Plot":"Earth is invaded by Martians with unbeatable weapons and a cruel sense of humor.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0116996",
+        "Runtime":106,
+        "BoxOffice":37781197.0,
+        "IMDb":6.4,
+        "RT":56.0,
+        "Meta":52.0,
+        "poster_path":"\/hll4O5vSAfnZDb6JbnP06GPtz7b.jpg",
+        "backdrop_path":"\/rxwbgJKuglsUfcMUJG7oer1fLAy.jpg",
+        "Watched":false,
+        "Season":9.0
+    },
+    {
+        "Unnamed: 0":124,
         "Title":"Men in Black",
         "imdbID":"tt0119654",
         "Year":1997,
@@ -2500,6 +2373,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":125,
         "Title":"Metropolis",
         "imdbID":"tt0017136",
         "Year":1927,
@@ -2520,6 +2394,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":126,
         "Title":"Midnight Special",
         "imdbID":"tt2649554",
         "Year":2016,
@@ -2540,6 +2415,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":127,
         "Title":"Millennium",
         "imdbID":"tt0097883",
         "Year":1989,
@@ -2560,6 +2436,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":128,
         "Title":"Minor Premise",
         "imdbID":"tt12680508",
         "Year":2020,
@@ -2580,6 +2457,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":129,
         "Title":"Minority Report",
         "imdbID":"tt0181689",
         "Year":2002,
@@ -2600,6 +2478,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":130,
         "Title":"Moebius",
         "imdbID":"tt0117069",
         "Year":1996,
@@ -2620,6 +2499,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":131,
         "Title":"Monsters",
         "imdbID":"tt1470827",
         "Year":2010,
@@ -2640,6 +2520,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":132,
         "Title":"Moon",
         "imdbID":"tt1182345",
         "Year":2009,
@@ -2660,6 +2541,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":133,
         "Title":"Moonfall",
         "imdbID":"tt5834426",
         "Year":2022,
@@ -2680,6 +2562,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":134,
         "Title":"Mr. Nobody",
         "imdbID":"tt0485947",
         "Year":2009,
@@ -2700,6 +2583,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":135,
         "Title":"Mystery Science Theater 3000: The Movie",
         "imdbID":"tt0117128",
         "Year":1996,
@@ -2720,6 +2604,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":136,
         "Title":"Never Gonna Snow Again",
         "imdbID":"tt9526784",
         "Year":2020,
@@ -2740,6 +2625,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":137,
         "Title":"Night of the Comet",
         "imdbID":"tt0087799",
         "Year":1984,
@@ -2760,6 +2646,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":138,
         "Title":"No Blade of Grass",
         "imdbID":"tt0066154",
         "Year":1970,
@@ -2780,6 +2667,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":139,
         "Title":"No Escape",
         "imdbID":"tt0110678",
         "Year":1994,
@@ -2800,6 +2688,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":140,
         "Title":"O-Bi, O-Ba: The End of Civilization",
         "imdbID":"tt0089714",
         "Year":1985,
@@ -2820,6 +2709,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":141,
         "Title":"Oblivion",
         "imdbID":"tt1483013",
         "Year":2013,
@@ -2840,6 +2730,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":142,
         "Title":"Oxygen",
         "imdbID":"tt6341832",
         "Year":2021,
@@ -2860,6 +2751,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":143,
         "Title":"Passengers",
         "imdbID":"tt1355644",
         "Year":2016,
@@ -2880,6 +2772,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":144,
         "Title":"Phase IV",
         "imdbID":"tt0070531",
         "Year":1974,
@@ -2900,6 +2793,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":145,
         "Title":"Predator",
         "imdbID":"tt0093773",
         "Year":1987,
@@ -2920,6 +2814,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":146,
         "Title":"Predestination",
         "imdbID":"tt2397535",
         "Year":2014,
@@ -2940,6 +2835,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":147,
         "Title":"Prometheus",
         "imdbID":"tt1446714",
         "Year":2012,
@@ -2960,6 +2856,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":148,
         "Title":"Punishment Park",
         "imdbID":"tt0067633",
         "Year":1971,
@@ -2980,6 +2877,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":149,
         "Title":"Quatermass and the Pit",
         "imdbID":"tt0062168",
         "Year":1967,
@@ -3000,6 +2898,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":150,
         "Title":"Quintet",
         "imdbID":"tt0079770",
         "Year":1979,
@@ -3020,6 +2919,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":151,
         "Title":"Real Steel",
         "imdbID":"tt0433035",
         "Year":2011,
@@ -3040,6 +2940,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":152,
         "Title":"Repo Man",
         "imdbID":"tt0087995",
         "Year":1984,
@@ -3060,6 +2961,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":153,
         "Title":"RoboCop",
         "imdbID":"tt0093870",
         "Year":1987,
@@ -3080,6 +2982,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":154,
         "Title":"Robot & Frank",
         "imdbID":"tt1990314",
         "Year":2012,
@@ -3100,6 +3003,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":155,
         "Title":"Robot Jox",
         "imdbID":"tt0102800",
         "Year":1989,
@@ -3120,26 +3024,7 @@
         "Season":3.0
     },
     {
-        "Title":"Rollerball",
-        "imdbID":"tt0246894",
-        "Year":2002,
-        "Rated":"PG-13",
-        "Director":"John McTiernan",
-        "Actors":"Chris Klein, Jean Reno, LL Cool J",
-        "Language":"English, Russian, French, Arabic, Korean, German, Japanese",
-        "Plot":"The big thing in 2005 is a violent sport which can have some pretty serious consequences... like dying.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0246894",
-        "Runtime":98,
-        "BoxOffice":18990798.0,
-        "IMDb":3.1,
-        "RT":67.0,
-        "Meta":14.0,
-        "poster_path":"\/5Wquo3EjfDpK7S1BHcybuC3TZDO.jpg",
-        "backdrop_path":"\/xnBZxfqR6EqbrIyb3yfU1w90n6q.jpg",
-        "Watched":true,
-        "Season":6.0
-    },
-    {
+        "Unnamed: 0":157,
         "Title":"Rollerball",
         "imdbID":"tt0073631",
         "Year":1975,
@@ -3160,6 +3045,28 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":156,
+        "Title":"Rollerball",
+        "imdbID":"tt0246894",
+        "Year":2002,
+        "Rated":"PG-13",
+        "Director":"John McTiernan",
+        "Actors":"Chris Klein, Jean Reno, LL Cool J",
+        "Language":"English, Russian, French, Arabic, Korean, German, Japanese",
+        "Plot":"The big thing in 2005 is a violent sport which can have some pretty serious consequences... like dying.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0246894",
+        "Runtime":98,
+        "BoxOffice":18990798.0,
+        "IMDb":3.1,
+        "RT":67.0,
+        "Meta":14.0,
+        "poster_path":"\/5Wquo3EjfDpK7S1BHcybuC3TZDO.jpg",
+        "backdrop_path":"\/xnBZxfqR6EqbrIyb3yfU1w90n6q.jpg",
+        "Watched":true,
+        "Season":6.0
+    },
+    {
+        "Unnamed: 0":158,
         "Title":"Safety Not Guaranteed",
         "imdbID":"tt1862079",
         "Year":2012,
@@ -3180,6 +3087,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":159,
         "Title":"Saturn 3",
         "imdbID":"tt0079285",
         "Year":1980,
@@ -3200,6 +3108,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":160,
         "Title":"Serenity",
         "imdbID":"tt0379786",
         "Year":2005,
@@ -3220,6 +3129,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":161,
         "Title":"Series 7: The Contenders",
         "imdbID":"tt0251031",
         "Year":2001,
@@ -3240,6 +3150,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":162,
         "Title":"Sexmission",
         "imdbID":"tt0088083",
         "Year":1984,
@@ -3260,6 +3171,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":163,
         "Title":"Short Circuit",
         "imdbID":"tt0091949",
         "Year":1986,
@@ -3280,6 +3192,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":164,
         "Title":"Silent Running",
         "imdbID":"tt0067756",
         "Year":1972,
@@ -3300,6 +3213,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":165,
         "Title":"Slash\/Back",
         "imdbID":"tt9050310",
         "Year":2022,
@@ -3320,6 +3234,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":166,
         "Title":"Slaughterhouse-Five",
         "imdbID":"tt0069280",
         "Year":1972,
@@ -3340,6 +3255,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":167,
         "Title":"Sleeper",
         "imdbID":"tt0070707",
         "Year":1973,
@@ -3360,6 +3276,28 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":11,
+        "Title":"Slipstream",
+        "imdbID":"tt0098350",
+        "Year":1989,
+        "Rated":"PG-13",
+        "Director":"Steven Lisberger",
+        "Actors":"Bob Peck, Mark Hamill, Kitty Aldridge",
+        "Language":"English",
+        "Plot":"In the near future, where Earth has been devastated by man's pollution and giant winds rule the planet, bounty hunter Matt kidnaps a murderer out of the hands of two police officers, planning to get the bounty himself.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0098350",
+        "Runtime":102,
+        "BoxOffice":null,
+        "IMDb":4.7,
+        "RT":43.0,
+        "Meta":null,
+        "poster_path":"\/cv5ga1449YmBl7by0sRQmuyzydo.jpg",
+        "backdrop_path":"\/bww604cVWWzDjKCeusNV6fbITKm.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":168,
         "Title":"Snowpiercer",
         "imdbID":"tt1706620",
         "Year":2013,
@@ -3380,6 +3318,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":169,
         "Title":"Solarbabies",
         "imdbID":"tt0091981",
         "Year":1986,
@@ -3400,6 +3339,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":170,
         "Title":"Solaris",
         "imdbID":"tt0069293",
         "Year":1972,
@@ -3420,6 +3360,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":171,
         "Title":"Source Code",
         "imdbID":"tt0945513",
         "Year":2011,
@@ -3440,6 +3381,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":172,
         "Title":"Soylent Green",
         "imdbID":"tt0070723",
         "Year":1973,
@@ -3460,6 +3402,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":173,
         "Title":"Splice",
         "imdbID":"tt1017460",
         "Year":2009,
@@ -3480,6 +3423,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":174,
         "Title":"Split Second",
         "imdbID":"tt0105459",
         "Year":1992,
@@ -3500,6 +3444,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":175,
         "Title":"Stalker",
         "imdbID":"tt0079944",
         "Year":1979,
@@ -3520,6 +3465,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":176,
         "Title":"Starcrash",
         "imdbID":"tt0079946",
         "Year":1978,
@@ -3540,6 +3486,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":177,
         "Title":"Starship Troopers",
         "imdbID":"tt0120201",
         "Year":1997,
@@ -3560,6 +3507,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":178,
         "Title":"Strange Days",
         "imdbID":"tt0114558",
         "Year":1995,
@@ -3580,6 +3528,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":179,
         "Title":"Sunshine",
         "imdbID":"tt0448134",
         "Year":2007,
@@ -3600,6 +3549,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":180,
         "Title":"Synchronic",
         "imdbID":"tt9016974",
         "Year":2019,
@@ -3620,6 +3570,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":181,
         "Title":"THX 1138",
         "imdbID":"tt0066434",
         "Year":1971,
@@ -3640,6 +3591,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":182,
         "Title":"Tank Girl",
         "imdbID":"tt0114614",
         "Year":1995,
@@ -3660,6 +3612,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":183,
         "Title":"Terminator 2: Judgment Day",
         "imdbID":"tt0103064",
         "Year":1991,
@@ -3680,6 +3633,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":184,
         "Title":"Terminator Genisys",
         "imdbID":"tt1340138",
         "Year":2015,
@@ -3700,6 +3654,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":185,
         "Title":"Tetsuo II: Body Hammer",
         "imdbID":"tt0105569",
         "Year":1992,
@@ -3720,6 +3675,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":186,
         "Title":"Tetsuo: The Iron Man",
         "imdbID":"tt0096251",
         "Year":1989,
@@ -3740,6 +3696,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":17,
         "Title":"The Abyss",
         "imdbID":"tt0096754",
         "Year":1989,
@@ -3757,9 +3714,10 @@
         "poster_path":"\/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg",
         "backdrop_path":"\/xLzkWj2C6zCWyFT8Z7tKKtfrwcR.jpg",
         "Watched":false,
-        "Season":4.0
+        "Season":9.0
     },
     {
+        "Unnamed: 0":188,
         "Title":"The Andromeda Strain",
         "imdbID":"tt0066769",
         "Year":1971,
@@ -3780,6 +3738,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":189,
         "Title":"The Animatrix",
         "imdbID":"tt0328832",
         "Year":2003,
@@ -3800,6 +3759,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":190,
         "Title":"The Arrival",
         "imdbID":"tt0115571",
         "Year":1996,
@@ -3820,6 +3780,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":191,
         "Title":"The Black Hole",
         "imdbID":"tt0078869",
         "Year":1979,
@@ -3840,6 +3801,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":192,
         "Title":"The Blood of Heroes",
         "imdbID":"tt0094764",
         "Year":1989,
@@ -3860,6 +3822,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":193,
         "Title":"The Cabin in the Woods",
         "imdbID":"tt1259521",
         "Year":2011,
@@ -3880,6 +3843,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":194,
         "Title":"The Congress",
         "imdbID":"tt1821641",
         "Year":2013,
@@ -3900,6 +3864,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":195,
         "Title":"The Core",
         "imdbID":"tt0298814",
         "Year":2003,
@@ -3920,6 +3885,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":196,
         "Title":"The Day the Earth Stood Still",
         "imdbID":"tt0970416",
         "Year":2008,
@@ -3940,6 +3906,28 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":14,
+        "Title":"The Faculty",
+        "imdbID":"tt0133751",
+        "Year":1998,
+        "Rated":"R",
+        "Director":"Robert Rodriguez",
+        "Actors":"Jordana Brewster, Clea DuVall, Laura Harris",
+        "Language":"English",
+        "Plot":"When Casey Connor, Herrington High School's newspaper photographer, witnesses the murder of a nurse and sees her alive again, he decides to investigate the bizarre happenings.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0133751",
+        "Runtime":104,
+        "BoxOffice":40283321.0,
+        "IMDb":6.6,
+        "RT":58.0,
+        "Meta":61.0,
+        "poster_path":"\/5XetJwmAiDC0EtH23NIXaqFn3Wl.jpg",
+        "backdrop_path":"\/kswfKIkD0urnHhZK991aRdZ3Z8T.jpg",
+        "Watched":false,
+        "Season":9.0
+    },
+    {
+        "Unnamed: 0":197,
         "Title":"The Fifth Element",
         "imdbID":"tt0119116",
         "Year":1997,
@@ -3960,6 +3948,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":198,
         "Title":"The Fly",
         "imdbID":"tt0091064",
         "Year":1986,
@@ -3980,6 +3969,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":199,
         "Title":"The Fountain",
         "imdbID":"tt0414993",
         "Year":2006,
@@ -4000,6 +3990,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":200,
         "Title":"The Happening",
         "imdbID":"tt0949731",
         "Year":2008,
@@ -4020,6 +4011,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":201,
         "Title":"The Ice Pirates",
         "imdbID":"tt0087451",
         "Year":1984,
@@ -4040,6 +4032,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":202,
         "Title":"The Infinite Man",
         "imdbID":"tt2553424",
         "Year":2014,
@@ -4060,6 +4053,70 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":15,
+        "Title":"The Iron Giant",
+        "imdbID":"tt0129167",
+        "Year":1999,
+        "Rated":"PG",
+        "Director":"Brad Bird",
+        "Actors":"Eli Marienthal, Harry Connick Jr., Jennifer Aniston",
+        "Language":"English",
+        "Plot":"A young boy befriends a giant robot from outer space that a paranoid government agent wants to destroy.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0129167",
+        "Runtime":86,
+        "BoxOffice":23315035.0,
+        "IMDb":8.1,
+        "RT":96.0,
+        "Meta":85.0,
+        "poster_path":"\/ct04FCFLPImNG5thcPLRnVsZlmS.jpg",
+        "backdrop_path":"\/gZ78dyRH9hXeH94ASjuvD9Vw4b5.jpg",
+        "Watched":false,
+        "Season":9.0
+    },
+    {
+        "Unnamed: 0":2,
+        "Title":"The Island of Dr. Moreau",
+        "imdbID":"tt0116654",
+        "Year":1996,
+        "Rated":"PG-13",
+        "Director":"John Frankenheimer, Richard Stanley",
+        "Actors":"David Thewlis, Marlon Brando, Val Kilmer",
+        "Language":"English, Indonesian",
+        "Plot":"After being rescued and brought to an island, a man discovers that its inhabitants are experimental animals being turned into strange-looking humans, all of it the work of a visionary doctor.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0116654",
+        "Runtime":96,
+        "BoxOffice":27663982.0,
+        "IMDb":4.6,
+        "RT":22.0,
+        "Meta":37.0,
+        "poster_path":"\/hOJeQXve8W9rNRhdgC1WV3GQJyA.jpg",
+        "backdrop_path":"\/5kAeJB8wR1Be0EFG7QjKdwFfHx7.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":4,
+        "Title":"The Island of Dr. Moreau",
+        "imdbID":"tt0076210",
+        "Year":1977,
+        "Rated":"PG",
+        "Director":"Don Taylor",
+        "Actors":"Burt Lancaster, Michael York, Nigel Davenport",
+        "Language":"English",
+        "Plot":"A shipwrecked survivor discovers a remote island owned by a crazed scientist who is carrying out sinister experiments on the island's inhabitants.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0076210",
+        "Runtime":99,
+        "BoxOffice":null,
+        "IMDb":5.9,
+        "RT":54.0,
+        "Meta":null,
+        "poster_path":"\/q5kWAWxb3eWCkxFNT6WCipAnpQe.jpg",
+        "backdrop_path":"\/t4d80bW4Vn86EVIQW0eV2NjhFBh.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":203,
         "Title":"The Last Starfighter",
         "imdbID":"tt0087597",
         "Year":1984,
@@ -4080,6 +4137,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":204,
         "Title":"The Lathe of Heaven",
         "imdbID":"tt0081036",
         "Year":1980,
@@ -4100,6 +4158,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":205,
         "Title":"The Lawnmower Man",
         "imdbID":"tt0104692",
         "Year":1992,
@@ -4120,6 +4179,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":206,
         "Title":"The Lobster",
         "imdbID":"tt3464902",
         "Year":2015,
@@ -4140,6 +4200,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":207,
         "Title":"The Man Who Fell to Earth",
         "imdbID":"tt0074851",
         "Year":1976,
@@ -4160,6 +4221,28 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":10,
+        "Title":"The Man from Earth",
+        "imdbID":"tt0756683",
+        "Year":2007,
+        "Rated":"Not Rated",
+        "Director":"Richard Schenkman",
+        "Actors":"David Lee Smith, Tony Todd, John Billingsley",
+        "Language":"English",
+        "Plot":"An impromptu goodbye party for Professor John Oldman becomes a mysterious interrogation after the retiring scholar reveals to his colleagues he has a longer and stranger past than they can imagine.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0756683",
+        "Runtime":87,
+        "BoxOffice":null,
+        "IMDb":7.8,
+        "RT":100.0,
+        "Meta":null,
+        "poster_path":"\/V086R82gNgWrotaXZFO4JhdgB1.jpg",
+        "backdrop_path":"\/gt4EnUGbbGbNOX0q47YII3WxB48.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":208,
         "Title":"The Martian",
         "imdbID":"tt3659388",
         "Year":2015,
@@ -4180,6 +4263,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":209,
         "Title":"The Matrix",
         "imdbID":"tt0133093",
         "Year":1999,
@@ -4200,6 +4284,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":210,
         "Title":"The Matrix Reloaded",
         "imdbID":"tt0234215",
         "Year":2003,
@@ -4220,6 +4305,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":211,
         "Title":"The Matrix Revolutions",
         "imdbID":"tt0242653",
         "Year":2003,
@@ -4240,6 +4326,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":212,
         "Title":"The Ninth Configuration",
         "imdbID":"tt0081237",
         "Year":1980,
@@ -4260,6 +4347,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":213,
         "Title":"The Omega Man",
         "imdbID":"tt0067525",
         "Year":1971,
@@ -4280,6 +4368,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":214,
         "Title":"The One I Love",
         "imdbID":"tt2756032",
         "Year":2014,
@@ -4300,6 +4389,7 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":215,
         "Title":"The Platform",
         "imdbID":"tt8228288",
         "Year":2019,
@@ -4320,6 +4410,28 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":16,
+        "Title":"The Right Stuff",
+        "imdbID":"tt0086197",
+        "Year":1983,
+        "Rated":"PG",
+        "Director":"Philip Kaufman",
+        "Actors":"Sam Shepard, Scott Glenn, Ed Harris",
+        "Language":"English, Russian, Spanish",
+        "Plot":"The U.S. space program's development from the breaking of the sound barrier to selection of the Mercury 7 astronauts, from a group of test pilots with a more seat-of-the-pants approach than the program's more cautious engineers pr...",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0086197",
+        "Runtime":193,
+        "BoxOffice":21192102.0,
+        "IMDb":7.8,
+        "RT":96.0,
+        "Meta":91.0,
+        "poster_path":"\/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg",
+        "backdrop_path":"\/w2KUVzeOC1u6cQwvUV0qqi7QYxs.jpg",
+        "Watched":false,
+        "Season":9.0
+    },
+    {
+        "Unnamed: 0":216,
         "Title":"The Rocketeer",
         "imdbID":"tt0102803",
         "Year":1991,
@@ -4340,6 +4452,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":217,
         "Title":"The Running Man",
         "imdbID":"tt0093894",
         "Year":1987,
@@ -4360,6 +4473,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":218,
         "Title":"The Signal",
         "imdbID":"tt2910814",
         "Year":2014,
@@ -4380,6 +4494,28 @@
         "Season":3.0
     },
     {
+        "Unnamed: 0":5,
+        "Title":"The Similars",
+        "imdbID":"tt3949658",
+        "Year":2015,
+        "Rated":null,
+        "Director":"Isaac Ezban",
+        "Actors":"Gustavo S\u00e1nchez Parra, Cassandra Ciangherotti, Fernando Becerril",
+        "Language":"Spanish",
+        "Plot":"On the rainy night of October 2, 1968, eight characters waiting on a remote bus station for a bus heading to Mexico City start experiencing a strange phenomenon.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt3949658",
+        "Runtime":89,
+        "BoxOffice":null,
+        "IMDb":5.8,
+        "RT":95.0,
+        "Meta":null,
+        "poster_path":"\/gFySRlyCiay9wsqPUcIIyXf2VwL.jpg",
+        "backdrop_path":"\/egVHpPXhD0cy5UZlgiFy2Zpy1tB.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":219,
         "Title":"The Sticky Fingers of Time",
         "imdbID":"tt0127302",
         "Year":1997,
@@ -4400,6 +4536,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":220,
         "Title":"The Terminator",
         "imdbID":"tt0088247",
         "Year":1984,
@@ -4420,6 +4557,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":221,
         "Title":"The Thing",
         "imdbID":"tt0084787",
         "Year":1982,
@@ -4440,6 +4578,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":222,
         "Title":"The Thirteenth Floor",
         "imdbID":"tt0139809",
         "Year":1999,
@@ -4460,6 +4599,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":223,
         "Title":"The Truman Show",
         "imdbID":"tt0120382",
         "Year":1998,
@@ -4480,6 +4620,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":224,
         "Title":"The Vast of Night",
         "imdbID":"tt6803046",
         "Year":2019,
@@ -4500,6 +4641,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":225,
         "Title":"The Wandering Earth",
         "imdbID":"tt7605074",
         "Year":2019,
@@ -4520,6 +4662,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":226,
         "Title":"These Final Hours",
         "imdbID":"tt2268458",
         "Year":2013,
@@ -4540,6 +4683,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":227,
         "Title":"They Live",
         "imdbID":"tt0096256",
         "Year":1988,
@@ -4560,6 +4704,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":228,
         "Title":"Things to Come",
         "imdbID":"tt0028358",
         "Year":1936,
@@ -4580,6 +4725,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":229,
         "Title":"This Island Earth",
         "imdbID":"tt0047577",
         "Year":1955,
@@ -4600,6 +4746,28 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":9,
+        "Title":"Threads",
+        "imdbID":"tt0090163",
+        "Year":1984,
+        "Rated":"TV-MA",
+        "Director":"Mick Jackson",
+        "Actors":"Karen Meagher, Reece Dinsdale, David Brierly",
+        "Language":"English",
+        "Plot":"The effects of a nuclear holocaust on the working class city of Sheffield, England and the eventual long-term effects of nuclear war on civilization.",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt0090163",
+        "Runtime":112,
+        "BoxOffice":null,
+        "IMDb":8.0,
+        "RT":100.0,
+        "Meta":92.0,
+        "poster_path":"\/szefDW6E7DiZGivuu1U0ITsIT4s.jpg",
+        "backdrop_path":"\/xCoWt5obm6UYNyxmnGr253ADU6M.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":230,
         "Title":"Time After Time",
         "imdbID":"tt0080025",
         "Year":1979,
@@ -4620,6 +4788,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":231,
         "Title":"Time of the Wolf",
         "imdbID":"tt0324197",
         "Year":2003,
@@ -4640,6 +4809,7 @@
         "Season":7.0
     },
     {
+        "Unnamed: 0":232,
         "Title":"Timecrimes",
         "imdbID":"tt0480669",
         "Year":2007,
@@ -4660,6 +4830,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":233,
         "Title":"Timescape",
         "imdbID":"tt9672824",
         "Year":2022,
@@ -4680,6 +4851,7 @@
         "Season":5.0
     },
     {
+        "Unnamed: 0":234,
         "Title":"Tomorrowland",
         "imdbID":"tt1964418",
         "Year":2015,
@@ -4700,6 +4872,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":235,
         "Title":"Total Recall",
         "imdbID":"tt0100802",
         "Year":1990,
@@ -4720,6 +4893,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":236,
         "Title":"Tron",
         "imdbID":"tt0084827",
         "Year":1982,
@@ -4740,6 +4914,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":237,
         "Title":"Under the Skin",
         "imdbID":"tt1441395",
         "Year":2013,
@@ -4760,6 +4935,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":238,
         "Title":"Upstream Color",
         "imdbID":"tt2084989",
         "Year":2013,
@@ -4780,6 +4956,28 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":8,
+        "Title":"Valerian and the City of a Thousand Planets",
+        "imdbID":"tt2239822",
+        "Year":2017,
+        "Rated":"PG-13",
+        "Director":"Luc Besson",
+        "Actors":"Dane DeHaan, Cara Delevingne, Clive Owen",
+        "Language":"English, French, Hindi",
+        "Plot":"A dark force threatens Alpha, a vast metropolis and home to species from a thousand planets. Special operatives Valerian and Laureline must race to identify the marauding menace and safeguard not just Alpha, but the future of the ...",
+        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt2239822",
+        "Runtime":136,
+        "BoxOffice":41189488.0,
+        "IMDb":6.4,
+        "RT":47.0,
+        "Meta":51.0,
+        "poster_path":"\/jfIpMh79fGRqYJ6PwZLCntzgxlF.jpg",
+        "backdrop_path":"\/5rYnygKCkmqWuMv1O5yAnzGF8gV.jpg",
+        "Watched":false,
+        "Season":10.0
+    },
+    {
+        "Unnamed: 0":239,
         "Title":"Vanishing Waves",
         "imdbID":"tt2208216",
         "Year":2012,
@@ -4800,6 +4998,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":240,
         "Title":"Vesper",
         "imdbID":"tt20225374",
         "Year":2022,
@@ -4820,6 +5019,7 @@
         "Season":9.0
     },
     {
+        "Unnamed: 0":241,
         "Title":"Voyage to the End of the Universe",
         "imdbID":"tt0122111",
         "Year":1963,
@@ -4840,6 +5040,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":242,
         "Title":"WALL\u00b7E",
         "imdbID":"tt0910970",
         "Year":2008,
@@ -4860,6 +5061,7 @@
         "Season":8.0
     },
     {
+        "Unnamed: 0":243,
         "Title":"WarGames",
         "imdbID":"tt0086567",
         "Year":1983,
@@ -4880,6 +5082,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":244,
         "Title":"Warning from Space",
         "imdbID":"tt0049900",
         "Year":1956,
@@ -4900,6 +5103,7 @@
         "Season":6.0
     },
     {
+        "Unnamed: 0":245,
         "Title":"Westworld",
         "imdbID":"tt0070909",
         "Year":1973,
@@ -4920,6 +5124,7 @@
         "Season":2.0
     },
     {
+        "Unnamed: 0":246,
         "Title":"World of Tomorrow",
         "imdbID":"tt4171032",
         "Year":2015,
@@ -4940,6 +5145,7 @@
         "Season":4.0
     },
     {
+        "Unnamed: 0":247,
         "Title":"Zardoz",
         "imdbID":"tt0070948",
         "Year":1974,
@@ -4960,6 +5166,7 @@
         "Season":1.0
     },
     {
+        "Unnamed: 0":248,
         "Title":"eXistenZ",
         "imdbID":"tt0120907",
         "Year":1999,
