@@ -3,7 +3,8 @@ let filmsData = []; // Store loaded films data globally
 
 // Function to display film details
 async function showFilmDetails(film) {
-
+    history.replaceState({}, "", "?id=" + film.imdbID);
+    // console.log(film.imdbID)
     // Set the backdrop image
     const rightPanel = document.getElementById('right-panel');
     // detailsContainer.style.backgroundImage = `url(${backdropUrl})`;
@@ -19,17 +20,19 @@ async function showFilmDetails(film) {
     // // Set the poster image
     const poster = document.getElementById('poster');
     poster.src = posterUrl;
-    poster.alt = "${film.Title} poster";
-
+    // poster.alt = "${film.Title} poster";
+    poster.style.display = "flex";
 
     // Function to safely get score values or return a default message
     const getScoreValue = (score) => (score ? score : 'N/A');
-    
+
     const filmTitle = document.getElementById('film-title');
-    filmTitle.innerHTML=`<h2>${film.Title} (${film.Year})</h2>`
+    filmTitle.innerHTML = `<h2>${film.Title} (${film.Year})</h2>`
 
     const filmDetails = document.getElementById('film-details');
-    filmDetails.innerHTML = ` 
+    filmDetails.innerHTML = `
+        <p><strong>Season:</strong> ${film.Season ? film.Season : "N/A"}</p> 
+        <p><strong>Watched:</strong> ${film.Watched ? "Yes" : "No"}</p>
         <p><strong>Director:</strong> ${film.Director || 'N/A'}</p>
         <p><strong>Summary:</strong> ${film.Plot || 'N/A'}</p>
         <p><strong>Runtime:</strong> ${film.Runtime || 'N/A'} mins</p>
@@ -40,21 +43,23 @@ async function showFilmDetails(film) {
         <p><strong>Box Office:</strong> ${formatCurrency(film.BoxOffice)}</p>
         <p><strong>Rating:</strong> ${film.Rated || 'N/A'}</p>
         <p><strong>Language:</strong> ${film.Language || 'N/A'}</p>
-        <p><strong>Watched:</strong> ${film.Watched ? "Yes":"No"}</p>
-        <p><strong>Season:</strong> ${film.Season ? film.Season : "N/A"}</p>
+        <p class="back" onclick="rightPanelHome()">Back</p>
+
+
     `;
     // Show the details container
     rightPanel.style.display = 'flex';
 }
+
 // Function to sort films based on selected criteria
 function sortFilms(films, criteria) {
     return films.sort((a, b) => {
         if (criteria === 'Title') {
             return a.Title.localeCompare(b.Title);
-        } 
+        }
         else if (criteria === 'Year') {
             return b.Year - a.Year; // Sort by year, descending
-        } 
+        }
         else if (criteria === 'IMDb') {
             return b.IMDb - a.IMDb; // Sort by IMDb score, descending
         }
@@ -81,7 +86,7 @@ function filterFilms(films, filter) {
     if (filter === 'all') {
         return films; // No filtering
     }
-    else if (filter === "watched"){
+    else if (filter === "watched") {
         return films.filter(film => film.Watched == true);
     }
     else {
@@ -127,6 +132,7 @@ function loadFilms() {
             const sortedFilms = sortFilms(filmsData, document.getElementById('sort-options').value);
             const filteredFilms = filterFilms(sortedFilms, document.getElementById('filter-options').value);
             displayFilms(filteredFilms); // Display sorted and filtered films
+            processURL();
         })
         .catch(error => console.error('Error loading JSON:', error));
 }
@@ -145,22 +151,48 @@ document.getElementById('filter-options').addEventListener('change', () => {
 });
 
 
-// Set the backdrop image
-const backdrop = document.getElementById('backdrop');
-backdrop.style.backgroundImage = 'url(img/SFV1_crop.jpg)';
-backdrop.style.filter= 'brightness(100%)';
-// // // Set the poster image
-// const poster = document.getElementById('poster');
-// poster.src = '/SFV1_crop.jpg';
-
-
-const rightPanel = document.getElementById('right-panel');
-rightPanel.style.display = 'flex';
-const filmTitle = document.getElementById('film-title');
-filmTitle.innerHTML = `<h2>Welcome to Sci-fi Night!</h2>`
-const filmDetails = document.getElementById('film-details');
-filmDetails.innerHTML = `<p><strong></strong></p><a href='vote.html'>Vote!</a>`
-
+function rightPanelHome() {
+    const poster = document.getElementById('poster');
+    // poster.src = null;
+    poster.style.display="none";
+    // Set the backdrop image
+    const backdrop = document.getElementById('backdrop');
+    backdrop.style.backgroundImage = 'url(img/SFV1_crop.jpg)';
+    backdrop.style.filter = 'brightness(100%)';
+    // // // Set the poster image
+    // const poster = document.getElementById('poster');
+    // poster.src = '/SFV1_crop.jpg';
+    const rightPanel = document.getElementById('right-panel');
+    rightPanel.style.display = 'flex';
+    const filmTitle = document.getElementById('film-title');
+    filmTitle.innerHTML = `<h2>Welcome to Sci-fi Night!</h2>`
+    const filmDetails = document.getElementById('film-details');
+    filmDetails.innerHTML = `<p><strong></strong></p><a href='vote.html'>Vote!</a>`
+}
 
 // Run this when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadFilms);
+
+function getFilmByID(films, id) {
+    // console.log("get", films, id)
+    return films.filter(film => film.imdbID == id)
+}
+function processURL() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let urlID = urlParams.get('id')
+    console.log(urlID)
+    if (urlID) {
+        const urlFilm = getFilmByID(filmsData, urlID)
+        console.log(urlFilm.length)
+        if (urlFilm.length == 1) {
+            showFilmDetails(urlFilm[0])
+        }
+        else {
+            rightPanelHome();
+        }
+    }
+    else {
+        rightPanelHome();
+    }
+}

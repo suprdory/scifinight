@@ -96,7 +96,8 @@ def buildFilmDat(imdbID,season):
     out['Season']=season
     return out,omdbDat,tmdbDat
 
-imdbID = newData.loc[1, 'imdbID']
+# imdbID = newData.loc[1, 'imdbID']
+
 filmDats=[]
 for i,film in newData.iterrows():
     filmDat,omdbDat,tmdbDat=buildFilmDat(film['imdbID'],film['Season'])
@@ -108,18 +109,15 @@ df_new=pd.DataFrame(filmDats)
 # %%
 df=pd.concat((df_new,df_old))
 df=df.reset_index(drop=True)
-df=df.iloc[:,:-3]
-#%%
+df=df.iloc[:,:-2]
+df=df.sort_values("Title")
 df.Watched=df.Watched==1
 #%%
 # df=df_old.sort_values('Title')
-# df.loc[df.Title=="Asteroid City","Season"]=9.0
+# df.loc[df.Title=="Innerspace","Season"]=10
 #%%
 
-
-
-
-df.to_csv('scifi_data_241024.csv')
+df.to_csv('scifi_data_251024.csv')
 # df.to_json('films.json', orient='records', indent=4)
 df.to_json('../films.json', orient='records', indent=4)
 

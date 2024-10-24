@@ -6,6 +6,8 @@ let startButton = document.getElementById('start-btn');
 let filterSection = document.getElementById('filters'); // Get the filters section
 let titleSection = document.getElementById('title');
 
+let cb = ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#f7f7f7", "#d1e5f0", "#92c5de", "#4393c3", "#2166ac", "#053061"]
+
 // Fetch films from films.json
 fetch('films.json')
     .then(response => response.json())
@@ -68,7 +70,7 @@ function createGroupElement(group, groupId) {
 
     // Display each film with its title, year, and runtime
     groupElement.innerHTML = group.map(film => `
-    <strong>${film.Title}</strong> (${film.Year})
+    <strong style="color:${cb[11-parseInt(film.IMDb*11/10)]};">${film.Title}</strong> (${film.Year})
     ${film.Runtime} mins
   `).join('<br><br>');
 
