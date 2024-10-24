@@ -9,7 +9,7 @@ omdb_api_key = config['omdb_api_key']
 #%%
 
 # df_old=pd.read_pickle('df_scfi_db_181024_posters.pkl')
-df_old = pd.read_csv('scifi_data_241024.csv')
+df_old = pd.read_csv('scifi_data_251024.csv').iloc[:,1:]
 # %%
 newData=pd.read_csv('to_add.csv')
 
@@ -109,7 +109,7 @@ df_new=pd.DataFrame(filmDats)
 # %%
 df=pd.concat((df_new,df_old))
 df=df.reset_index(drop=True)
-df=df.iloc[:,:-2]
+# df=df.iloc[:,:-2]
 df=df.sort_values("Title")
 df.Watched=df.Watched==1
 #%%
@@ -117,7 +117,7 @@ df.Watched=df.Watched==1
 # df.loc[df.Title=="Innerspace","Season"]=10
 #%%
 
-df.to_csv('scifi_data_251024.csv')
+df.to_csv('scifi_data_261024.csv')
 # df.to_json('films.json', orient='records', indent=4)
 df.to_json('../films.json', orient='records', indent=4)
 
