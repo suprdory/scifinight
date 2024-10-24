@@ -13,6 +13,7 @@ fetch('films.json')
     .then(response => response.json())
     .then(data => {
         films = data;
+        startVote()
     })
     .catch(error => console.error('Error loading films:', error));
 
@@ -69,15 +70,45 @@ function createGroupElement(group, groupId) {
     groupElement.id = groupId;
 
     // Display each film with its title, year, and runtime
-    groupElement.innerHTML = group.map(film => `
-    <strong style="color:${cb[11-parseInt(film.IMDb*11/10)]};">${film.Title}</strong> (${film.Year})
-    ${film.Runtime} mins
-  `).join('<br><br>');
+//     groupElement.innerHTML = group.map(film => `
+//     <strong style="color:${cb[11-parseInt(film.IMDb*11/10)]};">${film.Title}</strong> (${film.Year})
+//     ${film.Runtime} mins
+//   `).join('<br>');
+
+    group.forEach(film => {
+        let card=document.createElement('div');
+        card.classList.add("film-card")
+        let title = document.createElement('h3');
+        title.classList.add('film-title')
+        title.innerText=film.Title
+        title.style.color = cb[11 - parseInt(film.IMDb * 11 / 10)]
+        card.appendChild(title)
+
+        let filmDetails=document.createElement('div')
+        filmDetails.classList.add('film-details')
+
+        let filmYear = document.createElement('span')
+        filmYear.classList.add('film-year')
+        filmYear.innerText=film.Year
+        
+        let filmRuntime = document.createElement('span')
+        filmRuntime.classList.add('film-runtime')
+        filmRuntime.innerText=film.Runtime + " m"
+
+        filmDetails.appendChild(filmYear)
+        filmDetails.appendChild(filmRuntime)
+
+        card.append(filmDetails)
+
+        groupElement.appendChild(card)
+        // groupElement.innerHTML = groupElement.innerHTML+element.Title
+    });
 
     // Add click event to eliminate this group
     groupElement.addEventListener('click', () => {
         eliminateGroup(groupId);
     });
+    groupElement.style.display="flex"
 
     return groupElement;
 }
@@ -110,8 +141,7 @@ function showFinalFilm() {
     startButton.textContent = "Re-vote";
 }
 
-// Start the game and apply the filter when clicked
-startButton.addEventListener('click', () => {
+function startVote(){
     remainingFilms = filterFilms(films); // Apply the Watched filter
 
     // Remove filter section to free up space
@@ -125,4 +155,10 @@ startButton.addEventListener('click', () => {
     } else {
         alert("No films match the selected criteria.");
     }
+}
+
+// Start the game and apply the filter when clicked
+startButton.addEventListener('click', () => {
+    startVote()
 });
+
