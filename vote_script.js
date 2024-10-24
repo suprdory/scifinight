@@ -13,7 +13,7 @@ fetch('films.json')
     .then(response => response.json())
     .then(data => {
         films = data;
-        startVote()
+        // startVote()
     })
     .catch(error => console.error('Error loading films:', error));
 
@@ -82,6 +82,7 @@ function createGroupElement(group, groupId) {
         title.classList.add('film-title')
         title.innerText=film.Title
         title.style.color = cb[11 - parseInt(film.IMDb * 11 / 10)]
+        // title.style.color = cb[10]
         card.appendChild(title)
 
         let filmDetails=document.createElement('div')
