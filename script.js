@@ -1,9 +1,11 @@
 // // script.js
 let filmsData = []; // Store loaded films data globally
+let urlBase = window.location.pathname;
 
 // Function to display film details
 async function showFilmDetails(film) {
-    history.replaceState({}, "", "?id=" + film.imdbID);
+    // console.log("State:", window.location.pathname)
+    history.replaceState({}, "", urlBase +"?id=" + film.imdbID);
     // console.log(film.imdbID)
     // Set the backdrop image
     const rightPanel = document.getElementById('right-panel');
@@ -16,6 +18,10 @@ async function showFilmDetails(film) {
     const backdrop = document.getElementById('backdrop');
     backdrop.style.backgroundImage = `url(${backdropUrl})`;
     backdrop.style.filter = 'brightness(50%)';
+    let mediaq = window.matchMedia("(max-width: 768px)").matches
+    console.log("media",mediaq)
+    backdrop.style.display =mediaq?'none':'flex';
+
 
     // // Set the poster image
     const poster = document.getElementById('poster');
@@ -152,17 +158,17 @@ document.getElementById('filter-options').addEventListener('change', () => {
 
 
 function rightPanelHome() {
-    history.replaceState({},"","/");
+
+    history.replaceState({},"",urlBase);
     const poster = document.getElementById('poster');
     // poster.src = null;
     poster.style.display="none";
     // Set the backdrop image
     const backdrop = document.getElementById('backdrop');
+    backdrop.style.display='flex'
     backdrop.style.backgroundImage = 'url(img/SFV1_crop.jpg)';
     backdrop.style.filter = 'brightness(100%)';
-    // // // Set the poster image
-    // const poster = document.getElementById('poster');
-    // poster.src = '/SFV1_crop.jpg';
+
     const rightPanel = document.getElementById('right-panel');
     rightPanel.style.display = 'flex';
     const filmTitle = document.getElementById('film-title');
