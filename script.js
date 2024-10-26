@@ -152,6 +152,7 @@ document.getElementById('filter-options').addEventListener('change', () => {
 
 
 function rightPanelHome() {
+    history.replaceState({},"","/");
     const poster = document.getElementById('poster');
     // poster.src = null;
     poster.style.display="none";
