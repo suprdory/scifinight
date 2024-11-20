@@ -15,8 +15,6 @@ df_old = pd.read_csv('scifi_data_281024.csv').iloc[:, 1:]
 newData = pd.read_csv('to_add.csv')
 
 # %%
-
-
 def get_scores(omdb_ratings):
     sources = ['Internet Movie Database', 'Rotten Tomatoes', 'Metacritic']
 
@@ -68,7 +66,6 @@ def get_tmdb_imdb(imdb_id):
     else:
         return None
 # %%
-
 
 def buildFilmDat(imdbID, season):
     omdbDat = get_omdb_imdb(imdbID)
@@ -148,7 +145,7 @@ df.Watched = df.Watched == 1
 # df.loc[df.Title=="Innerspace","Season"]=10
 # %%
 
-df.to_csv('scifi_data_281024.csv')
+df.to_csv('scifi_data_201124.csv')
 # df.to_json('films.json', orient='records', indent=4)
 df.to_json('../films.json', orient='records', indent=4)
 
