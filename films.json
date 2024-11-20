@@ -1,7 +1,6 @@
 [
     {
         "Title":"12 Monkeys",
-        "Year":1995,
         "imdbID":"tt0114746",
         "Year":1995,
         "Rated":"R",
@@ -16,11 +15,12 @@
         "RT":88.0,
         "Meta":74.0,
         "poster_path":"\/gt3iyguaCIw8DpQZI1LIN5TohM2.jpg",
-        "backdrop_path":"\/1IWaKG7AWiYMhADxhGtnElDJAGI.jpg"
+        "backdrop_path":"\/1IWaKG7AWiYMhADxhGtnElDJAGI.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"2001: A Space Odyssey",
-        "Year":1968,
         "imdbID":"tt0062622",
         "Year":1968,
         "Rated":"G",
@@ -35,11 +35,12 @@
         "RT":92.0,
         "Meta":84.0,
         "poster_path":"\/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
-        "backdrop_path":"\/w5IDXtifKntw0ajv2co7jFlTQDM.jpg"
+        "backdrop_path":"\/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"2010: The Year We Make Contact",
-        "Year":1984,
         "imdbID":"tt0086837",
         "Year":1984,
         "Rated":"PG",
@@ -54,11 +55,12 @@
         "RT":67.0,
         "Meta":53.0,
         "poster_path":"\/mEWKXuCMv7mFMxXVSTI3v8UOQuq.jpg",
-        "backdrop_path":"\/48ern5F857hPdEwJeUT6bnfGnHF.jpg"
+        "backdrop_path":"\/48ern5F857hPdEwJeUT6bnfGnHF.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"A Boy and His Dog",
-        "Year":1975,
         "imdbID":"tt0072730",
         "Year":1975,
         "Rated":"R",
@@ -73,11 +75,12 @@
         "RT":78.0,
         "Meta":68.0,
         "poster_path":"\/dMbkoFzD5sEQvEaqRsIh4pTBJVq.jpg",
-        "backdrop_path":"\/sWOQBQYkJvm8W7HGk6J8OAjPl2V.jpg"
+        "backdrop_path":"\/sWOQBQYkJvm8W7HGk6J8OAjPl2V.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"A Scanner Darkly",
-        "Year":2006,
         "imdbID":"tt0405296",
         "Year":2006,
         "Rated":"R",
@@ -92,11 +95,12 @@
         "RT":68.0,
         "Meta":73.0,
         "poster_path":"\/lUKudOpHICDj6A6SO7DdaZM4W48.jpg",
-        "backdrop_path":"\/fdrQusLbssk6WEpyZXVDmyRlylE.jpg"
+        "backdrop_path":"\/fdrQusLbssk6WEpyZXVDmyRlylE.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"A.I. Artificial Intelligence",
-        "Year":2001,
         "imdbID":"tt0212720",
         "Year":2001,
         "Rated":"PG-13",
@@ -111,11 +115,12 @@
         "RT":76.0,
         "Meta":65.0,
         "poster_path":"\/zxUhHQxKRbVLsaHR1V81SWYADOl.jpg",
-        "backdrop_path":"\/n7p6UTAZtkeoHkwCO42BEQaMFJY.jpg"
+        "backdrop_path":"\/n7p6UTAZtkeoHkwCO42BEQaMFJY.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Ad Astra",
-        "Year":2019,
         "imdbID":"tt2935510",
         "Year":2019,
         "Rated":"PG-13",
@@ -130,11 +135,12 @@
         "RT":83.0,
         "Meta":80.0,
         "poster_path":"\/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg",
-        "backdrop_path":"\/AeDS2MKGFy6QcjgWbJBde0Ga6Hd.jpg"
+        "backdrop_path":"\/AeDS2MKGFy6QcjgWbJBde0Ga6Hd.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Akira",
-        "Year":1988,
         "imdbID":"tt0094625",
         "Year":1988,
         "Rated":"R",
@@ -149,11 +155,12 @@
         "RT":91.0,
         "Meta":67.0,
         "poster_path":"\/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg",
-        "backdrop_path":"\/pHtVkUvKiG7CEemZkUiqPzjpMri.jpg"
+        "backdrop_path":"\/pHtVkUvKiG7CEemZkUiqPzjpMri.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Alien",
-        "Year":1979,
         "imdbID":"tt0078748",
         "Year":1979,
         "Rated":"R",
@@ -168,11 +175,12 @@
         "RT":93.0,
         "Meta":89.0,
         "poster_path":"\/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
-        "backdrop_path":"\/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg"
+        "backdrop_path":"\/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Alienoid",
-        "Year":2022,
         "imdbID":"tt20168564",
         "Year":2022,
         "Rated":"Not Rated",
@@ -187,11 +195,12 @@
         "RT":83.0,
         "Meta":54.0,
         "poster_path":"\/8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg",
-        "backdrop_path":"\/7ZP8HtgOIDaBs12krXgUIygqEsy.jpg"
+        "backdrop_path":"\/7ZP8HtgOIDaBs12krXgUIygqEsy.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Aliens",
-        "Year":1986,
         "imdbID":"tt0090605",
         "Year":1986,
         "Rated":"R",
@@ -206,11 +215,12 @@
         "RT":94.0,
         "Meta":84.0,
         "poster_path":"\/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
-        "backdrop_path":"\/jMBpJFRtrtIXymer93XLavPwI3P.jpg"
+        "backdrop_path":"\/jMBpJFRtrtIXymer93XLavPwI3P.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Alita: Battle Angel",
-        "Year":2019,
         "imdbID":"tt0437086",
         "Year":2019,
         "Rated":"PG-13",
@@ -225,11 +235,12 @@
         "RT":61.0,
         "Meta":53.0,
         "poster_path":"\/xRWht48C2V8XNfzvPehyClOvDni.jpg",
-        "backdrop_path":"\/lcCNS7vyofFpJV7fl92ipIdNmGi.jpg"
+        "backdrop_path":"\/lcCNS7vyofFpJV7fl92ipIdNmGi.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Altered States",
-        "Year":1980,
         "imdbID":"tt0080360",
         "Year":1980,
         "Rated":"R",
@@ -244,11 +255,12 @@
         "RT":86.0,
         "Meta":58.0,
         "poster_path":"\/1iZBJcFJFupnxrSCwQIrtVgsrkA.jpg",
-        "backdrop_path":"\/ivgNm4ICvwbrlV6crntR4F7lKgL.jpg"
+        "backdrop_path":"\/ivgNm4ICvwbrlV6crntR4F7lKgL.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Android Apocalypse",
-        "Year":2006,
         "imdbID":"tt0470023",
         "Year":2006,
         "Rated":"PG-13",
@@ -263,11 +275,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/h6DkAZAcDgoJQbKlkC4ZNgrdh9J.jpg",
-        "backdrop_path":"\/uxlYQKsoOkBgR9PxgeZDUh1GbhZ.jpg"
+        "backdrop_path":"\/uxlYQKsoOkBgR9PxgeZDUh1GbhZ.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Aniara",
-        "Year":2018,
         "imdbID":"tt7589524",
         "Year":2018,
         "Rated":"R",
@@ -282,11 +295,12 @@
         "RT":71.0,
         "Meta":61.0,
         "poster_path":"\/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg",
-        "backdrop_path":"\/mz8xBEIl1l18e2ToNlV1Tt5HVmJ.jpg"
+        "backdrop_path":"\/mz8xBEIl1l18e2ToNlV1Tt5HVmJ.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Annihilation",
-        "Year":2018,
         "imdbID":"tt2798920",
         "Year":2018,
         "Rated":"R",
@@ -301,11 +315,12 @@
         "RT":88.0,
         "Meta":79.0,
         "poster_path":"\/1dRweZy8DxGDhJFqiOA4Ni3I1ie.jpg",
-        "backdrop_path":"\/9trZvBr44UGedUOiGo3jgSUw13e.jpg"
+        "backdrop_path":"\/9trZvBr44UGedUOiGo3jgSUw13e.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Another Earth",
-        "Year":2011,
         "imdbID":"tt1549572",
         "Year":2011,
         "Rated":"PG-13",
@@ -320,11 +335,12 @@
         "RT":67.0,
         "Meta":66.0,
         "poster_path":"\/qvGJK3lFzpifAdyIupMNdWNX0qr.jpg",
-        "backdrop_path":"\/fJfpZnS2pvFCtyaDqoIgKLASvAT.jpg"
+        "backdrop_path":"\/fJfpZnS2pvFCtyaDqoIgKLASvAT.jpg",
+        "Watched":false,
+        "Season":5.0
     },
     {
         "Title":"Arrival",
-        "Year":2016,
         "imdbID":"tt2543164",
         "Year":2016,
         "Rated":"PG-13",
@@ -339,11 +355,12 @@
         "RT":94.0,
         "Meta":81.0,
         "poster_path":"\/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
-        "backdrop_path":"\/r8FD6CC3GgjWaGVkZh00AcedfpA.jpg"
+        "backdrop_path":"\/r8FD6CC3GgjWaGVkZh00AcedfpA.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Assault Girls",
-        "Year":2009,
         "imdbID":"tt1478800",
         "Year":2009,
         "Rated":"Not Rated",
@@ -358,11 +375,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/2m71925BHKULBlAkLtw0pazLUit.jpg",
-        "backdrop_path":"\/38jmP1ndBCGrzNdZ0jtr5iUILja.jpg"
+        "backdrop_path":"\/38jmP1ndBCGrzNdZ0jtr5iUILja.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Asteroid City",
-        "Year":2023,
         "imdbID":"tt14230388",
         "Year":2023,
         "Rated":"PG-13",
@@ -377,11 +395,12 @@
         "RT":76.0,
         "Meta":74.0,
         "poster_path":"\/qdq40gRS8xKnpFt5V75t6lUHgpx.jpg",
-        "backdrop_path":"\/gcbZ2ZdVzfBsGmfjTy8g7UaZS16.jpg"
+        "backdrop_path":"\/gcbZ2ZdVzfBsGmfjTy8g7UaZS16.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Attack from Outer Space",
-        "Year":1979,
         "imdbID":"tt12658910",
         "Year":1979,
         "Rated":null,
@@ -396,11 +415,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/dNmJwg1jfOydg4bPMj7TYhCdeUp.jpg",
-        "backdrop_path":null
+        "backdrop_path":null,
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Avalon",
-        "Year":2001,
         "imdbID":"tt0267287",
         "Year":2001,
         "Rated":"R",
@@ -415,11 +435,12 @@
         "RT":83.0,
         "Meta":null,
         "poster_path":"\/xm8byLTLqscSae3vFJDDggNeH1j.jpg",
-        "backdrop_path":"\/cf8qwkSTSuHrRH9yIKfM6QYoCtB.jpg"
+        "backdrop_path":"\/cf8qwkSTSuHrRH9yIKfM6QYoCtB.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Back to the Future",
-        "Year":1985,
         "imdbID":"tt0088763",
         "Year":1985,
         "Rated":"PG",
@@ -434,11 +455,12 @@
         "RT":93.0,
         "Meta":87.0,
         "poster_path":"\/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg",
-        "backdrop_path":"\/hxSB02ksqnkXY4hPGAXqgO2fL01.jpg"
+        "backdrop_path":"\/hxSB02ksqnkXY4hPGAXqgO2fL01.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Back to the Future Part II",
-        "Year":1989,
         "imdbID":"tt0096874",
         "Year":1989,
         "Rated":"PG",
@@ -453,11 +475,12 @@
         "RT":63.0,
         "Meta":57.0,
         "poster_path":"\/hQq8xZe5uLjFzSBt4LanNP7SQjl.jpg",
-        "backdrop_path":"\/skQN2UMQKQnOTmwplcYMx6ZF4jS.jpg"
+        "backdrop_path":"\/skQN2UMQKQnOTmwplcYMx6ZF4jS.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Back to the Future Part III",
-        "Year":1990,
         "imdbID":"tt0099088",
         "Year":1990,
         "Rated":"PG",
@@ -472,11 +495,12 @@
         "RT":81.0,
         "Meta":55.0,
         "poster_path":"\/crzoVQnMzIrRfHtQw0tLBirNfVg.jpg",
-        "backdrop_path":"\/vKp3NvqBkcjHkCHSGi6EbcP7g4J.jpg"
+        "backdrop_path":"\/vKp3NvqBkcjHkCHSGi6EbcP7g4J.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Barbarella",
-        "Year":1968,
         "imdbID":"tt0062711",
         "Year":1968,
         "Rated":"PG",
@@ -491,11 +515,12 @@
         "RT":75.0,
         "Meta":51.0,
         "poster_path":"\/kfaRSR3geV3I65icyHWBBEsE9u.jpg",
-        "backdrop_path":"\/gY8essk1UcNZMK3VRkPpdaUQLDQ.jpg"
+        "backdrop_path":"\/gY8essk1UcNZMK3VRkPpdaUQLDQ.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Battlefield Earth",
-        "Year":2000,
         "imdbID":"tt0185183",
         "Year":2000,
         "Rated":"PG-13",
@@ -510,11 +535,12 @@
         "RT":3.0,
         "Meta":9.0,
         "poster_path":"\/wXCRuBHdJ5aTFQdsuGJFXNdo79T.jpg",
-        "backdrop_path":"\/sKTTPiNq6tgBpecmoHAvmqG4I4K.jpg"
+        "backdrop_path":"\/sKTTPiNq6tgBpecmoHAvmqG4I4K.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Bill & Ted's Excellent Adventure",
-        "Year":1989,
         "imdbID":"tt0096928",
         "Year":1989,
         "Rated":"PG",
@@ -529,11 +555,12 @@
         "RT":83.0,
         "Meta":50.0,
         "poster_path":"\/tV25lGWGWGEqUe3U0xjQTBgilSx.jpg",
-        "backdrop_path":"\/9Ac0H6cdbYolC72KXm8N0DwZc2I.jpg"
+        "backdrop_path":"\/9Ac0H6cdbYolC72KXm8N0DwZc2I.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Blade Runner",
-        "Year":1982,
         "imdbID":"tt0083658",
         "Year":1982,
         "Rated":"R",
@@ -548,11 +575,12 @@
         "RT":89.0,
         "Meta":84.0,
         "poster_path":"\/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
-        "backdrop_path":"\/qr7dUqleMRd0VgollazbmyP9XjI.jpg"
+        "backdrop_path":"\/qr7dUqleMRd0VgollazbmyP9XjI.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Blade Runner 2049",
-        "Year":2017,
         "imdbID":"tt1856101",
         "Year":2017,
         "Rated":"R",
@@ -567,11 +595,12 @@
         "RT":88.0,
         "Meta":81.0,
         "poster_path":"\/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
-        "backdrop_path":"\/ilRyazdMJwN05exqhwK4tMKBYZs.jpg"
+        "backdrop_path":"\/ilRyazdMJwN05exqhwK4tMKBYZs.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Born in Flames",
-        "Year":1983,
         "imdbID":"tt0085267",
         "Year":1983,
         "Rated":"Not Rated",
@@ -586,11 +615,12 @@
         "RT":88.0,
         "Meta":null,
         "poster_path":"\/xAbFfFxbl47PgOC9zXhdoGZMFYx.jpg",
-        "backdrop_path":"\/pC9qonwPXvvPx5kOT48X8U4sOTq.jpg"
+        "backdrop_path":"\/pC9qonwPXvvPx5kOT48X8U4sOTq.jpg",
+        "Watched":false,
+        "Season":1.0
     },
     {
         "Title":"Brazil",
-        "Year":1985,
         "imdbID":"tt0088846",
         "Year":1985,
         "Rated":"R",
@@ -605,11 +635,12 @@
         "RT":98.0,
         "Meta":84.0,
         "poster_path":"\/li6ABwitsBHg0Ah88HbFfPq1hxM.jpg",
-        "backdrop_path":"\/9IYyCLf5NNAQFK9pNtqzEU9HWzM.jpg"
+        "backdrop_path":"\/9IYyCLf5NNAQFK9pNtqzEU9HWzM.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Brian and Charles",
-        "Year":2022,
         "imdbID":"tt13270424",
         "Year":2022,
         "Rated":"PG",
@@ -624,11 +655,12 @@
         "RT":85.0,
         "Meta":66.0,
         "poster_path":"\/pzP3N9qRo3S91QjfBFWNI0ph0AY.jpg",
-        "backdrop_path":"\/sT0c22syDUXXz85Gg0E7dzZzCaA.jpg"
+        "backdrop_path":"\/sT0c22syDUXXz85Gg0E7dzZzCaA.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Casshern",
-        "Year":2004,
         "imdbID":"tt0405821",
         "Year":2004,
         "Rated":"Not Rated",
@@ -643,11 +675,12 @@
         "RT":73.0,
         "Meta":null,
         "poster_path":"\/naIjHWfQFge69GqeehgsekwDkbl.jpg",
-        "backdrop_path":"\/nOovQqWWrGRkEkefR19syGO5a9i.jpg"
+        "backdrop_path":"\/nOovQqWWrGRkEkefR19syGO5a9i.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Chappie",
-        "Year":2015,
         "imdbID":"tt1823672",
         "Year":2015,
         "Rated":"R",
@@ -662,11 +695,12 @@
         "RT":32.0,
         "Meta":41.0,
         "poster_path":"\/hpnuXlKKWznTgbheGe4iQXzkuwJ.jpg",
-        "backdrop_path":"\/qX5T5GVAcq2UKaaiAx5SZp1AtlY.jpg"
+        "backdrop_path":"\/qX5T5GVAcq2UKaaiAx5SZp1AtlY.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Cherry 2000",
-        "Year":1987,
         "imdbID":"tt0092746",
         "Year":1987,
         "Rated":"PG-13",
@@ -681,11 +715,12 @@
         "RT":38.0,
         "Meta":59.0,
         "poster_path":"\/t3uds00MHLsibhKLCL0BbCEGxXb.jpg",
-        "backdrop_path":"\/vjlBasTA8imogIxQLHzsUrCMjJB.jpg"
+        "backdrop_path":"\/vjlBasTA8imogIxQLHzsUrCMjJB.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Children of Men",
-        "Year":2006,
         "imdbID":"tt0206634",
         "Year":2006,
         "Rated":"R",
@@ -700,11 +735,12 @@
         "RT":92.0,
         "Meta":84.0,
         "poster_path":"\/k9IAS4TehZFcKi4HVByxZNPfqex.jpg",
-        "backdrop_path":"\/z8FzomPxfCb2nv827VWLSI6oYiB.jpg"
+        "backdrop_path":"\/z8FzomPxfCb2nv827VWLSI6oYiB.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Chronicle",
-        "Year":2012,
         "imdbID":"tt1706593",
         "Year":2012,
         "Rated":"PG-13",
@@ -719,11 +755,12 @@
         "RT":85.0,
         "Meta":69.0,
         "poster_path":"\/xENglsVIIWEEhhB5lgpy33tGcKI.jpg",
-        "backdrop_path":"\/rgNzvSagnlc32TuMEBa529QFIig.jpg"
+        "backdrop_path":"\/rgNzvSagnlc32TuMEBa529QFIig.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Class of 1999",
-        "Year":1990,
         "imdbID":"tt0099277",
         "Year":1990,
         "Rated":"R",
@@ -738,11 +775,12 @@
         "RT":63.0,
         "Meta":33.0,
         "poster_path":"\/5HkKJhPODjCjVOoGcvHvo7tRgNU.jpg",
-        "backdrop_path":"\/lzw4iTwHxQUi3hrP0ziZIhhZtRf.jpg"
+        "backdrop_path":"\/lzw4iTwHxQUi3hrP0ziZIhhZtRf.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Close Encounters of the Third Kind",
-        "Year":1977,
         "imdbID":"tt0075860",
         "Year":1977,
         "Rated":"PG",
@@ -757,11 +795,12 @@
         "RT":90.0,
         "Meta":90.0,
         "poster_path":"\/yaPx3cK9zGFX3SbcKwxWM1QIbUh.jpg",
-        "backdrop_path":"\/yBCekmb7vK70xUhtsRQBcTu65sB.jpg"
+        "backdrop_path":"\/yBCekmb7vK70xUhtsRQBcTu65sB.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Cloud Atlas",
-        "Year":2012,
         "imdbID":"tt1371111",
         "Year":2012,
         "Rated":"R",
@@ -776,11 +815,12 @@
         "RT":66.0,
         "Meta":55.0,
         "poster_path":"\/mxcvshnizr7frjN8WMKPQRJ3LmY.jpg",
-        "backdrop_path":"\/rXxsazBqE5DkXhhnc2OJQhu6fkv.jpg"
+        "backdrop_path":"\/rXxsazBqE5DkXhhnc2OJQhu6fkv.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Cloverfield",
-        "Year":2008,
         "imdbID":"tt1060277",
         "Year":2008,
         "Rated":"PG-13",
@@ -795,11 +835,12 @@
         "RT":78.0,
         "Meta":64.0,
         "poster_path":"\/qIegUGJqyMMCRjkKV1s7A9MqdJ8.jpg",
-        "backdrop_path":"\/6ms6RdNcQUAnjBY26aM85xC2wV0.jpg"
+        "backdrop_path":"\/6ms6RdNcQUAnjBY26aM85xC2wV0.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Coherence",
-        "Year":2013,
         "imdbID":"tt2866360",
         "Year":2013,
         "Rated":"Not Rated",
@@ -814,11 +855,12 @@
         "RT":88.0,
         "Meta":65.0,
         "poster_path":"\/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg",
-        "backdrop_path":"\/utghtkDDOhwEDS7r9hhRhn7Wneg.jpg"
+        "backdrop_path":"\/utghtkDDOhwEDS7r9hhRhn7Wneg.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Colossal",
-        "Year":2016,
         "imdbID":"tt4680182",
         "Year":2016,
         "Rated":"R",
@@ -833,11 +875,12 @@
         "RT":82.0,
         "Meta":70.0,
         "poster_path":"\/4VOyofBd1pexblxtDZYtYIk7NI4.jpg",
-        "backdrop_path":"\/1ddf2Kq1hC7SgV02E3pyLAC26lq.jpg"
+        "backdrop_path":"\/1ddf2Kq1hC7SgV02E3pyLAC26lq.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Colossus: The Forbin Project",
-        "Year":1970,
         "imdbID":"tt0064177",
         "Year":1970,
         "Rated":"M",
@@ -852,11 +895,12 @@
         "RT":89.0,
         "Meta":null,
         "poster_path":"\/kmVDlTzERxSvBrqtQurjKf1zEy1.jpg",
-        "backdrop_path":"\/3eV9l3HhOGOytCilHJOACDL9DIT.jpg"
+        "backdrop_path":"\/3eV9l3HhOGOytCilHJOACDL9DIT.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Coneheads",
-        "Year":1993,
         "imdbID":"tt0106598",
         "Year":1993,
         "Rated":"PG",
@@ -871,11 +915,12 @@
         "RT":35.0,
         "Meta":49.0,
         "poster_path":"\/4eHnstayi28SCHv8ATcISFEv1Rl.jpg",
-        "backdrop_path":"\/pvh2cyUUu7BYghoRqlV9jsd5Pdh.jpg"
+        "backdrop_path":"\/pvh2cyUUu7BYghoRqlV9jsd5Pdh.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Contact",
-        "Year":1997,
         "imdbID":"tt0118884",
         "Year":1997,
         "Rated":"PG",
@@ -890,11 +935,12 @@
         "RT":68.0,
         "Meta":62.0,
         "poster_path":"\/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
-        "backdrop_path":"\/yFkUPqBuUnbhYbQL8VFpTrAT9za.jpg"
+        "backdrop_path":"\/yFkUPqBuUnbhYbQL8VFpTrAT9za.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Crimes of the Future",
-        "Year":2022,
         "imdbID":"tt14549466",
         "Year":2022,
         "Rated":"R",
@@ -909,11 +955,12 @@
         "RT":80.0,
         "Meta":67.0,
         "poster_path":"\/RAFYMC0NgK9In9aGY6k6wsIL8w.jpg",
-        "backdrop_path":"\/sqdsuvy8X6Maila4IAc7deMtPAA.jpg"
+        "backdrop_path":"\/sqdsuvy8X6Maila4IAc7deMtPAA.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Cube",
-        "Year":1997,
         "imdbID":"tt0123755",
         "Year":1997,
         "Rated":"R",
@@ -928,11 +975,12 @@
         "RT":63.0,
         "Meta":61.0,
         "poster_path":"\/x4BTjxdrOKC27FcSkBh8KPEgnum.jpg",
-        "backdrop_path":"\/3TimUBrXMVblpnTsyg4HssGVbBv.jpg"
+        "backdrop_path":"\/3TimUBrXMVblpnTsyg4HssGVbBv.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Cypher",
-        "Year":2002,
         "imdbID":"tt0284978",
         "Year":2002,
         "Rated":"R",
@@ -947,11 +995,12 @@
         "RT":58.0,
         "Meta":null,
         "poster_path":"\/ph7oKfGjGSJFnjBvIVlkCwCrZx2.jpg",
-        "backdrop_path":"\/y1EjQaJojDusoFCzzCLi2BlByA.jpg"
+        "backdrop_path":"\/y1EjQaJojDusoFCzzCLi2BlByA.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"D.A.R.Y.L.",
-        "Year":1985,
         "imdbID":"tt0088979",
         "Year":1985,
         "Rated":"PG",
@@ -966,11 +1015,12 @@
         "RT":53.0,
         "Meta":null,
         "poster_path":"\/87huhTOQijJy0pLhusZfest1MoZ.jpg",
-        "backdrop_path":"\/6Ld4ivkOa2tmvP2F0Fo4eRiuMkz.jpg"
+        "backdrop_path":"\/6Ld4ivkOa2tmvP2F0Fo4eRiuMkz.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Dark City",
-        "Year":1998,
         "imdbID":"tt0118929",
         "Year":1998,
         "Rated":"R",
@@ -985,11 +1035,12 @@
         "RT":null,
         "Meta":66.0,
         "poster_path":"\/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
-        "backdrop_path":"\/bmAzESah8IUNRQX5MqeyUrhE5Pr.jpg"
+        "backdrop_path":"\/bmAzESah8IUNRQX5MqeyUrhE5Pr.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Dark Star",
-        "Year":1974,
         "imdbID":"tt0069945",
         "Year":1974,
         "Rated":"G",
@@ -1004,11 +1055,12 @@
         "RT":73.0,
         "Meta":66.0,
         "poster_path":"\/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg",
-        "backdrop_path":"\/9yXen3n0LOX4yfb1KTSQXmJovPN.jpg"
+        "backdrop_path":"\/9yXen3n0LOX4yfb1KTSQXmJovPN.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Das Millionenspiel",
-        "Year":1970,
         "imdbID":"tt0066079",
         "Year":1970,
         "Rated":null,
@@ -1023,11 +1075,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/1RUB5goPRL6TvS59oy5P4qsQ5BO.jpg",
-        "backdrop_path":"\/fPy8zbYcqcKupx2ziixSuH4NKAu.jpg"
+        "backdrop_path":"\/fPy8zbYcqcKupx2ziixSuH4NKAu.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Dead Man's Letters",
-        "Year":1986,
         "imdbID":"tt0091759",
         "Year":1986,
         "Rated":null,
@@ -1042,11 +1095,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/uPfG3ZnXCdRdxZ88DqMe0UuIwBS.jpg",
-        "backdrop_path":"\/lLvIoN4fHSrmOuK0CvVgkqA6Sa4.jpg"
+        "backdrop_path":"\/lLvIoN4fHSrmOuK0CvVgkqA6Sa4.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Death Race 2000",
-        "Year":1975,
         "imdbID":"tt0072856",
         "Year":1975,
         "Rated":"R",
@@ -1061,11 +1115,12 @@
         "RT":82.0,
         "Meta":58.0,
         "poster_path":"\/kwM8kkNGtv62gfPWVhD6qFxjDzg.jpg",
-        "backdrop_path":"\/2MVfJHo1P79LSXg67aE8wjbh2uY.jpg"
+        "backdrop_path":"\/2MVfJHo1P79LSXg67aE8wjbh2uY.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Demolition Man",
-        "Year":1993,
         "imdbID":"tt0106697",
         "Year":1993,
         "Rated":"R",
@@ -1080,11 +1135,12 @@
         "RT":63.0,
         "Meta":34.0,
         "poster_path":"\/dq6AmlVFo92PRuoLCcIyFdoRuxf.jpg",
-        "backdrop_path":"\/cO5tOuyaW1WA3QaDuqps6HMGI81.jpg"
+        "backdrop_path":"\/cO5tOuyaW1WA3QaDuqps6HMGI81.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Demon Seed",
-        "Year":1977,
         "imdbID":"tt0075931",
         "Year":1977,
         "Rated":"R",
@@ -1099,11 +1155,12 @@
         "RT":59.0,
         "Meta":55.0,
         "poster_path":"\/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg",
-        "backdrop_path":"\/gZnYAzOakSL5QK519ixYKF2Qben.jpg"
+        "backdrop_path":"\/gZnYAzOakSL5QK519ixYKF2Qben.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Diamantino",
-        "Year":2018,
         "imdbID":"tt6522668",
         "Year":2018,
         "Rated":null,
@@ -1118,11 +1175,12 @@
         "RT":87.0,
         "Meta":75.0,
         "poster_path":"\/mjOvGWYeQuaUUkEMKvL1gqIjeAz.jpg",
-        "backdrop_path":"\/3Wl88SIaaBnEneMfu5iqOFls5wb.jpg"
+        "backdrop_path":"\/3Wl88SIaaBnEneMfu5iqOFls5wb.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"District 9",
-        "Year":2009,
         "imdbID":"tt1136608",
         "Year":2009,
         "Rated":"R",
@@ -1137,11 +1195,12 @@
         "RT":90.0,
         "Meta":81.0,
         "poster_path":"\/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
-        "backdrop_path":"\/jhM3wgWUrrOkz9r4xwV5cV5RhI4.jpg"
+        "backdrop_path":"\/jhM3wgWUrrOkz9r4xwV5cV5RhI4.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Dr. Goldfoot and the Bikini Machine",
-        "Year":1965,
         "imdbID":"tt0059124",
         "Year":1965,
         "Rated":"Approved",
@@ -1156,11 +1215,12 @@
         "RT":29.0,
         "Meta":null,
         "poster_path":"\/v1NPmkAgQ85fTJAD7cmZ2EcFCvh.jpg",
-        "backdrop_path":"\/x5pCJEEXyi5noe2iT7u8kVRyMpb.jpg"
+        "backdrop_path":"\/x5pCJEEXyi5noe2iT7u8kVRyMpb.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Dreamscape",
-        "Year":1984,
         "imdbID":"tt0087175",
         "Year":1984,
         "Rated":"R",
@@ -1175,11 +1235,12 @@
         "RT":79.0,
         "Meta":63.0,
         "poster_path":"\/gRLhwWhXS9asnE4c1mt84t1iEER.jpg",
-        "backdrop_path":"\/tc3ti6qRHDRKLwXBoVltRIkYIbL.jpg"
+        "backdrop_path":"\/tc3ti6qRHDRKLwXBoVltRIkYIbL.jpg",
+        "Watched":true,
+        "Season":10.0
     },
     {
         "Title":"Dredd",
-        "Year":2012,
         "imdbID":"tt1343727",
         "Year":2012,
         "Rated":"R",
@@ -1194,11 +1255,12 @@
         "RT":80.0,
         "Meta":60.0,
         "poster_path":"\/wLx65gtGVnUFCxceHWGszcruCZj.jpg",
-        "backdrop_path":"\/yeF9ewBnFp9d5nqdHMic4IAOqrs.jpg"
+        "backdrop_path":"\/yeF9ewBnFp9d5nqdHMic4IAOqrs.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Dune",
-        "Year":1984,
         "imdbID":"tt0087182",
         "Year":1984,
         "Rated":"PG-13",
@@ -1213,11 +1275,12 @@
         "RT":37.0,
         "Meta":41.0,
         "poster_path":"\/ldugBX89jCQA9RRwfzRgX0gNpBc.jpg",
-        "backdrop_path":"\/5wJ2tckpvwcxGCAgZiccodwEJpf.jpg"
+        "backdrop_path":"\/5wJ2tckpvwcxGCAgZiccodwEJpf.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"E.T. the Extra-Terrestrial",
-        "Year":1982,
         "imdbID":"tt0083866",
         "Year":1982,
         "Rated":"PG",
@@ -1232,11 +1295,12 @@
         "RT":99.0,
         "Meta":92.0,
         "poster_path":"\/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg",
-        "backdrop_path":"\/1jVEONg10d7lJunwl9GAS6tUGkB.jpg"
+        "backdrop_path":"\/1jVEONg10d7lJunwl9GAS6tUGkB.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Earth Girls Are Easy",
-        "Year":1988,
         "imdbID":"tt0097257",
         "Year":1988,
         "Rated":"PG",
@@ -1251,11 +1315,12 @@
         "RT":68.0,
         "Meta":66.0,
         "poster_path":"\/pO9Edq8mgp9kD3N6EkCGYLnIVaA.jpg",
-        "backdrop_path":"\/6qQZ54iVgQWOFaVWss77yHy8YHu.jpg"
+        "backdrop_path":"\/6qQZ54iVgQWOFaVWss77yHy8YHu.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Edge of Tomorrow",
-        "Year":2014,
         "imdbID":"tt1631867",
         "Year":2014,
         "Rated":"PG-13",
@@ -1270,11 +1335,12 @@
         "RT":91.0,
         "Meta":71.0,
         "poster_path":"\/xjw5trHV7Mwo61P0kCTy8paEkgO.jpg",
-        "backdrop_path":"\/4V1yIoAKPMRQwGBaSses8Bp2nsi.jpg"
+        "backdrop_path":"\/4V1yIoAKPMRQwGBaSses8Bp2nsi.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Elysium",
-        "Year":2013,
         "imdbID":"tt1535108",
         "Year":2013,
         "Rated":"R",
@@ -1289,11 +1355,12 @@
         "RT":64.0,
         "Meta":61.0,
         "poster_path":"\/aRjuJuPXHtVs6YegfeeQWXGRs1E.jpg",
-        "backdrop_path":"\/xjnxyYqsgRDF9NmuNF19kHHu0Yg.jpg"
+        "backdrop_path":"\/xjnxyYqsgRDF9NmuNF19kHHu0Yg.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Embers",
-        "Year":2015,
         "imdbID":"tt3503460",
         "Year":2015,
         "Rated":"Not Rated",
@@ -1308,11 +1375,12 @@
         "RT":83.0,
         "Meta":55.0,
         "poster_path":"\/1pdOleZZ8jdXq7gPIdNvoRRcYrF.jpg",
-        "backdrop_path":"\/pBRwq6SHcjteOSxaflR2YE6wOOg.jpg"
+        "backdrop_path":"\/pBRwq6SHcjteOSxaflR2YE6wOOg.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Ender's Game",
-        "Year":2013,
         "imdbID":"tt1731141",
         "Year":2013,
         "Rated":"PG-13",
@@ -1327,11 +1395,12 @@
         "RT":63.0,
         "Meta":51.0,
         "poster_path":"\/vrEpLNkv30qw7JiVyorgR6NOWDm.jpg",
-        "backdrop_path":"\/qGqlWb5izTPtFngBWdbJAEmninR.jpg"
+        "backdrop_path":"\/qGqlWb5izTPtFngBWdbJAEmninR.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Enemy Mine",
-        "Year":1985,
         "imdbID":"tt0089092",
         "Year":1985,
         "Rated":"PG-13",
@@ -1346,11 +1415,12 @@
         "RT":59.0,
         "Meta":59.0,
         "poster_path":"\/a3dr9L8VIjhEvivzQ2M12VQDere.jpg",
-        "backdrop_path":"\/dMjNyPk3aBwXYYfAuSAwSRz1ewa.jpg"
+        "backdrop_path":"\/dMjNyPk3aBwXYYfAuSAwSRz1ewa.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Equilibrium",
-        "Year":2002,
         "imdbID":"tt0238380",
         "Year":2002,
         "Rated":"R",
@@ -1365,11 +1435,12 @@
         "RT":40.0,
         "Meta":33.0,
         "poster_path":"\/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg",
-        "backdrop_path":"\/huZZBPyYUnMPCnrAFyJhnwYsQx9.jpg"
+        "backdrop_path":"\/huZZBPyYUnMPCnrAFyJhnwYsQx9.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Escape from New York",
-        "Year":1981,
         "imdbID":"tt0082340",
         "Year":1981,
         "Rated":"R",
@@ -1384,11 +1455,12 @@
         "RT":86.0,
         "Meta":76.0,
         "poster_path":"\/yreqWiQ7IOkXWVB2Tz4LJIs7xqA.jpg",
-        "backdrop_path":"\/aXPCXYFzFzdveVVk1HjVf9fHUcn.jpg"
+        "backdrop_path":"\/aXPCXYFzFzdveVVk1HjVf9fHUcn.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Europa Report",
-        "Year":2013,
         "imdbID":"tt2051879",
         "Year":2013,
         "Rated":"PG-13",
@@ -1403,11 +1475,12 @@
         "RT":80.0,
         "Meta":68.0,
         "poster_path":"\/tbsfaBjiAW5vfrV06R8KCOzVOYy.jpg",
-        "backdrop_path":"\/7bXsWwEkqrjCEAykNR9D5EspTLD.jpg"
+        "backdrop_path":"\/7bXsWwEkqrjCEAykNR9D5EspTLD.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Evil Brain from Outer Space",
-        "Year":1966,
         "imdbID":"tt0058072",
         "Year":1966,
         "Rated":null,
@@ -1422,11 +1495,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/9T3Pjh0lQxJCcz7flsFyQ8xAPKH.jpg",
-        "backdrop_path":"\/7LttSAMFIuSby9WNmnp08iQynAi.jpg"
+        "backdrop_path":"\/7LttSAMFIuSby9WNmnp08iQynAi.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Ex Machina",
-        "Year":2014,
         "imdbID":"tt0470752",
         "Year":2014,
         "Rated":"R",
@@ -1441,11 +1515,12 @@
         "RT":92.0,
         "Meta":78.0,
         "poster_path":"\/9goPE2IoMIXxTLWzl7aizwuIiLh.jpg",
-        "backdrop_path":"\/jFxxqdEQ9TkXQSytO7qM8wlwXL1.jpg"
+        "backdrop_path":"\/jFxxqdEQ9TkXQSytO7qM8wlwXL1.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Fast Color",
-        "Year":2018,
         "imdbID":"tt6418778",
         "Year":2018,
         "Rated":"PG-13",
@@ -1460,11 +1535,12 @@
         "RT":82.0,
         "Meta":64.0,
         "poster_path":"\/2YAu2ctaxVGisdbmbbG35LXpQNp.jpg",
-        "backdrop_path":"\/4ZIoJBeYRTrqxjJh9NP1Fi2AlWr.jpg"
+        "backdrop_path":"\/4ZIoJBeYRTrqxjJh9NP1Fi2AlWr.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Forbidden Planet",
-        "Year":1956,
         "imdbID":"tt0049223",
         "Year":1956,
         "Rated":"G",
@@ -1479,11 +1555,12 @@
         "RT":96.0,
         "Meta":80.0,
         "poster_path":"\/aq0OQfRS7hDDI8vyD0ICbH9eguC.jpg",
-        "backdrop_path":"\/9EUmwXS6EbY5djAhLtBGzUbBwNV.jpg"
+        "backdrop_path":"\/9EUmwXS6EbY5djAhLtBGzUbBwNV.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Frequencies",
-        "Year":2013,
         "imdbID":"tt2414766",
         "Year":2013,
         "Rated":"Not Rated",
@@ -1498,11 +1575,12 @@
         "RT":100.0,
         "Meta":null,
         "poster_path":"\/dDF11WTsDVY1i25VNPbwBjPk6t1.jpg",
-        "backdrop_path":"\/71TAboo7x1IQn45CmWWfRn6aDAP.jpg"
+        "backdrop_path":"\/71TAboo7x1IQn45CmWWfRn6aDAP.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Fried Barry",
-        "Year":2020,
         "imdbID":"tt9102084",
         "Year":2020,
         "Rated":null,
@@ -1517,7 +1595,9 @@
         "RT":80.0,
         "Meta":null,
         "poster_path":"\/iQ2TCB6nszgFHnF1QeHJujvBIzn.jpg",
-        "backdrop_path":"\/hYfm6bESA5cahGIOOD4gH0L4pQf.jpg"
+        "backdrop_path":"\/hYfm6bESA5cahGIOOD4gH0L4pQf.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Future War",
@@ -1541,7 +1621,6 @@
     },
     {
         "Title":"Futureworld",
-        "Year":1976,
         "imdbID":"tt0074559",
         "Year":1976,
         "Rated":"PG",
@@ -1556,11 +1635,12 @@
         "RT":36.0,
         "Meta":46.0,
         "poster_path":"\/o9ShxrsXaeg1KulDp37RWOUKn5U.jpg",
-        "backdrop_path":"\/7PSLLtj7i94WSQ3Svjv7qHevj2n.jpg"
+        "backdrop_path":"\/7PSLLtj7i94WSQ3Svjv7qHevj2n.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"G.O.R.A.",
-        "Year":2004,
         "imdbID":"tt0384116",
         "Year":2004,
         "Rated":null,
@@ -1575,11 +1655,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/e73adWbjLnPW2rzmG7lLYv1qxvp.jpg",
-        "backdrop_path":"\/g90Hlbaj8OofowG9hDg9ScD5fqG.jpg"
+        "backdrop_path":"\/g90Hlbaj8OofowG9hDg9ScD5fqG.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Gattaca",
-        "Year":1997,
         "imdbID":"tt0119177",
         "Year":1997,
         "Rated":"PG-13",
@@ -1594,31 +1675,12 @@
         "RT":82.0,
         "Meta":64.0,
         "poster_path":"\/mi8ow4MIoPvgBnWB1OKe0ph0woa.jpg",
-        "backdrop_path":"\/hPsCR1ny6GnctJkWqeJwihTDD7T.jpg"
-    },
-    {
-        "Title":"Ghost in the Shell",
-        "Year":2017,
-        "imdbID":"tt1219827",
-        "Rated":"PG-13",
-        "Director":"Rupert Sanders",
-        "Actors":"Scarlett Johansson, Pilou Asb\u00e6k, Takeshi Kitano",
-        "Language":"English, Japanese",
-        "Plot":"In the near future, Major Mira Killian is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.",
-        "IMDb_link":"https:\/\/www.imdb.com\/title\/tt1219827",
-        "Runtime":107,
-        "BoxOffice":40563557.0,
-        "IMDb":6.3,
-        "RT":42.0,
-        "Meta":52.0,
-        "poster_path":"\/myRzRzCxdfUWjkJWgpHHZ1oGkJd.jpg",
-        "backdrop_path":"\/7lINTRMapEkgQbwYfAYX3178xRf.jpg",
+        "backdrop_path":"\/hPsCR1ny6GnctJkWqeJwihTDD7T.jpg",
         "Watched":true,
         "Season":6.0
     },
     {
         "Title":"Ghost in the Shell",
-        "Year":1995,
         "imdbID":"tt0113568",
         "Year":1995,
         "Rated":"TV-MA",
@@ -1633,7 +1695,9 @@
         "RT":95.0,
         "Meta":76.0,
         "poster_path":"\/9gC88zYUBARRSThcG93MvW14sqx.jpg",
-        "backdrop_path":"\/gTRXgigmgKpeJjW07iq686HZyBD.jpg"
+        "backdrop_path":"\/gTRXgigmgKpeJjW07iq686HZyBD.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Ghost in the Shell",
@@ -1657,7 +1721,6 @@
     },
     {
         "Title":"Gremlins",
-        "Year":1984,
         "imdbID":"tt0087363",
         "Year":1984,
         "Rated":"PG",
@@ -1672,11 +1735,12 @@
         "RT":86.0,
         "Meta":70.0,
         "poster_path":"\/gDSfs0hqAQVJ9jIHbX3AJ3StTVG.jpg",
-        "backdrop_path":"\/r5xlOGwg4tEbLb5RiYzL51YzSHl.jpg"
+        "backdrop_path":"\/r5xlOGwg4tEbLb5RiYzL51YzSHl.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Hackers",
-        "Year":1995,
         "imdbID":"tt0113243",
         "Year":1995,
         "Rated":"PG-13",
@@ -1691,11 +1755,12 @@
         "RT":33.0,
         "Meta":46.0,
         "poster_path":"\/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg",
-        "backdrop_path":"\/bqFO92d1idNAI4OOncUrduz2YoA.jpg"
+        "backdrop_path":"\/bqFO92d1idNAI4OOncUrduz2YoA.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Hard to Be a God",
-        "Year":2013,
         "imdbID":"tt2328813",
         "Year":2013,
         "Rated":"Not Rated",
@@ -1710,11 +1775,12 @@
         "RT":93.0,
         "Meta":93.0,
         "poster_path":"\/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg",
-        "backdrop_path":"\/iEOKiQs1Exyuu5eNK3MT8pyen0e.jpg"
+        "backdrop_path":"\/iEOKiQs1Exyuu5eNK3MT8pyen0e.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"High Life",
-        "Year":2018,
         "imdbID":"tt4827558",
         "Year":2018,
         "Rated":"R",
@@ -1729,11 +1795,12 @@
         "RT":82.0,
         "Meta":78.0,
         "poster_path":"\/ftRRIYNzpTDYeTznrAxgT5v1vJY.jpg",
-        "backdrop_path":"\/zMlPAatS0X5kBVOSzdItp90pq8k.jpg"
+        "backdrop_path":"\/zMlPAatS0X5kBVOSzdItp90pq8k.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"High-Rise",
-        "Year":2015,
         "imdbID":"tt0462335",
         "Year":2015,
         "Rated":"R",
@@ -1748,11 +1815,12 @@
         "RT":null,
         "Meta":65.0,
         "poster_path":"\/h8d92L9T5Ty8olbkGGeqXIpzaj0.jpg",
-        "backdrop_path":"\/wESuRMxELPAwo56qFRcoyI4p20F.jpg"
+        "backdrop_path":"\/wESuRMxELPAwo56qFRcoyI4p20F.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"I Origins",
-        "Year":2014,
         "imdbID":"tt2884206",
         "Year":2014,
         "Rated":"R",
@@ -1768,12 +1836,11 @@
         "Meta":57.0,
         "poster_path":"\/2P31jhd1dWUAPD8dmnSrwkQ8CNN.jpg",
         "backdrop_path":"\/x8qNQSvvqd2PE15Pm6tmnXH0584.jpg",
-        "Watched":false,
+        "Watched":true,
         "Season":9.0
     },
     {
         "Title":"Inception",
-        "Year":2010,
         "imdbID":"tt1375666",
         "Year":2010,
         "Rated":"PG-13",
@@ -1788,11 +1855,12 @@
         "RT":87.0,
         "Meta":74.0,
         "poster_path":"\/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg",
-        "backdrop_path":"\/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg"
+        "backdrop_path":"\/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Innerspace",
-        "Year":1987,
         "imdbID":"tt0093260",
         "Year":1987,
         "Rated":"PG",
@@ -1807,11 +1875,12 @@
         "RT":82.0,
         "Meta":66.0,
         "poster_path":"\/A4azclZQjqeQxXvcok3rdUmuq8a.jpg",
-        "backdrop_path":"\/cDEseDgCAYCEUT6q1n0U742X3tZ.jpg"
+        "backdrop_path":"\/cDEseDgCAYCEUT6q1n0U742X3tZ.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Interstellar",
-        "Year":2014,
         "imdbID":"tt0816692",
         "Year":2014,
         "Rated":"PG-13",
@@ -1826,11 +1895,12 @@
         "RT":73.0,
         "Meta":74.0,
         "poster_path":"\/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-        "backdrop_path":"\/xJHokMbljvjADYdit5fK5VQsXEG.jpg"
+        "backdrop_path":"\/xJHokMbljvjADYdit5fK5VQsXEG.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Invasion of the Body Snatchers",
-        "Year":1978,
         "imdbID":"tt0077745",
         "Year":1978,
         "Rated":"PG",
@@ -1845,11 +1915,12 @@
         "RT":93.0,
         "Meta":75.0,
         "poster_path":"\/5oNHdVo0vTsaC47Jv2Wb4eeo4V4.jpg",
-        "backdrop_path":"\/j0AZ67brlWze2Owv47z1E27LQQy.jpg"
+        "backdrop_path":"\/j0AZ67brlWze2Owv47z1E27LQQy.jpg",
+        "Watched":false,
+        "Season":2.0
     },
     {
         "Title":"Iron Sky",
-        "Year":2012,
         "imdbID":"tt1034314",
         "Year":2012,
         "Rated":"R",
@@ -1864,11 +1935,12 @@
         "RT":41.0,
         "Meta":null,
         "poster_path":"\/hVDJM29BSbET4FzI24xLuWSmDUR.jpg",
-        "backdrop_path":"\/bMVhgI3jFvsoDeCseRsaxYR1nUA.jpg"
+        "backdrop_path":"\/bMVhgI3jFvsoDeCseRsaxYR1nUA.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Ivan Vasilyevich Changes His Profession",
-        "Year":1973,
         "imdbID":"tt0070233",
         "Year":1973,
         "Rated":"TV-G",
@@ -1883,11 +1955,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/6f7vhvnma8sbO6821ShE5ViA3r8.jpg",
-        "backdrop_path":"\/z8125Gm4hadwQZOcFiZ7uor77E4.jpg"
+        "backdrop_path":"\/z8125Gm4hadwQZOcFiZ7uor77E4.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Johnny Mnemonic",
-        "Year":1995,
         "imdbID":"tt0113481",
         "Year":1995,
         "Rated":"R",
@@ -1902,11 +1975,12 @@
         "RT":20.0,
         "Meta":36.0,
         "poster_path":"\/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg",
-        "backdrop_path":"\/5SUJYI5kdfktjPqSQSj2dpqmaL8.jpg"
+        "backdrop_path":"\/5SUJYI5kdfktjPqSQSj2dpqmaL8.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Journey to the Center of the Earth",
-        "Year":1959,
         "imdbID":"tt0052948",
         "Year":1959,
         "Rated":"Approved",
@@ -1921,11 +1995,12 @@
         "RT":84.0,
         "Meta":null,
         "poster_path":"\/nWn9MRFkC1M13hVf17mT0BfYKbg.jpg",
-        "backdrop_path":"\/8P4s6D8GHepUhGuxzeU0wKi1cKZ.jpg"
+        "backdrop_path":"\/8P4s6D8GHepUhGuxzeU0wKi1cKZ.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Jubilee",
-        "Year":1978,
         "imdbID":"tt0076240",
         "Year":1978,
         "Rated":"Not Rated",
@@ -1940,11 +2015,12 @@
         "RT":100.0,
         "Meta":79.0,
         "poster_path":"\/8HtAaaDZDCCx2F73n41xMDWDhwU.jpg",
-        "backdrop_path":"\/iBFVJDDhuhSe1JeoMrNzSKeuqTJ.jpg"
+        "backdrop_path":"\/iBFVJDDhuhSe1JeoMrNzSKeuqTJ.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Judge Dredd",
-        "Year":1995,
         "imdbID":"tt0113492",
         "Year":1995,
         "Rated":"R",
@@ -1959,11 +2035,12 @@
         "RT":22.0,
         "Meta":null,
         "poster_path":"\/cfSnKn8NDU3m8UxihjVcYprA0Aq.jpg",
-        "backdrop_path":"\/baJHUXBcoaHnMf2sjwegbuhIjEV.jpg"
+        "backdrop_path":"\/baJHUXBcoaHnMf2sjwegbuhIjEV.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Jupiter Ascending",
-        "Year":2015,
         "imdbID":"tt1617661",
         "Year":2015,
         "Rated":"PG-13",
@@ -1978,11 +2055,12 @@
         "RT":28.0,
         "Meta":40.0,
         "poster_path":"\/2NCcAZ3M3F0FxENYmammBknwpVn.jpg",
-        "backdrop_path":"\/dSPuaE2VEvTWP6LoADTL4rKNVkA.jpg"
+        "backdrop_path":"\/dSPuaE2VEvTWP6LoADTL4rKNVkA.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Jurassic World",
-        "Year":2015,
         "imdbID":"tt0369610",
         "Year":2015,
         "Rated":"PG-13",
@@ -1997,11 +2075,12 @@
         "RT":71.0,
         "Meta":59.0,
         "poster_path":"\/A0LZHXUzo5C60Oahvt7VxvwuzHw.jpg",
-        "backdrop_path":"\/dF6FjTZzRTENfB4R17HDN20jLT2.jpg"
+        "backdrop_path":"\/dF6FjTZzRTENfB4R17HDN20jLT2.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Kung Fury",
-        "Year":2015,
         "imdbID":"tt3472226",
         "Year":2015,
         "Rated":"TV-14",
@@ -2016,11 +2095,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/6Qam8Leycapwik947j6U3vcUbAv.jpg",
-        "backdrop_path":"\/gdxPHC5nw9sBrrUyiOnzkWqnLE4.jpg"
+        "backdrop_path":"\/gdxPHC5nw9sBrrUyiOnzkWqnLE4.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"La Jet\u00e9e",
-        "Year":1962,
         "imdbID":"tt0056119",
         "Year":1962,
         "Rated":"Not Rated",
@@ -2035,11 +2115,12 @@
         "RT":93.0,
         "Meta":null,
         "poster_path":"\/sqbvjbJRzTduUj4lVm2FmPkqJkS.jpg",
-        "backdrop_path":"\/qNbl3TFwxIm0fyFqQ1iRxzs4hb7.jpg"
+        "backdrop_path":"\/qNbl3TFwxIm0fyFqQ1iRxzs4hb7.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Lapsis",
-        "Year":2020,
         "imdbID":"tt11540272",
         "Year":2020,
         "Rated":null,
@@ -2054,11 +2135,12 @@
         "RT":95.0,
         "Meta":74.0,
         "poster_path":"\/sXw5f1O5t930kWa9tJAr90BCeOM.jpg",
-        "backdrop_path":"\/ldF6EQUJ58Tvrpq7lsRRtJnuhxu.jpg"
+        "backdrop_path":"\/ldF6EQUJ58Tvrpq7lsRRtJnuhxu.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Last and First Men",
-        "Year":2020,
         "imdbID":"tt8015444",
         "Year":2020,
         "Rated":null,
@@ -2073,11 +2155,12 @@
         "RT":100.0,
         "Meta":80.0,
         "poster_path":"\/7B9t8lTFCJQ6GVvSbhrbrA7nsVu.jpg",
-        "backdrop_path":"\/6wjjZZ7WqNGyrpdbPuw8U4eWUQT.jpg"
+        "backdrop_path":"\/6wjjZZ7WqNGyrpdbPuw8U4eWUQT.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Lifeforce",
-        "Year":1985,
         "imdbID":"tt0089489",
         "Year":1985,
         "Rated":"R",
@@ -2092,11 +2175,12 @@
         "RT":56.0,
         "Meta":50.0,
         "poster_path":"\/953hMDf9G2ZRIEs97M6iFIYWtWF.jpg",
-        "backdrop_path":"\/7i6SMeioykainE8TTbYXkANbMKv.jpg"
+        "backdrop_path":"\/7i6SMeioykainE8TTbYXkANbMKv.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Little Joe",
-        "Year":2019,
         "imdbID":"tt9204204",
         "Year":2019,
         "Rated":"Not Rated",
@@ -2111,11 +2195,12 @@
         "RT":67.0,
         "Meta":60.0,
         "poster_path":"\/q4VMyavCoXxN9U8AONE2YryQDVz.jpg",
-        "backdrop_path":"\/cdSNdPIoj6ZJjwoBxAtvvXzY9be.jpg"
+        "backdrop_path":"\/cdSNdPIoj6ZJjwoBxAtvvXzY9be.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Logan's Run",
-        "Year":1976,
         "imdbID":"tt0074812",
         "Year":1976,
         "Rated":"PG",
@@ -2130,11 +2215,12 @@
         "RT":58.0,
         "Meta":53.0,
         "poster_path":"\/v3ILN8ROPcrNRJ8S7GH24JyihH8.jpg",
-        "backdrop_path":"\/cCLR0sTF8OixOiRLEesoQqOfc29.jpg"
+        "backdrop_path":"\/cCLR0sTF8OixOiRLEesoQqOfc29.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Lola",
-        "Year":2022,
         "imdbID":"tt11366674",
         "Year":2022,
         "Rated":null,
@@ -2149,11 +2235,12 @@
         "RT":98.0,
         "Meta":null,
         "poster_path":"\/6IQEDnHKMvzforhtQW9mwW5kSHB.jpg",
-        "backdrop_path":"\/80SGE0Pt6R5Sb3i859nSLmc6WEO.jpg"
+        "backdrop_path":"\/80SGE0Pt6R5Sb3i859nSLmc6WEO.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Love",
-        "Year":2011,
         "imdbID":"tt1541874",
         "Year":2011,
         "Rated":"Not Rated",
@@ -2168,11 +2255,12 @@
         "RT":60.0,
         "Meta":null,
         "poster_path":"\/AlhdDsLxSAb1a54rYLPb7CidAIX.jpg",
-        "backdrop_path":"\/17yZ1T3lNc8ud80723vFyXwI1Iy.jpg"
+        "backdrop_path":"\/17yZ1T3lNc8ud80723vFyXwI1Iy.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Mars Attacks!",
-        "Year":1996,
         "imdbID":"tt0116996",
         "Year":1996,
         "Rated":"PG-13",
@@ -2187,11 +2275,12 @@
         "RT":56.0,
         "Meta":52.0,
         "poster_path":"\/hll4O5vSAfnZDb6JbnP06GPtz7b.jpg",
-        "backdrop_path":"\/rxwbgJKuglsUfcMUJG7oer1fLAy.jpg"
+        "backdrop_path":"\/rxwbgJKuglsUfcMUJG7oer1fLAy.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Men in Black",
-        "Year":1997,
         "imdbID":"tt0119654",
         "Year":1997,
         "Rated":"PG-13",
@@ -2206,11 +2295,12 @@
         "RT":91.0,
         "Meta":71.0,
         "poster_path":"\/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
-        "backdrop_path":"\/1GJvBE7UWU1WOVi0XREl4JQc7f8.jpg"
+        "backdrop_path":"\/1GJvBE7UWU1WOVi0XREl4JQc7f8.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Metropolis",
-        "Year":1927,
         "imdbID":"tt0017136",
         "Year":1927,
         "Rated":"Not Rated",
@@ -2225,11 +2315,12 @@
         "RT":97.0,
         "Meta":98.0,
         "poster_path":"\/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
-        "backdrop_path":"\/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg"
+        "backdrop_path":"\/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Midnight Special",
-        "Year":2016,
         "imdbID":"tt2649554",
         "Year":2016,
         "Rated":"PG-13",
@@ -2244,11 +2335,12 @@
         "RT":83.0,
         "Meta":76.0,
         "poster_path":"\/hgDRq1l4ATxwufWjILKsYtglbI6.jpg",
-        "backdrop_path":"\/23COMNwqP8q4rWPtLGTBuCD3LnT.jpg"
+        "backdrop_path":"\/23COMNwqP8q4rWPtLGTBuCD3LnT.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Millennium",
-        "Year":1989,
         "imdbID":"tt0097883",
         "Year":1989,
         "Rated":"PG-13",
@@ -2263,11 +2355,12 @@
         "RT":11.0,
         "Meta":26.0,
         "poster_path":"\/mFGCK7RnFnRXR6CweAhQw030Zv7.jpg",
-        "backdrop_path":"\/gQBfneFjgGHyhJNxuR9mHhXkJpP.jpg"
+        "backdrop_path":"\/gQBfneFjgGHyhJNxuR9mHhXkJpP.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Minor Premise",
-        "Year":2020,
         "imdbID":"tt12680508",
         "Year":2020,
         "Rated":null,
@@ -2282,11 +2375,12 @@
         "RT":93.0,
         "Meta":66.0,
         "poster_path":"\/c4H5aH4PxVomNxa5UIHa32bzrCO.jpg",
-        "backdrop_path":"\/2hMyqceKKpr0Ff1QSNvejWZvNal.jpg"
+        "backdrop_path":"\/2hMyqceKKpr0Ff1QSNvejWZvNal.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Minority Report",
-        "Year":2002,
         "imdbID":"tt0181689",
         "Year":2002,
         "Rated":"PG-13",
@@ -2301,11 +2395,12 @@
         "RT":89.0,
         "Meta":80.0,
         "poster_path":"\/ccqpHq5tk5W4ymbSbuoy4uYOxFI.jpg",
-        "backdrop_path":"\/r1gLQFbpkWWLrOEPmpqzzMIUxxj.jpg"
+        "backdrop_path":"\/r1gLQFbpkWWLrOEPmpqzzMIUxxj.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Moebius",
-        "Year":1996,
         "imdbID":"tt0117069",
         "Year":1996,
         "Rated":null,
@@ -2320,11 +2415,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/mzgCnFivP1W2gyjLjHEmhNb0fjh.jpg",
-        "backdrop_path":"\/fazUBTQ17rfCxirPjXq0gFSi2cl.jpg"
+        "backdrop_path":"\/fazUBTQ17rfCxirPjXq0gFSi2cl.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Monsters",
-        "Year":2010,
         "imdbID":"tt1470827",
         "Year":2010,
         "Rated":"R",
@@ -2339,11 +2435,12 @@
         "RT":73.0,
         "Meta":63.0,
         "poster_path":"\/cARETxTELl8kQCIcpbRhEcMjkPD.jpg",
-        "backdrop_path":"\/imiBIsvNU3TbMB3sbqKanKODS33.jpg"
+        "backdrop_path":"\/imiBIsvNU3TbMB3sbqKanKODS33.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Moon",
-        "Year":2009,
         "imdbID":"tt1182345",
         "Year":2009,
         "Rated":"R",
@@ -2358,11 +2455,12 @@
         "RT":90.0,
         "Meta":67.0,
         "poster_path":"\/cJ6JnuLwCNbiAAOBuHDjRTP7bQJ.jpg",
-        "backdrop_path":"\/7by1GIdmBJFHKDz1XJWXCmOztmK.jpg"
+        "backdrop_path":"\/7by1GIdmBJFHKDz1XJWXCmOztmK.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Moonfall",
-        "Year":2022,
         "imdbID":"tt5834426",
         "Year":2022,
         "Rated":"PG-13",
@@ -2377,11 +2475,12 @@
         "RT":35.0,
         "Meta":41.0,
         "poster_path":"\/odVv1sqVs0KxBXiA8bhIBlPgalx.jpg",
-        "backdrop_path":"\/8QpzqK3nPGxpqpKqhe6QasTGBWQ.jpg"
+        "backdrop_path":"\/8QpzqK3nPGxpqpKqhe6QasTGBWQ.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Mr. Nobody",
-        "Year":2009,
         "imdbID":"tt0485947",
         "Year":2009,
         "Rated":"R",
@@ -2396,11 +2495,12 @@
         "RT":67.0,
         "Meta":63.0,
         "poster_path":"\/qNkIONc4Rgmzo23ph7qWp9QfVnW.jpg",
-        "backdrop_path":"\/y9zcjxEilWr44c4vJbEaLTgE0Uw.jpg"
+        "backdrop_path":"\/y9zcjxEilWr44c4vJbEaLTgE0Uw.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Mystery Science Theater 3000: The Movie",
-        "Year":1996,
         "imdbID":"tt0117128",
         "Year":1996,
         "Rated":"PG-13",
@@ -2415,11 +2515,12 @@
         "RT":80.0,
         "Meta":65.0,
         "poster_path":"\/tlakU3uwNiUgd7aOlb2RoAsGTnY.jpg",
-        "backdrop_path":"\/hXD4z5xykt9G7SLXstUB96RFflh.jpg"
+        "backdrop_path":"\/hXD4z5xykt9G7SLXstUB96RFflh.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Never Gonna Snow Again",
-        "Year":2020,
         "imdbID":"tt9526784",
         "Year":2020,
         "Rated":"Unrated",
@@ -2434,11 +2535,12 @@
         "RT":93.0,
         "Meta":73.0,
         "poster_path":"\/vzp2uKcS7JYwOOFKh022MOamCpK.jpg",
-        "backdrop_path":"\/kXgtY2BKrRJ1pysWDUw2tERd6Wf.jpg"
+        "backdrop_path":"\/kXgtY2BKrRJ1pysWDUw2tERd6Wf.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Night of the Comet",
-        "Year":1984,
         "imdbID":"tt0087799",
         "Year":1984,
         "Rated":"PG-13",
@@ -2453,11 +2555,12 @@
         "RT":79.0,
         "Meta":59.0,
         "poster_path":"\/iescRW5SbMOgSLQAFFVhn7zTt9K.jpg",
-        "backdrop_path":"\/4wLJxD1VZLyWNGcHKFo6YnGPMb5.jpg"
+        "backdrop_path":"\/4wLJxD1VZLyWNGcHKFo6YnGPMb5.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"No Blade of Grass",
-        "Year":1970,
         "imdbID":"tt0066154",
         "Year":1970,
         "Rated":"R",
@@ -2472,11 +2575,12 @@
         "RT":29.0,
         "Meta":null,
         "poster_path":"\/pJw5cPZHVo2phCIIIxgK0KOvauk.jpg",
-        "backdrop_path":"\/bgRspmkYtoj9srqvICNZcoXWUr8.jpg"
+        "backdrop_path":"\/bgRspmkYtoj9srqvICNZcoXWUr8.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"No Escape",
-        "Year":1994,
         "imdbID":"tt0110678",
         "Year":1994,
         "Rated":"R",
@@ -2491,11 +2595,12 @@
         "RT":59.0,
         "Meta":null,
         "poster_path":"\/jRwMdEb5bxwVARU2VmOADTflLfZ.jpg",
-        "backdrop_path":"\/1qVBaLg4pBFbBHlZ2b6PDsxsF12.jpg"
+        "backdrop_path":"\/1qVBaLg4pBFbBHlZ2b6PDsxsF12.jpg",
+        "Watched":false,
+        "Season":3.0
     },
     {
         "Title":"O-Bi, O-Ba: The End of Civilization",
-        "Year":1985,
         "imdbID":"tt0089714",
         "Year":1985,
         "Rated":null,
@@ -2510,11 +2615,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/yqEr7wi67GMkrZLFqJntCsIvGud.jpg",
-        "backdrop_path":"\/wuZ76BS0zwUKFaUciPeEPehV3as.jpg"
+        "backdrop_path":"\/wuZ76BS0zwUKFaUciPeEPehV3as.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Oblivion",
-        "Year":2013,
         "imdbID":"tt1483013",
         "Year":2013,
         "Rated":"PG-13",
@@ -2529,11 +2635,12 @@
         "RT":54.0,
         "Meta":54.0,
         "poster_path":"\/eO3r38fwnhb58M1YgcjQBd3VNcp.jpg",
-        "backdrop_path":"\/A6wFgFFEgymebp518fcsa71jnSu.jpg"
+        "backdrop_path":"\/A6wFgFFEgymebp518fcsa71jnSu.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Oxygen",
-        "Year":2021,
         "imdbID":"tt6341832",
         "Year":2021,
         "Rated":"TV-14",
@@ -2548,11 +2655,12 @@
         "RT":89.0,
         "Meta":67.0,
         "poster_path":"\/u74DFoZGTcZ8cuHO8nvQkCqXEVP.jpg",
-        "backdrop_path":"\/jedggylU3FyIN7XRAl9WY8mrT6H.jpg"
+        "backdrop_path":"\/jedggylU3FyIN7XRAl9WY8mrT6H.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Passengers",
-        "Year":2016,
         "imdbID":"tt1355644",
         "Year":2016,
         "Rated":"PG-13",
@@ -2567,11 +2675,12 @@
         "RT":30.0,
         "Meta":41.0,
         "poster_path":"\/oZpdONg32luHu0g8HcysuPgSlIK.jpg",
-        "backdrop_path":"\/gHz4ZQytRs8YGrqFMwB3Vrr8pig.jpg"
+        "backdrop_path":"\/gHz4ZQytRs8YGrqFMwB3Vrr8pig.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Phase IV",
-        "Year":1974,
         "imdbID":"tt0070531",
         "Year":1974,
         "Rated":"PG",
@@ -2586,11 +2695,12 @@
         "RT":53.0,
         "Meta":49.0,
         "poster_path":"\/x6fQtAmCD4JlAcUnTfYoinPp1zz.jpg",
-        "backdrop_path":"\/qMxhl5NeeXj4Rs0stsGgC7GsB9C.jpg"
+        "backdrop_path":"\/qMxhl5NeeXj4Rs0stsGgC7GsB9C.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Predator",
-        "Year":1987,
         "imdbID":"tt0093773",
         "Year":1987,
         "Rated":"R",
@@ -2605,11 +2715,12 @@
         "RT":80.0,
         "Meta":47.0,
         "poster_path":"\/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg",
-        "backdrop_path":"\/YL3GPOiDcNraIJOVDCZsoOBoDy.jpg"
+        "backdrop_path":"\/YL3GPOiDcNraIJOVDCZsoOBoDy.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Predestination",
-        "Year":2014,
         "imdbID":"tt2397535",
         "Year":2014,
         "Rated":"R",
@@ -2624,11 +2735,12 @@
         "RT":85.0,
         "Meta":69.0,
         "poster_path":"\/38Xr1JnV1ZcLQ55zmdSp6n475cZ.jpg",
-        "backdrop_path":"\/fbQX0aMu6RvMWnIUE3WFJ4ddP0K.jpg"
+        "backdrop_path":"\/fbQX0aMu6RvMWnIUE3WFJ4ddP0K.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Prometheus",
-        "Year":2012,
         "imdbID":"tt1446714",
         "Year":2012,
         "Rated":"R",
@@ -2643,11 +2755,12 @@
         "RT":73.0,
         "Meta":64.0,
         "poster_path":"\/m7nZCtHJyDLncBUarfM5h5mrppx.jpg",
-        "backdrop_path":"\/vMDdWQuvOjg9yUjMJrNunXq9cmw.jpg"
+        "backdrop_path":"\/vMDdWQuvOjg9yUjMJrNunXq9cmw.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Prospect",
-        "Year":2018,
         "imdbID":"tt7946422",
         "Year":2018,
         "Rated":"R",
@@ -2662,11 +2775,12 @@
         "RT":89.0,
         "Meta":68.0,
         "poster_path":"\/1HpAwszXLsD8GeypDzK0me7fPFA.jpg",
-        "backdrop_path":"\/xZZogkWBWH9WmqT8dv0Lej2Xbwh.jpg"
+        "backdrop_path":"\/xZZogkWBWH9WmqT8dv0Lej2Xbwh.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Punishment Park",
-        "Year":1971,
         "imdbID":"tt0067633",
         "Year":1971,
         "Rated":"R",
@@ -2681,11 +2795,12 @@
         "RT":92.0,
         "Meta":null,
         "poster_path":"\/fPGnMnp80ycqUHdgP1T3nzCyYKe.jpg",
-        "backdrop_path":"\/csvJf1bAdBqV2TwEJQGdReDeqvy.jpg"
+        "backdrop_path":"\/csvJf1bAdBqV2TwEJQGdReDeqvy.jpg",
+        "Watched":false,
+        "Season":3.0
     },
     {
         "Title":"Quatermass and the Pit",
-        "Year":1967,
         "imdbID":"tt0062168",
         "Year":1967,
         "Rated":"Approved",
@@ -2700,11 +2815,12 @@
         "RT":88.0,
         "Meta":null,
         "poster_path":"\/qjb5lWMJHpS7dzaf6LUVGdPe5KH.jpg",
-        "backdrop_path":"\/4thlb8BV5BFWtD1whfH5a21bmJ8.jpg"
+        "backdrop_path":"\/4thlb8BV5BFWtD1whfH5a21bmJ8.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Quintet",
-        "Year":1979,
         "imdbID":"tt0079770",
         "Year":1979,
         "Rated":"R",
@@ -2719,11 +2835,12 @@
         "RT":27.0,
         "Meta":null,
         "poster_path":"\/3yAroYDIwZ2PAU4etZXgMXLiTJC.jpg",
-        "backdrop_path":"\/4gIrc2OGZJgloQadWdS427rPJ6Q.jpg"
+        "backdrop_path":"\/4gIrc2OGZJgloQadWdS427rPJ6Q.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Real Steel",
-        "Year":2011,
         "imdbID":"tt0433035",
         "Year":2011,
         "Rated":"PG-13",
@@ -2738,11 +2855,12 @@
         "RT":60.0,
         "Meta":56.0,
         "poster_path":"\/4GIeI5K5YdDUkR3mNQBoScpSFEf.jpg",
-        "backdrop_path":"\/4f0Kj0QwPui5ydu1UavsnvP1m1o.jpg"
+        "backdrop_path":"\/4f0Kj0QwPui5ydu1UavsnvP1m1o.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Repo Man",
-        "Year":1984,
         "imdbID":"tt0087995",
         "Year":1984,
         "Rated":"R",
@@ -2757,11 +2875,12 @@
         "RT":98.0,
         "Meta":82.0,
         "poster_path":"\/bjuu5UceuVUNUjnOC2fBzL3hZKC.jpg",
-        "backdrop_path":"\/xoPFmvBGycoksXIjUlbevFUYhXD.jpg"
+        "backdrop_path":"\/xoPFmvBGycoksXIjUlbevFUYhXD.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"River",
-        "Year":2023,
         "imdbID":"tt27695005",
         "Year":2023,
         "Rated":"TV-PG",
@@ -2776,11 +2895,12 @@
         "RT":100.0,
         "Meta":null,
         "poster_path":"\/9bFZlrGdc5J3qzpLExN3PKak0t2.jpg",
-        "backdrop_path":"\/gDqkQPDVox6FArBIbN0Mt7HdzuN.jpg"
+        "backdrop_path":"\/gDqkQPDVox6FArBIbN0Mt7HdzuN.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"RoboCop",
-        "Year":1987,
         "imdbID":"tt0093870",
         "Year":1987,
         "Rated":"R",
@@ -2795,7 +2915,9 @@
         "RT":92.0,
         "Meta":70.0,
         "poster_path":"\/hHtOgGb3NihlyRATHlKPaFApbrd.jpg",
-        "backdrop_path":"\/7WUS3j7UmYEulWkFSouRl5VxYis.jpg"
+        "backdrop_path":"\/7WUS3j7UmYEulWkFSouRl5VxYis.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"RoboCop 2",
@@ -2839,7 +2961,6 @@
     },
     {
         "Title":"Robot & Frank",
-        "Year":2012,
         "imdbID":"tt1990314",
         "Year":2012,
         "Rated":"PG-13",
@@ -2854,11 +2975,12 @@
         "RT":86.0,
         "Meta":67.0,
         "poster_path":"\/602vUwe1GPmaRvcrT3OQWqH1Nm1.jpg",
-        "backdrop_path":"\/mV2UZZHYiWPKH0AwtMSil1T7DUH.jpg"
+        "backdrop_path":"\/mV2UZZHYiWPKH0AwtMSil1T7DUH.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Robot Jox",
-        "Year":1989,
         "imdbID":"tt0102800",
         "Year":1989,
         "Rated":"PG",
@@ -2873,11 +2995,12 @@
         "RT":40.0,
         "Meta":null,
         "poster_path":"\/uzoxflhwjB8WS1QPTakDz8Edxnf.jpg",
-        "backdrop_path":"\/sJKimzusAR7mhpgxpYLoUFfGIlF.jpg"
+        "backdrop_path":"\/sJKimzusAR7mhpgxpYLoUFfGIlF.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Rollerball",
-        "Year":1975,
         "imdbID":"tt0073631",
         "Year":1975,
         "Rated":"R",
@@ -2892,11 +3015,12 @@
         "RT":67.0,
         "Meta":56.0,
         "poster_path":"\/cmcipEfexlhVLYQXqeSWp1YcsPY.jpg",
-        "backdrop_path":"\/1JwLeunKPVPgcP2HpGWiAPvNlMN.jpg"
+        "backdrop_path":"\/1JwLeunKPVPgcP2HpGWiAPvNlMN.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Rollerball",
-        "Year":2002,
         "imdbID":"tt0246894",
         "Year":2002,
         "Rated":"PG-13",
@@ -2911,11 +3035,12 @@
         "RT":67.0,
         "Meta":14.0,
         "poster_path":"\/5Wquo3EjfDpK7S1BHcybuC3TZDO.jpg",
-        "backdrop_path":"\/xnBZxfqR6EqbrIyb3yfU1w90n6q.jpg"
+        "backdrop_path":"\/xnBZxfqR6EqbrIyb3yfU1w90n6q.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Safety Not Guaranteed",
-        "Year":2012,
         "imdbID":"tt1862079",
         "Year":2012,
         "Rated":"R",
@@ -2930,11 +3055,12 @@
         "RT":91.0,
         "Meta":72.0,
         "poster_path":"\/uNR9lccRN60mOpCi1trIxsQi68G.jpg",
-        "backdrop_path":"\/hOVZHM2ZEaWdytcptRhfzk0fJBv.jpg"
+        "backdrop_path":"\/hOVZHM2ZEaWdytcptRhfzk0fJBv.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Saturn 3",
-        "Year":1980,
         "imdbID":"tt0079285",
         "Year":1980,
         "Rated":"R",
@@ -2949,11 +3075,12 @@
         "RT":33.0,
         "Meta":9.0,
         "poster_path":"\/zAoLR1azwd8QbglnjWpOwJ4PI6C.jpg",
-        "backdrop_path":"\/6SrwQQhdCdO2z7vAdYqPbUVF0Pk.jpg"
+        "backdrop_path":"\/6SrwQQhdCdO2z7vAdYqPbUVF0Pk.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Serenity",
-        "Year":2005,
         "imdbID":"tt0379786",
         "Year":2005,
         "Rated":"PG-13",
@@ -2968,11 +3095,12 @@
         "RT":82.0,
         "Meta":74.0,
         "poster_path":"\/4sqUOaPFoP2W81mq1UYqZqf5WzA.jpg",
-        "backdrop_path":"\/csGprKcRxt7SDpsrKiwxpgLdEsx.jpg"
+        "backdrop_path":"\/csGprKcRxt7SDpsrKiwxpgLdEsx.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Series 7: The Contenders",
-        "Year":2001,
         "imdbID":"tt0251031",
         "Year":2001,
         "Rated":"R",
@@ -2987,11 +3115,12 @@
         "RT":71.0,
         "Meta":55.0,
         "poster_path":"\/85tuJxQdjQcec3DTMc9dxwlYYfi.jpg",
-        "backdrop_path":"\/vSAtqIdjJmoPjTkOZoV8X2f70nw.jpg"
+        "backdrop_path":"\/vSAtqIdjJmoPjTkOZoV8X2f70nw.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Sexmission",
-        "Year":1984,
         "imdbID":"tt0088083",
         "Year":1984,
         "Rated":null,
@@ -3006,11 +3135,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/dmHoCNyADhR87E0PSHkLIYMXrg6.jpg",
-        "backdrop_path":"\/36nTaD0feaC8fXry2eG9qOCJJfc.jpg"
+        "backdrop_path":"\/36nTaD0feaC8fXry2eG9qOCJJfc.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Short Circuit",
-        "Year":1986,
         "imdbID":"tt0091949",
         "Year":1986,
         "Rated":"PG",
@@ -3025,11 +3155,12 @@
         "RT":62.0,
         "Meta":50.0,
         "poster_path":"\/e3eimdUK6lLe0iaSlLrYVQF3yeL.jpg",
-        "backdrop_path":"\/9ip9HUpOVpJ1cYCrPG9DyIrApJy.jpg"
+        "backdrop_path":"\/9ip9HUpOVpJ1cYCrPG9DyIrApJy.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Silent Running",
-        "Year":1972,
         "imdbID":"tt0067756",
         "Year":1972,
         "Rated":"G",
@@ -3044,11 +3175,12 @@
         "RT":71.0,
         "Meta":67.0,
         "poster_path":"\/oWLdnBKgVVUd7DougF5pNuIkZZJ.jpg",
-        "backdrop_path":"\/5QTwfS9vcr22Nl7PCcUro7dEMFq.jpg"
+        "backdrop_path":"\/5QTwfS9vcr22Nl7PCcUro7dEMFq.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Slash\/Back",
-        "Year":2022,
         "imdbID":"tt9050310",
         "Year":2022,
         "Rated":null,
@@ -3063,11 +3195,12 @@
         "RT":89.0,
         "Meta":67.0,
         "poster_path":"\/fmmRFQtsRrNOpmcfoxVIyE1LxxT.jpg",
-        "backdrop_path":"\/vruRG9oFSC2QI3F6vLAsj1ND14S.jpg"
+        "backdrop_path":"\/vruRG9oFSC2QI3F6vLAsj1ND14S.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Slaughterhouse-Five",
-        "Year":1972,
         "imdbID":"tt0069280",
         "Year":1972,
         "Rated":"R",
@@ -3082,11 +3215,12 @@
         "RT":82.0,
         "Meta":66.0,
         "poster_path":"\/gM2q9pGW9x2zdEMPRsXLBgTDDFH.jpg",
-        "backdrop_path":"\/tIlhG6ZmJFF1NKEA3aMWJhXhW78.jpg"
+        "backdrop_path":"\/tIlhG6ZmJFF1NKEA3aMWJhXhW78.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Sleeper",
-        "Year":1973,
         "imdbID":"tt0070707",
         "Year":1973,
         "Rated":"PG",
@@ -3101,11 +3235,12 @@
         "RT":100.0,
         "Meta":77.0,
         "poster_path":"\/YTYSziZZP5aXt5CDvdEMwKDzme.jpg",
-        "backdrop_path":"\/uVTEJPLof6fizkWvmhxEprut9oQ.jpg"
+        "backdrop_path":"\/uVTEJPLof6fizkWvmhxEprut9oQ.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Slipstream",
-        "Year":1989,
         "imdbID":"tt0098350",
         "Year":1989,
         "Rated":"PG-13",
@@ -3120,11 +3255,12 @@
         "RT":43.0,
         "Meta":null,
         "poster_path":"\/cv5ga1449YmBl7by0sRQmuyzydo.jpg",
-        "backdrop_path":"\/bww604cVWWzDjKCeusNV6fbITKm.jpg"
+        "backdrop_path":"\/bww604cVWWzDjKCeusNV6fbITKm.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Snowpiercer",
-        "Year":2013,
         "imdbID":"tt1706620",
         "Year":2013,
         "Rated":"R",
@@ -3139,11 +3275,12 @@
         "RT":94.0,
         "Meta":84.0,
         "poster_path":"\/nzccOvhrLGI0nvAknCEAk8bchD9.jpg",
-        "backdrop_path":"\/33dV6HAnXBmwKl640gO3U4auqUN.jpg"
+        "backdrop_path":"\/33dV6HAnXBmwKl640gO3U4auqUN.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Solarbabies",
-        "Year":1986,
         "imdbID":"tt0091981",
         "Year":1986,
         "Rated":"PG-13",
@@ -3158,11 +3295,12 @@
         "RT":0.0,
         "Meta":24.0,
         "poster_path":"\/vKNdxHrWTmG80WXdmLWM6YddZvP.jpg",
-        "backdrop_path":"\/oFUDnSUG8nPZ3V3yr21kQp3colL.jpg"
+        "backdrop_path":"\/oFUDnSUG8nPZ3V3yr21kQp3colL.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Solaris",
-        "Year":1972,
         "imdbID":"tt0069293",
         "Year":1972,
         "Rated":"PG",
@@ -3177,11 +3315,12 @@
         "RT":93.0,
         "Meta":93.0,
         "poster_path":"\/7h0DPEYm7A4VL6rNViwiXb8Np7Z.jpg",
-        "backdrop_path":"\/qjPhauZx2vOi3gNKsQfJZHeGemB.jpg"
+        "backdrop_path":"\/qjPhauZx2vOi3gNKsQfJZHeGemB.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Source Code",
-        "Year":2011,
         "imdbID":"tt0945513",
         "Year":2011,
         "Rated":"PG-13",
@@ -3196,11 +3335,12 @@
         "RT":92.0,
         "Meta":74.0,
         "poster_path":"\/zXJe3nXCp7ggE3rLbhDx8jWZ4qn.jpg",
-        "backdrop_path":"\/noHDKhzbwP6DfoaO2xRFLVrpX0N.jpg"
+        "backdrop_path":"\/noHDKhzbwP6DfoaO2xRFLVrpX0N.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Soylent Green",
-        "Year":1973,
         "imdbID":"tt0070723",
         "Year":1973,
         "Rated":"PG",
@@ -3215,7 +3355,9 @@
         "RT":71.0,
         "Meta":66.0,
         "poster_path":"\/tIQVty3lbBzwuLemEDQic1Axfbd.jpg",
-        "backdrop_path":"\/b7ATgNqE84WrGKq7Y8JtrnAuAS8.jpg"
+        "backdrop_path":"\/b7ATgNqE84WrGKq7Y8JtrnAuAS8.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Spaceballs",
@@ -3239,7 +3381,6 @@
     },
     {
         "Title":"Splice",
-        "Year":2009,
         "imdbID":"tt1017460",
         "Year":2009,
         "Rated":"R",
@@ -3254,11 +3395,12 @@
         "RT":75.0,
         "Meta":66.0,
         "poster_path":"\/4oqaWnO3dKYAt3vZWAD4oLfOXOC.jpg",
-        "backdrop_path":"\/1Qall5wH3teJEYUvf8XZ9eltPvx.jpg"
+        "backdrop_path":"\/1Qall5wH3teJEYUvf8XZ9eltPvx.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Split Second",
-        "Year":1992,
         "imdbID":"tt0105459",
         "Year":1992,
         "Rated":"R",
@@ -3273,11 +3415,12 @@
         "RT":null,
         "Meta":26.0,
         "poster_path":"\/yVY3YXdEWZDVruKPmcAkNfhsQWV.jpg",
-        "backdrop_path":"\/oCjnXawymfIn4sBog5a9nEQGxfX.jpg"
+        "backdrop_path":"\/oCjnXawymfIn4sBog5a9nEQGxfX.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Stalker",
-        "Year":1979,
         "imdbID":"tt0079944",
         "Year":1979,
         "Rated":"Not Rated",
@@ -3292,11 +3435,12 @@
         "RT":100.0,
         "Meta":85.0,
         "poster_path":"\/ttxJEwrVUOYJWJNURNr0mI3sRrj.jpg",
-        "backdrop_path":"\/6yrbWzzrPp7pwz6zHdifspJk8t3.jpg"
+        "backdrop_path":"\/6yrbWzzrPp7pwz6zHdifspJk8t3.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"Starcrash",
-        "Year":1978,
         "imdbID":"tt0079946",
         "Year":1978,
         "Rated":"PG",
@@ -3311,11 +3455,12 @@
         "RT":33.0,
         "Meta":null,
         "poster_path":"\/npJt35Q36aGcTYpcg9epbwQIIkz.jpg",
-        "backdrop_path":"\/owpKSfeEtwQefx8XxxhmSpRVpwC.jpg"
+        "backdrop_path":"\/owpKSfeEtwQefx8XxxhmSpRVpwC.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Starship Troopers",
-        "Year":1997,
         "imdbID":"tt0120201",
         "Year":1997,
         "Rated":"R",
@@ -3330,11 +3475,12 @@
         "RT":72.0,
         "Meta":52.0,
         "poster_path":"\/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
-        "backdrop_path":"\/uceohbhT4QLNRzdLmOtVBXAzxlW.jpg"
+        "backdrop_path":"\/uceohbhT4QLNRzdLmOtVBXAzxlW.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Strange Days",
-        "Year":1995,
         "imdbID":"tt0114558",
         "Year":1995,
         "Rated":"R",
@@ -3349,11 +3495,12 @@
         "RT":68.0,
         "Meta":66.0,
         "poster_path":"\/rY5BrDRcYAKE0BYmmT66YG6Uy5Q.jpg",
-        "backdrop_path":"\/zSFuvi6fIPT8CHpH1KMG25T2Iub.jpg"
+        "backdrop_path":"\/zSFuvi6fIPT8CHpH1KMG25T2Iub.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Sunshine",
-        "Year":2007,
         "imdbID":"tt0448134",
         "Year":2007,
         "Rated":"R",
@@ -3368,11 +3515,12 @@
         "RT":77.0,
         "Meta":64.0,
         "poster_path":"\/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
-        "backdrop_path":"\/5AIAnucJKZ3sHpm7r1ykFVIoUHK.jpg"
+        "backdrop_path":"\/5AIAnucJKZ3sHpm7r1ykFVIoUHK.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Synchronic",
-        "Year":2019,
         "imdbID":"tt9016974",
         "Year":2019,
         "Rated":"R",
@@ -3387,11 +3535,12 @@
         "RT":79.0,
         "Meta":64.0,
         "poster_path":"\/wgm4gdJwb7iSYX0uBsRAZmHQmPm.jpg",
-        "backdrop_path":"\/zh1M8fE2vQ0BKxYzIvMYan7ryV.jpg"
+        "backdrop_path":"\/zh1M8fE2vQ0BKxYzIvMYan7ryV.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"THX 1138",
-        "Year":1971,
         "imdbID":"tt0066434",
         "Year":1971,
         "Rated":"GP",
@@ -3406,11 +3555,12 @@
         "RT":86.0,
         "Meta":75.0,
         "poster_path":"\/25cQH5gZ60BiA5Y91HxoPpnFiY0.jpg",
-        "backdrop_path":"\/fM9ODwfR7m8fI2g99M9WyhvqXtI.jpg"
+        "backdrop_path":"\/fM9ODwfR7m8fI2g99M9WyhvqXtI.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Tank Girl",
-        "Year":1995,
         "imdbID":"tt0114614",
         "Year":1995,
         "Rated":"R",
@@ -3425,11 +3575,12 @@
         "RT":45.0,
         "Meta":46.0,
         "poster_path":"\/qohdY3BcJ98sFneOUAWp0FmH4Z6.jpg",
-        "backdrop_path":"\/9bfsEbee1ISYAvJepdqAT4MLoom.jpg"
+        "backdrop_path":"\/9bfsEbee1ISYAvJepdqAT4MLoom.jpg",
+        "Watched":false,
+        "Season":4.0
     },
     {
         "Title":"Terminator 2: Judgment Day",
-        "Year":1991,
         "imdbID":"tt0103064",
         "Year":1991,
         "Rated":"R",
@@ -3444,11 +3595,12 @@
         "RT":91.0,
         "Meta":75.0,
         "poster_path":"\/5M0j0B18abtBI5gi2RhfjjurTqb.jpg",
-        "backdrop_path":"\/vINgGecnz95iDL6fjQMARDsocgG.jpg"
+        "backdrop_path":"\/vINgGecnz95iDL6fjQMARDsocgG.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Terminator Genisys",
-        "Year":2015,
         "imdbID":"tt1340138",
         "Year":2015,
         "Rated":"PG-13",
@@ -3463,11 +3615,12 @@
         "RT":26.0,
         "Meta":38.0,
         "poster_path":"\/oZRVDpNtmHk8M1VYy1aeOWUXgbC.jpg",
-        "backdrop_path":"\/tZvP8DNNSyC9Cir4viXXn3S7uhn.jpg"
+        "backdrop_path":"\/tZvP8DNNSyC9Cir4viXXn3S7uhn.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"Tetsuo II: Body Hammer",
-        "Year":1992,
         "imdbID":"tt0105569",
         "Year":1992,
         "Rated":"R",
@@ -3482,11 +3635,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/w2We4S0SmRP72BKpvtOfyu9cF6H.jpg",
-        "backdrop_path":"\/ql0B3ptH0jApLi9yR0Qv198PxVI.jpg"
+        "backdrop_path":"\/ql0B3ptH0jApLi9yR0Qv198PxVI.jpg",
+        "Watched":false,
+        "Season":6.0
     },
     {
         "Title":"Tetsuo: The Iron Man",
-        "Year":1989,
         "imdbID":"tt0096251",
         "Year":1989,
         "Rated":"Not Rated",
@@ -3501,11 +3655,12 @@
         "RT":84.0,
         "Meta":null,
         "poster_path":"\/v3OnlQS8ED0qmpnz6LZQRKN6Zor.jpg",
-        "backdrop_path":"\/yaiPcHyLzP1hQRmInJ87yRaaS4b.jpg"
+        "backdrop_path":"\/yaiPcHyLzP1hQRmInJ87yRaaS4b.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"The Abyss",
-        "Year":1989,
         "imdbID":"tt0096754",
         "Year":1989,
         "Rated":"PG-13",
@@ -3520,7 +3675,9 @@
         "RT":89.0,
         "Meta":62.0,
         "poster_path":"\/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg",
-        "backdrop_path":"\/xLzkWj2C6zCWyFT8Z7tKKtfrwcR.jpg"
+        "backdrop_path":"\/xLzkWj2C6zCWyFT8Z7tKKtfrwcR.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"The Adventures of Buckaroo Banzai Across the 8th Dimension",
@@ -3564,7 +3721,6 @@
     },
     {
         "Title":"The Andromeda Strain",
-        "Year":1971,
         "imdbID":"tt0066769",
         "Year":1971,
         "Rated":"G",
@@ -3579,11 +3735,12 @@
         "RT":68.0,
         "Meta":60.0,
         "poster_path":"\/4FBSFz8wLpxd4o6hnvKOJJ8WSIz.jpg",
-        "backdrop_path":"\/8yE0aOQoZSSl2CuuPvjxdHuQl4P.jpg"
+        "backdrop_path":"\/8yE0aOQoZSSl2CuuPvjxdHuQl4P.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"The Animatrix",
-        "Year":2003,
         "imdbID":"tt0328832",
         "Year":2003,
         "Rated":"Unrated",
@@ -3598,11 +3755,12 @@
         "RT":89.0,
         "Meta":null,
         "poster_path":"\/g52SOsTvdjzY8oPIn5znLJMzLHG.jpg",
-        "backdrop_path":"\/7a4WHNllmX5ZGR0MfYJDPhV69eM.jpg"
+        "backdrop_path":"\/7a4WHNllmX5ZGR0MfYJDPhV69eM.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"The Arrival",
-        "Year":1996,
         "imdbID":"tt0115571",
         "Year":1996,
         "Rated":"PG-13",
@@ -3617,11 +3775,12 @@
         "RT":66.0,
         "Meta":56.0,
         "poster_path":"\/7ARbqk8SqABU8QqANvpJCpMQ5nj.jpg",
-        "backdrop_path":"\/oJ597dVjLMICx56clM7iy3AUUsA.jpg"
+        "backdrop_path":"\/oJ597dVjLMICx56clM7iy3AUUsA.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"The Black Hole",
-        "Year":1979,
         "imdbID":"tt0078869",
         "Year":1979,
         "Rated":"PG",
@@ -3636,11 +3795,12 @@
         "RT":41.0,
         "Meta":52.0,
         "poster_path":"\/92fghstMdnJQPxoqWPGtRhbUb8G.jpg",
-        "backdrop_path":"\/dfNNSNVdbaFgDt4DLJf55CZsB5L.jpg"
+        "backdrop_path":"\/dfNNSNVdbaFgDt4DLJf55CZsB5L.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"The Blood of Heroes",
-        "Year":1989,
         "imdbID":"tt0094764",
         "Year":1989,
         "Rated":"R",
@@ -3655,11 +3815,12 @@
         "RT":22.0,
         "Meta":null,
         "poster_path":"\/hWIDNOsF1yeGTR7jG42VzS1AHmI.jpg",
-        "backdrop_path":"\/wvvFqriQZcwFdZsDQCLY5Rh6C7W.jpg"
+        "backdrop_path":"\/wvvFqriQZcwFdZsDQCLY5Rh6C7W.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"The Cabin in the Woods",
-        "Year":2011,
         "imdbID":"tt1259521",
         "Year":2011,
         "Rated":"R",
@@ -3674,11 +3835,12 @@
         "RT":92.0,
         "Meta":72.0,
         "poster_path":"\/kjDXrK3ReIwuDrpWElI5OQkKYTA.jpg",
-        "backdrop_path":"\/dWLoSzvw52y1gt7ni9gZXdy693e.jpg"
+        "backdrop_path":"\/dWLoSzvw52y1gt7ni9gZXdy693e.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"The Congress",
-        "Year":2013,
         "imdbID":"tt1821641",
         "Year":2013,
         "Rated":"Not Rated",
@@ -3693,11 +3855,12 @@
         "RT":72.0,
         "Meta":63.0,
         "poster_path":"\/oeT9rwfCBayxgVoUn1yZGmkZlUq.jpg",
-        "backdrop_path":"\/8DTL9HCoQ1sfzyrCqDp1anRJtbN.jpg"
+        "backdrop_path":"\/8DTL9HCoQ1sfzyrCqDp1anRJtbN.jpg",
+        "Watched":false,
+        "Season":5.0
     },
     {
         "Title":"The Core",
-        "Year":2003,
         "imdbID":"tt0298814",
         "Year":2003,
         "Rated":"PG-13",
@@ -3712,11 +3875,12 @@
         "RT":39.0,
         "Meta":48.0,
         "poster_path":"\/jaG2vih2z4V5fP9pnYSIL65lr8d.jpg",
-        "backdrop_path":"\/v2YxWPX2yKdo6arIAknJzKLxhZY.jpg"
+        "backdrop_path":"\/v2YxWPX2yKdo6arIAknJzKLxhZY.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"The Day the Earth Stood Still",
-        "Year":2008,
         "imdbID":"tt0970416",
         "Year":2008,
         "Rated":"PG-13",
@@ -3731,11 +3895,12 @@
         "RT":21.0,
         "Meta":40.0,
         "poster_path":"\/3744nDNrKIFcgXEDL2WDkqYc7vF.jpg",
-        "backdrop_path":"\/9UUikoZdhXglbIIbUifXFsAbPUE.jpg"
+        "backdrop_path":"\/9UUikoZdhXglbIIbUifXFsAbPUE.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"The Faculty",
-        "Year":1998,
         "imdbID":"tt0133751",
         "Year":1998,
         "Rated":"R",
@@ -3750,11 +3915,12 @@
         "RT":58.0,
         "Meta":61.0,
         "poster_path":"\/5XetJwmAiDC0EtH23NIXaqFn3Wl.jpg",
-        "backdrop_path":"\/kswfKIkD0urnHhZK991aRdZ3Z8T.jpg"
+        "backdrop_path":"\/kswfKIkD0urnHhZK991aRdZ3Z8T.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"The Fifth Element",
-        "Year":1997,
         "imdbID":"tt0119116",
         "Year":1997,
         "Rated":"PG-13",
@@ -3769,11 +3935,12 @@
         "RT":71.0,
         "Meta":52.0,
         "poster_path":"\/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
-        "backdrop_path":"\/gEFe2joIQUopBmMPXOHPxuX2f4u.jpg"
+        "backdrop_path":"\/gEFe2joIQUopBmMPXOHPxuX2f4u.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"The Fly",
-        "Year":1986,
         "imdbID":"tt0091064",
         "Year":1986,
         "Rated":"R",
@@ -3788,11 +3955,12 @@
         "RT":93.0,
         "Meta":79.0,
         "poster_path":"\/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg",
-        "backdrop_path":"\/cFnv7rB6I9gtZ0eTR7nPgjKNe0Q.jpg"
+        "backdrop_path":"\/cFnv7rB6I9gtZ0eTR7nPgjKNe0Q.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"The Fountain",
-        "Year":2006,
         "imdbID":"tt0414993",
         "Year":2006,
         "Rated":"PG-13",
@@ -3807,11 +3975,12 @@
         "RT":53.0,
         "Meta":51.0,
         "poster_path":"\/t18RxTAw8AW0V5f0bKHpezRaGa6.jpg",
-        "backdrop_path":"\/9RNJ0pKYA8EQiMa0lFZ68gzeElH.jpg"
+        "backdrop_path":"\/9RNJ0pKYA8EQiMa0lFZ68gzeElH.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"The Happening",
-        "Year":2008,
         "imdbID":"tt0949731",
         "Year":2008,
         "Rated":"R",
@@ -3826,11 +3995,12 @@
         "RT":18.0,
         "Meta":34.0,
         "poster_path":"\/v1Cw6WaCjNqInpAzUwbXB4LGgoX.jpg",
-        "backdrop_path":"\/kDGBcBTMcYw97wchi1xrEGvPL1h.jpg"
+        "backdrop_path":"\/kDGBcBTMcYw97wchi1xrEGvPL1h.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"The Ice Pirates",
-        "Year":1984,
         "imdbID":"tt0087451",
         "Year":1984,
         "Rated":"PG",
@@ -3845,11 +4015,12 @@
         "RT":17.0,
         "Meta":44.0,
         "poster_path":"\/tv2iZbQYWwKcWOUWVFxOhcchKZT.jpg",
-        "backdrop_path":"\/cOSXpy1zfwmvO7ONEM37gDiNe9t.jpg"
+        "backdrop_path":"\/cOSXpy1zfwmvO7ONEM37gDiNe9t.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"The Infinite Man",
-        "Year":2014,
         "imdbID":"tt2553424",
         "Year":2014,
         "Rated":"Not Rated",
@@ -3864,11 +4035,12 @@
         "RT":95.0,
         "Meta":null,
         "poster_path":"\/uAzV7D3nRyFbYe6EkuV1J6OHiQ0.jpg",
-        "backdrop_path":"\/6FkLR9rpsMviZU7lWRAKgLuG9Zt.jpg"
+        "backdrop_path":"\/6FkLR9rpsMviZU7lWRAKgLuG9Zt.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"The Iron Giant",
-        "Year":1999,
         "imdbID":"tt0129167",
         "Year":1999,
         "Rated":"PG",
@@ -3883,11 +4055,12 @@
         "RT":96.0,
         "Meta":85.0,
         "poster_path":"\/ct04FCFLPImNG5thcPLRnVsZlmS.jpg",
-        "backdrop_path":"\/gZ78dyRH9hXeH94ASjuvD9Vw4b5.jpg"
+        "backdrop_path":"\/gZ78dyRH9hXeH94ASjuvD9Vw4b5.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"The Island of Dr. Moreau",
-        "Year":1996,
         "imdbID":"tt0116654",
         "Year":1996,
         "Rated":"PG-13",
@@ -3902,11 +4075,12 @@
         "RT":22.0,
         "Meta":37.0,
         "poster_path":"\/hOJeQXve8W9rNRhdgC1WV3GQJyA.jpg",
-        "backdrop_path":"\/5kAeJB8wR1Be0EFG7QjKdwFfHx7.jpg"
+        "backdrop_path":"\/5kAeJB8wR1Be0EFG7QjKdwFfHx7.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"The Island of Dr. Moreau",
-        "Year":1977,
         "imdbID":"tt0076210",
         "Year":1977,
         "Rated":"PG",
@@ -3921,11 +4095,12 @@
         "RT":54.0,
         "Meta":null,
         "poster_path":"\/q5kWAWxb3eWCkxFNT6WCipAnpQe.jpg",
-        "backdrop_path":"\/t4d80bW4Vn86EVIQW0eV2NjhFBh.jpg"
+        "backdrop_path":"\/t4d80bW4Vn86EVIQW0eV2NjhFBh.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"The Last Starfighter",
-        "Year":1984,
         "imdbID":"tt0087597",
         "Year":1984,
         "Rated":"PG",
@@ -3940,11 +4115,12 @@
         "RT":76.0,
         "Meta":67.0,
         "poster_path":"\/an1H0DPADLDlEsiUy8vE9AWqrhm.jpg",
-        "backdrop_path":"\/xI78c4sz0Vw1rafa5y5LHYzNbqW.jpg"
+        "backdrop_path":"\/xI78c4sz0Vw1rafa5y5LHYzNbqW.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"The Lathe of Heaven",
-        "Year":1980,
         "imdbID":"tt0081036",
         "Year":1980,
         "Rated":null,
@@ -3959,11 +4135,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/xQwNDyCXROg7LalX9f7mqTrCFfg.jpg",
-        "backdrop_path":"\/lTKWc4HWs0aKLzEOIfXq1GLB7Uz.jpg"
+        "backdrop_path":"\/lTKWc4HWs0aKLzEOIfXq1GLB7Uz.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"The Lawnmower Man",
-        "Year":1992,
         "imdbID":"tt0104692",
         "Year":1992,
         "Rated":"R",
@@ -3978,11 +4155,12 @@
         "RT":37.0,
         "Meta":42.0,
         "poster_path":"\/1VLqWcel87oYVmN383FgSH0mCTY.jpg",
-        "backdrop_path":"\/rbPZNYkHOuRTSedWrq1rONVeZvp.jpg"
+        "backdrop_path":"\/rbPZNYkHOuRTSedWrq1rONVeZvp.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"The Lobster",
-        "Year":2015,
         "imdbID":"tt3464902",
         "Year":2015,
         "Rated":"R",
@@ -3997,11 +4175,12 @@
         "RT":87.0,
         "Meta":82.0,
         "poster_path":"\/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
-        "backdrop_path":"\/s48CvFbWoWHhSPgz2wW9Rffw04q.jpg"
+        "backdrop_path":"\/s48CvFbWoWHhSPgz2wW9Rffw04q.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"The Man Who Fell to Earth",
-        "Year":1976,
         "imdbID":"tt0074851",
         "Year":1976,
         "Rated":"R",
@@ -4016,11 +4195,12 @@
         "RT":79.0,
         "Meta":81.0,
         "poster_path":"\/gwmPVphE5DMFFGXGMhfEFyxOOYj.jpg",
-        "backdrop_path":"\/xarA1q7NcqPVXD2gOKslUeynqRD.jpg"
+        "backdrop_path":"\/xarA1q7NcqPVXD2gOKslUeynqRD.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"The Man from Earth",
-        "Year":2007,
         "imdbID":"tt0756683",
         "Year":2007,
         "Rated":"Not Rated",
@@ -4035,11 +4215,12 @@
         "RT":100.0,
         "Meta":null,
         "poster_path":"\/V086R82gNgWrotaXZFO4JhdgB1.jpg",
-        "backdrop_path":"\/gt4EnUGbbGbNOX0q47YII3WxB48.jpg"
+        "backdrop_path":"\/gt4EnUGbbGbNOX0q47YII3WxB48.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"The Martian",
-        "Year":2015,
         "imdbID":"tt3659388",
         "Year":2015,
         "Rated":"PG-13",
@@ -4054,11 +4235,12 @@
         "RT":91.0,
         "Meta":80.0,
         "poster_path":"\/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg",
-        "backdrop_path":"\/9pubUbDX3eKB6ZuKxbFgv4cBZrz.jpg"
+        "backdrop_path":"\/9pubUbDX3eKB6ZuKxbFgv4cBZrz.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"The Matrix",
-        "Year":1999,
         "imdbID":"tt0133093",
         "Year":1999,
         "Rated":"R",
@@ -4073,11 +4255,12 @@
         "RT":83.0,
         "Meta":73.0,
         "poster_path":"\/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-        "backdrop_path":"\/icmmSD4vTTDKOq2vvdulafOGw93.jpg"
+        "backdrop_path":"\/icmmSD4vTTDKOq2vvdulafOGw93.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"The Matrix Reloaded",
-        "Year":2003,
         "imdbID":"tt0234215",
         "Year":2003,
         "Rated":"R",
@@ -4092,11 +4275,12 @@
         "RT":73.0,
         "Meta":62.0,
         "poster_path":"\/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg",
-        "backdrop_path":"\/ihOJcrorpDQtHTzIOrobbOhpJsj.jpg"
+        "backdrop_path":"\/ihOJcrorpDQtHTzIOrobbOhpJsj.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"The Matrix Revolutions",
-        "Year":2003,
         "imdbID":"tt0242653",
         "Year":2003,
         "Rated":"R",
@@ -4111,11 +4295,12 @@
         "RT":34.0,
         "Meta":47.0,
         "poster_path":"\/tyXwreXv4pfo4T4aplTKIp7f9GI.jpg",
-        "backdrop_path":"\/533xAMhhVyjTy8hwMUFEt5TuDfR.jpg"
+        "backdrop_path":"\/533xAMhhVyjTy8hwMUFEt5TuDfR.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"The Ninth Configuration",
-        "Year":1980,
         "imdbID":"tt0081237",
         "Year":1980,
         "Rated":"R",
@@ -4130,11 +4315,12 @@
         "RT":81.0,
         "Meta":46.0,
         "poster_path":"\/jlQMBckfnLhiCusar62sJ7WCKBv.jpg",
-        "backdrop_path":"\/dkZuDDTA6EJgCTXKoVTlXon8mkG.jpg"
+        "backdrop_path":"\/dkZuDDTA6EJgCTXKoVTlXon8mkG.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"The Omega Man",
-        "Year":1971,
         "imdbID":"tt0067525",
         "Year":1971,
         "Rated":"PG",
@@ -4149,11 +4335,12 @@
         "RT":65.0,
         "Meta":56.0,
         "poster_path":"\/qlt65C43HeoDm5K5gYBtT20OeA1.jpg",
-        "backdrop_path":"\/3ZiuypiyAtyxTcjZjkK7aGjWRBa.jpg"
+        "backdrop_path":"\/3ZiuypiyAtyxTcjZjkK7aGjWRBa.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"The One I Love",
-        "Year":2014,
         "imdbID":"tt2756032",
         "Year":2014,
         "Rated":"R",
@@ -4168,11 +4355,12 @@
         "RT":83.0,
         "Meta":66.0,
         "poster_path":"\/ewsYTI6KKQw3IDPFmVVbHq89kxv.jpg",
-        "backdrop_path":"\/32QQ6RG5haSRrKXnFIq0sryzWJs.jpg"
+        "backdrop_path":"\/32QQ6RG5haSRrKXnFIq0sryzWJs.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"The Platform",
-        "Year":2019,
         "imdbID":"tt8228288",
         "Year":2019,
         "Rated":"TV-MA",
@@ -4187,11 +4375,12 @@
         "RT":81.0,
         "Meta":73.0,
         "poster_path":"\/8ZX18L5m6rH5viSYpRnTSbb9eXh.jpg",
-        "backdrop_path":"\/3tkDMNfM2YuIAJlvGO6rfIzAnfG.jpg"
+        "backdrop_path":"\/3tkDMNfM2YuIAJlvGO6rfIzAnfG.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"The Right Stuff",
-        "Year":1983,
         "imdbID":"tt0086197",
         "Year":1983,
         "Rated":"PG",
@@ -4206,11 +4395,12 @@
         "RT":96.0,
         "Meta":91.0,
         "poster_path":"\/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg",
-        "backdrop_path":"\/w2KUVzeOC1u6cQwvUV0qqi7QYxs.jpg"
+        "backdrop_path":"\/w2KUVzeOC1u6cQwvUV0qqi7QYxs.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"The Rocketeer",
-        "Year":1991,
         "imdbID":"tt0102803",
         "Year":1991,
         "Rated":"PG",
@@ -4225,11 +4415,12 @@
         "RT":67.0,
         "Meta":61.0,
         "poster_path":"\/2tDFRESFwKww1LHRE8W1Exj9edH.jpg",
-        "backdrop_path":"\/2fQ6d8B0wgKTr2c7aHcDW8DqwIB.jpg"
+        "backdrop_path":"\/2fQ6d8B0wgKTr2c7aHcDW8DqwIB.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"The Running Man",
-        "Year":1987,
         "imdbID":"tt0093894",
         "Year":1987,
         "Rated":"R",
@@ -4244,11 +4435,12 @@
         "RT":67.0,
         "Meta":45.0,
         "poster_path":"\/iRF4a7ZBbLf6cB9QtHbhXQOXNuL.jpg",
-        "backdrop_path":"\/bNWwJOWS3Lcu7Wvd9AYppyb6jWO.jpg"
+        "backdrop_path":"\/bNWwJOWS3Lcu7Wvd9AYppyb6jWO.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"The Signal",
-        "Year":2014,
         "imdbID":"tt2910814",
         "Year":2014,
         "Rated":"PG-13",
@@ -4263,11 +4455,12 @@
         "RT":61.0,
         "Meta":54.0,
         "poster_path":"\/opZNdMgVBl3kKpKlW58PXnLZKFV.jpg",
-        "backdrop_path":"\/oxZh9qhkxfOczKmTang0j9a06Bx.jpg"
+        "backdrop_path":"\/oxZh9qhkxfOczKmTang0j9a06Bx.jpg",
+        "Watched":true,
+        "Season":3.0
     },
     {
         "Title":"The Similars",
-        "Year":2015,
         "imdbID":"tt3949658",
         "Year":2015,
         "Rated":null,
@@ -4282,11 +4475,12 @@
         "RT":95.0,
         "Meta":null,
         "poster_path":"\/gFySRlyCiay9wsqPUcIIyXf2VwL.jpg",
-        "backdrop_path":"\/egVHpPXhD0cy5UZlgiFy2Zpy1tB.jpg"
+        "backdrop_path":"\/egVHpPXhD0cy5UZlgiFy2Zpy1tB.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"The Sticky Fingers of Time",
-        "Year":1997,
         "imdbID":"tt0127302",
         "Year":1997,
         "Rated":null,
@@ -4301,11 +4495,12 @@
         "RT":83.0,
         "Meta":59.0,
         "poster_path":"\/tV6CgLqPopQcVW7ZvFg80CsL2Hx.jpg",
-        "backdrop_path":"\/hej0JcZEvu9oLNvs9vbig4euDvO.jpg"
+        "backdrop_path":"\/hej0JcZEvu9oLNvs9vbig4euDvO.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"The Terminator",
-        "Year":1984,
         "imdbID":"tt0088247",
         "Year":1984,
         "Rated":"R",
@@ -4320,11 +4515,12 @@
         "RT":100.0,
         "Meta":84.0,
         "poster_path":"\/qvktm0BHcnmDpul4Hz01GIazWPr.jpg",
-        "backdrop_path":"\/ffdqHMWkh1h9MABwIfbfRJhgFW6.jpg"
+        "backdrop_path":"\/ffdqHMWkh1h9MABwIfbfRJhgFW6.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"The Thing",
-        "Year":1982,
         "imdbID":"tt0084787",
         "Year":1982,
         "Rated":"R",
@@ -4339,11 +4535,12 @@
         "RT":85.0,
         "Meta":57.0,
         "poster_path":"\/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
-        "backdrop_path":"\/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
+        "backdrop_path":"\/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"The Thirteenth Floor",
-        "Year":1999,
         "imdbID":"tt0139809",
         "Year":1999,
         "Rated":"R",
@@ -4358,11 +4555,12 @@
         "RT":28.0,
         "Meta":36.0,
         "poster_path":"\/7oaie3ZBc9UuWZLF24crro1pone.jpg",
-        "backdrop_path":"\/nJ0jz1J3zNja31UEMeklhgFeMw5.jpg"
+        "backdrop_path":"\/nJ0jz1J3zNja31UEMeklhgFeMw5.jpg",
+        "Watched":false,
+        "Season":4.0
     },
     {
         "Title":"The Truman Show",
-        "Year":1998,
         "imdbID":"tt0120382",
         "Year":1998,
         "Rated":"PG",
@@ -4377,11 +4575,12 @@
         "RT":94.0,
         "Meta":90.0,
         "poster_path":"\/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
-        "backdrop_path":"\/aCHn2TXYJfzPXQKA6r9mKPbMlUB.jpg"
+        "backdrop_path":"\/aCHn2TXYJfzPXQKA6r9mKPbMlUB.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"The Vast of Night",
-        "Year":2019,
         "imdbID":"tt6803046",
         "Year":2019,
         "Rated":"PG-13",
@@ -4396,11 +4595,12 @@
         "RT":92.0,
         "Meta":84.0,
         "poster_path":"\/q2P9lYkctl5Ory71HEBMaFxbVlD.jpg",
-        "backdrop_path":"\/u3irmJ8d9HPDk4udWV385K8mSQJ.jpg"
+        "backdrop_path":"\/u3irmJ8d9HPDk4udWV385K8mSQJ.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"The Wandering Earth",
-        "Year":2019,
         "imdbID":"tt7605074",
         "Year":2019,
         "Rated":"TV-MA",
@@ -4415,11 +4615,12 @@
         "RT":70.0,
         "Meta":57.0,
         "poster_path":"\/AtWfsYZGW69YcCYOaVZ0EKNN14v.jpg",
-        "backdrop_path":"\/wIrqeoJHYtZmneqIufPtcOHMjOg.jpg"
+        "backdrop_path":"\/wIrqeoJHYtZmneqIufPtcOHMjOg.jpg",
+        "Watched":true,
+        "Season":7.0
     },
     {
         "Title":"The Year of the Sex Olympics",
-        "Year":1968,
         "imdbID":"tt0142001",
         "Year":1968,
         "Rated":"15",
@@ -4434,11 +4635,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/ztJENDWvfNA7jQiuVTqBm5CLyZk.jpg",
-        "backdrop_path":"\/x776jj9rOKIFCNAIATagE992BbT.jpg"
+        "backdrop_path":"\/x776jj9rOKIFCNAIATagE992BbT.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"These Final Hours",
-        "Year":2013,
         "imdbID":"tt2268458",
         "Year":2013,
         "Rated":"R",
@@ -4453,11 +4655,12 @@
         "RT":85.0,
         "Meta":61.0,
         "poster_path":"\/AmVgGpLdAUzCszbyQ4THY8eB0HL.jpg",
-        "backdrop_path":"\/vnD6QKkhwVgLRYyqZ1dqvfFUXV3.jpg"
+        "backdrop_path":"\/vnD6QKkhwVgLRYyqZ1dqvfFUXV3.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"They Live",
-        "Year":1988,
         "imdbID":"tt0096256",
         "Year":1988,
         "Rated":"R",
@@ -4472,11 +4675,12 @@
         "RT":87.0,
         "Meta":55.0,
         "poster_path":"\/ngnybFTuopfbfmmEeX9jjBQQmF6.jpg",
-        "backdrop_path":"\/ybQY0GgRrSx8hvH97MxOydQlfp1.jpg"
+        "backdrop_path":"\/ybQY0GgRrSx8hvH97MxOydQlfp1.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Things to Come",
-        "Year":1936,
         "imdbID":"tt0028358",
         "Year":1936,
         "Rated":"Not Rated",
@@ -4491,11 +4695,12 @@
         "RT":91.0,
         "Meta":null,
         "poster_path":"\/AqDTWCGOogxtIVKa6RAOhOaHkS.jpg",
-        "backdrop_path":"\/wa6uAXC6ei0BwaDiShwLjbMCLfe.jpg"
+        "backdrop_path":"\/wa6uAXC6ei0BwaDiShwLjbMCLfe.jpg",
+        "Watched":false,
+        "Season":1.0
     },
     {
         "Title":"This Island Earth",
-        "Year":1955,
         "imdbID":"tt0047577",
         "Year":1955,
         "Rated":"Approved",
@@ -4510,11 +4715,12 @@
         "RT":75.0,
         "Meta":null,
         "poster_path":"\/2viRDpHmhzQoreZok2auLjkVbSE.jpg",
-        "backdrop_path":"\/inQQLXDOkb3jwDqNqHF8Lnel6yU.jpg"
+        "backdrop_path":"\/inQQLXDOkb3jwDqNqHF8Lnel6yU.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Threads",
-        "Year":1984,
         "imdbID":"tt0090163",
         "Year":1984,
         "Rated":"TV-MA",
@@ -4529,11 +4735,12 @@
         "RT":100.0,
         "Meta":92.0,
         "poster_path":"\/szefDW6E7DiZGivuu1U0ITsIT4s.jpg",
-        "backdrop_path":"\/xCoWt5obm6UYNyxmnGr253ADU6M.jpg"
+        "backdrop_path":"\/xCoWt5obm6UYNyxmnGr253ADU6M.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Time After Time",
-        "Year":1979,
         "imdbID":"tt0080025",
         "Year":1979,
         "Rated":"PG",
@@ -4548,11 +4755,12 @@
         "RT":88.0,
         "Meta":69.0,
         "poster_path":"\/A4SXZxQempzTUReRlQiFaYc6KaC.jpg",
-        "backdrop_path":"\/1HDpR7nLqQcGSdbC41pSxCPjjyH.jpg"
+        "backdrop_path":"\/1HDpR7nLqQcGSdbC41pSxCPjjyH.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Time Trap",
-        "Year":2017,
         "imdbID":"tt4815122",
         "Year":2017,
         "Rated":"Not Rated",
@@ -4567,11 +4775,12 @@
         "RT":62.0,
         "Meta":46.0,
         "poster_path":"\/8w0hBC9kLy56F7rjwGIe8JtIrHS.jpg",
-        "backdrop_path":"\/lRFtFFIoGQfHxyHNS254Ew7PV9c.jpg"
+        "backdrop_path":"\/lRFtFFIoGQfHxyHNS254Ew7PV9c.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Time of the Wolf",
-        "Year":2003,
         "imdbID":"tt0324197",
         "Year":2003,
         "Rated":"R",
@@ -4586,11 +4795,12 @@
         "RT":67.0,
         "Meta":71.0,
         "poster_path":"\/10tjiBzMlvGYPpNpjHUOzMKNC6P.jpg",
-        "backdrop_path":"\/fx3dceNJMq7RHC03YWjdHYzweA2.jpg"
+        "backdrop_path":"\/fx3dceNJMq7RHC03YWjdHYzweA2.jpg",
+        "Watched":false,
+        "Season":7.0
     },
     {
         "Title":"Timecrimes",
-        "Year":2007,
         "imdbID":"tt0480669",
         "Year":2007,
         "Rated":"R",
@@ -4605,11 +4815,12 @@
         "RT":90.0,
         "Meta":68.0,
         "poster_path":"\/zdxQRP7mzczMJBwKnv8MCPRq7rQ.jpg",
-        "backdrop_path":"\/anA2hEvG5SWrYETwcJ1SUPUfKDz.jpg"
+        "backdrop_path":"\/anA2hEvG5SWrYETwcJ1SUPUfKDz.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"Timescape",
-        "Year":2022,
         "imdbID":"tt9672824",
         "Year":2022,
         "Rated":null,
@@ -4624,11 +4835,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/gLawhwtgRYW23AcDIe6ZUKFXPuJ.jpg",
-        "backdrop_path":"\/8Hn4Qp2LXb2T6teZ9ySbWaUCcTj.jpg"
+        "backdrop_path":"\/8Hn4Qp2LXb2T6teZ9ySbWaUCcTj.jpg",
+        "Watched":true,
+        "Season":5.0
     },
     {
         "Title":"Tomorrowland",
-        "Year":2015,
         "imdbID":"tt1964418",
         "Year":2015,
         "Rated":"PG",
@@ -4643,11 +4855,12 @@
         "RT":50.0,
         "Meta":60.0,
         "poster_path":"\/kziYpr5Nfw60P0My8aj1sgCEqed.jpg",
-        "backdrop_path":"\/udYOmbW1JEZjVd726PWHlmptxPi.jpg"
+        "backdrop_path":"\/udYOmbW1JEZjVd726PWHlmptxPi.jpg",
+        "Watched":true,
+        "Season":9.0
     },
     {
         "Title":"Total Recall",
-        "Year":1990,
         "imdbID":"tt0100802",
         "Year":1990,
         "Rated":"R",
@@ -4662,11 +4875,12 @@
         "RT":82.0,
         "Meta":60.0,
         "poster_path":"\/wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg",
-        "backdrop_path":"\/x2wOlXuK4NzPDQ0OBZiJjNNOp6Y.jpg"
+        "backdrop_path":"\/x2wOlXuK4NzPDQ0OBZiJjNNOp6Y.jpg",
+        "Watched":true,
+        "Season":8.0
     },
     {
         "Title":"Tron",
-        "Year":1982,
         "imdbID":"tt0084827",
         "Year":1982,
         "Rated":"PG",
@@ -4681,11 +4895,12 @@
         "RT":73.0,
         "Meta":58.0,
         "poster_path":"\/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
-        "backdrop_path":"\/vUmeBHiGp5r2ydd8aEvbNLamTVD.jpg"
+        "backdrop_path":"\/vUmeBHiGp5r2ydd8aEvbNLamTVD.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"Under the Skin",
-        "Year":2013,
         "imdbID":"tt1441395",
         "Year":2013,
         "Rated":"R",
@@ -4700,11 +4915,12 @@
         "RT":84.0,
         "Meta":80.0,
         "poster_path":"\/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
-        "backdrop_path":"\/eS5OdKN3kRZXQbWRSSCJ4Gh0z26.jpg"
+        "backdrop_path":"\/eS5OdKN3kRZXQbWRSSCJ4Gh0z26.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"Upstream Color",
-        "Year":2013,
         "imdbID":"tt2084989",
         "Year":2013,
         "Rated":"Not Rated",
@@ -4719,11 +4935,12 @@
         "RT":87.0,
         "Meta":81.0,
         "poster_path":"\/nkUl1D1KbqW5ux9cAbSxU5f7hOy.jpg",
-        "backdrop_path":"\/s1DqTGJ96V0Q8YxL9GZVkJi48jZ.jpg"
+        "backdrop_path":"\/s1DqTGJ96V0Q8YxL9GZVkJi48jZ.jpg",
+        "Watched":false,
+        "Season":4.0
     },
     {
         "Title":"Valerian and the City of a Thousand Planets",
-        "Year":2017,
         "imdbID":"tt2239822",
         "Year":2017,
         "Rated":"PG-13",
@@ -4738,11 +4955,12 @@
         "RT":47.0,
         "Meta":51.0,
         "poster_path":"\/jfIpMh79fGRqYJ6PwZLCntzgxlF.jpg",
-        "backdrop_path":"\/5rYnygKCkmqWuMv1O5yAnzGF8gV.jpg"
+        "backdrop_path":"\/5rYnygKCkmqWuMv1O5yAnzGF8gV.jpg",
+        "Watched":false,
+        "Season":10.0
     },
     {
         "Title":"Vanishing Waves",
-        "Year":2012,
         "imdbID":"tt2208216",
         "Year":2012,
         "Rated":"Unrated",
@@ -4757,11 +4975,12 @@
         "RT":70.0,
         "Meta":58.0,
         "poster_path":"\/2FDPjmAhKcVj0lLZRFjMRjQXV1D.jpg",
-        "backdrop_path":"\/eRZOgO9m7UVOCZx9tLal0bSlck5.jpg"
+        "backdrop_path":"\/eRZOgO9m7UVOCZx9tLal0bSlck5.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Vesper",
-        "Year":2022,
         "imdbID":"tt20225374",
         "Year":2022,
         "Rated":"Not Rated",
@@ -4776,11 +4995,12 @@
         "RT":91.0,
         "Meta":70.0,
         "poster_path":"\/etvK8ni1adjXU8obDpdUxTTQT6n.jpg",
-        "backdrop_path":"\/dxihDyyA6RSAtLZog4l1MYdDqLD.jpg"
+        "backdrop_path":"\/dxihDyyA6RSAtLZog4l1MYdDqLD.jpg",
+        "Watched":false,
+        "Season":9.0
     },
     {
         "Title":"Voyage to the End of the Universe",
-        "Year":1963,
         "imdbID":"tt0122111",
         "Year":1963,
         "Rated":null,
@@ -4795,11 +5015,12 @@
         "RT":100.0,
         "Meta":null,
         "poster_path":"\/oAFc4caOvnUF78VtU0kaUU4F6DD.jpg",
-        "backdrop_path":"\/tAcQVoPh5OV6aX5CDlHSyBiUDwo.jpg"
+        "backdrop_path":"\/tAcQVoPh5OV6aX5CDlHSyBiUDwo.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"WALL\u00b7E",
-        "Year":2008,
         "imdbID":"tt0910970",
         "Year":2008,
         "Rated":"G",
@@ -4814,11 +5035,12 @@
         "RT":95.0,
         "Meta":95.0,
         "poster_path":"\/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
-        "backdrop_path":"\/fK5ssgvtI43z19FoWigdlqgpLRE.jpg"
+        "backdrop_path":"\/fK5ssgvtI43z19FoWigdlqgpLRE.jpg",
+        "Watched":false,
+        "Season":8.0
     },
     {
         "Title":"WarGames",
-        "Year":1983,
         "imdbID":"tt0086567",
         "Year":1983,
         "Rated":"PG",
@@ -4833,11 +5055,12 @@
         "RT":94.0,
         "Meta":77.0,
         "poster_path":"\/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg",
-        "backdrop_path":"\/lol7pTLCvfrRIxjrPdDZ0iQq1Fl.jpg"
+        "backdrop_path":"\/lol7pTLCvfrRIxjrPdDZ0iQq1Fl.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Warning from Space",
-        "Year":1956,
         "imdbID":"tt0049900",
         "Year":1956,
         "Rated":"Unrated",
@@ -4852,11 +5075,12 @@
         "RT":null,
         "Meta":null,
         "poster_path":"\/fxK1qXaZS7S4JtMgrKWha80UuT9.jpg",
-        "backdrop_path":"\/7MWT2RzRUIKpQARHjC3AdNGs9O1.jpg"
+        "backdrop_path":"\/7MWT2RzRUIKpQARHjC3AdNGs9O1.jpg",
+        "Watched":true,
+        "Season":6.0
     },
     {
         "Title":"Westworld",
-        "Year":1973,
         "imdbID":"tt0070909",
         "Year":1973,
         "Rated":"PG",
@@ -4871,11 +5095,12 @@
         "RT":84.0,
         "Meta":77.0,
         "poster_path":"\/qNt29HzxwZ4jGTgSRxdA34ino9Q.jpg",
-        "backdrop_path":"\/iYGAJjtSBIhJodgvZ9k28rGtgyj.jpg"
+        "backdrop_path":"\/iYGAJjtSBIhJodgvZ9k28rGtgyj.jpg",
+        "Watched":true,
+        "Season":2.0
     },
     {
         "Title":"World of Tomorrow",
-        "Year":2015,
         "imdbID":"tt4171032",
         "Year":2015,
         "Rated":"G",
@@ -4890,11 +5115,12 @@
         "RT":100.0,
         "Meta":null,
         "poster_path":"\/5s7DSOek7Bk2CvcG1zX01bJzJ0x.jpg",
-        "backdrop_path":"\/oikjbzBjgvhH6wv3X060S9kqSTy.jpg"
+        "backdrop_path":"\/oikjbzBjgvhH6wv3X060S9kqSTy.jpg",
+        "Watched":true,
+        "Season":4.0
     },
     {
         "Title":"Zardoz",
-        "Year":1974,
         "imdbID":"tt0070948",
         "Year":1974,
         "Rated":"R",
@@ -4909,11 +5135,12 @@
         "RT":49.0,
         "Meta":46.0,
         "poster_path":"\/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg",
-        "backdrop_path":"\/xP91Ux8P3dCeSHbPZHRSLTpemxF.jpg"
+        "backdrop_path":"\/xP91Ux8P3dCeSHbPZHRSLTpemxF.jpg",
+        "Watched":true,
+        "Season":1.0
     },
     {
         "Title":"eXistenZ",
-        "Year":1999,
         "imdbID":"tt0120907",
         "Year":1999,
         "Rated":"R",
@@ -4928,6 +5155,8 @@
         "RT":75.0,
         "Meta":68.0,
         "poster_path":"\/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
-        "backdrop_path":"\/NmCB4DLe4OZWPeO6aixh3xE3OC.jpg"
+        "backdrop_path":"\/NmCB4DLe4OZWPeO6aixh3xE3OC.jpg",
+        "Watched":true,
+        "Season":6.0
     }
 ]
