@@ -4241,7 +4241,7 @@
     },
     {
         "Title":"The Matrix",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0133093",
         "Year":1999,
         "Rated":"R",
