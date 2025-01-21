@@ -321,7 +321,7 @@
     },
     {
         "Title":"Another Earth",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt1549572",
         "Year":2011,
         "Rated":"PG-13",
@@ -981,7 +981,7 @@
     },
     {
         "Title":"Cypher",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0284978",
         "Year":2002,
         "Rated":"R",
