@@ -201,7 +201,7 @@
     },
     {
         "Title":"Aliens",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0090605",
         "Year":1986,
         "Rated":"R",
