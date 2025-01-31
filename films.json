@@ -221,7 +221,7 @@
     },
     {
         "Title":"Alita: Battle Angel",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0437086",
         "Year":2019,
         "Rated":"PG-13",
@@ -241,7 +241,7 @@
     },
     {
         "Title":"Altered States",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0080360",
         "Year":1980,
         "Rated":"R",
@@ -1301,7 +1301,7 @@
     },
     {
         "Title":"Earth Girls Are Easy",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0097257",
         "Year":1988,
         "Rated":"PG",
@@ -4201,7 +4201,7 @@
     },
     {
         "Title":"The Man from Earth",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0756683",
         "Year":2007,
         "Rated":"Not Rated",
