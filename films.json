@@ -4721,7 +4721,7 @@
     },
     {
         "Title":"Threads",
-        "Watched":false,
+        "Watched":true,
         "imdbID":"tt0090163",
         "Year":1984,
         "Rated":"TV-MA",
