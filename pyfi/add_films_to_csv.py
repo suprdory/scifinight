@@ -91,7 +91,7 @@ def buildFilmDat(imdbID, season):
 #%%
 config = dotenv_values(".env")
 omdb_api_key = config['omdb_api_key']
-df_old = pd.read_csv('scifi_data_281024.csv').iloc[:, 1:]
+df_old = pd.read_csv('scifi_data_arx.csv').iloc[:, 1:]
 newData = pd.read_csv('to_add.csv')
 
 filmDats = []
@@ -109,5 +109,5 @@ df = df.sort_values("Title")
 df.Watched = df.Watched == 1
 
 # %%
-df.to_csv('scifi_data_180125.csv')
+df.to_csv('../scifi_data.csv')
 
