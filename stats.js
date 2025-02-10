@@ -43,8 +43,9 @@ function processCSV(data) {
     const nSeasons = 10
     for (let s = 1; s <= nSeasons; s++) {
         seasonStats[s] = {}
-        // seasonStats[s]['nFilms']=0;
-        // seasonStats[s]['nWatched'] = 0;
+        seasonStats[s]['nFilms'] = 0;
+        seasonStats[s]['nWatched'] = 0;
+        seasonStats[s]['nUnwatched'] = 0;
     }
 
     data.forEach(row => {
@@ -74,8 +75,69 @@ function processCSV(data) {
         // seasonStats[s]['nWatched'] = 0;
     }
 
+    // Calculate Unwatched stats
+    let totName = "Unwatched"
+    let s = totName
+    seasonStats[totName] = {}
+    seasonStats[s]['nFilms'] = 0;
+    seasonStats[s]['nWatched'] = 0;
+    seasonStats[s]['nUnwatched'] = 0;
+
+    data.forEach(row => {
+        if (row["Watched"] === "False") {
+            seasonStats[totName]["nFilms"] = (seasonStats[totName]["nFilms"] || 0) + 1;
+            if (row["Watched"] === "True") {
+                seasonStats[totName]["nWatched"] = (seasonStats[totName]["nWatched"] || 0) + 1;
+            }
+            else {
+                seasonStats[totName]["nUnwatched"] = (seasonStats[totName]["nUnwatched"] || 0) + 1;
+            }
+            seasonStats[totName]["runtime"] = (seasonStats[totName]["runtime"] || 0) + row["Runtime"];
+            seasonStats[totName]["imdb"] = (seasonStats[totName]["imdb"] || 0) + row["IMDb"];
+            seasonStats[totName]["rt"] = (seasonStats[totName]["rt"] || 0) + row["RT"];
+            seasonStats[totName]["year"] = (seasonStats[totName]["year"] || 0) + row["Year"];
+        }
+
+    });
+
+    seasonStats[s]['complete'] = 100 * seasonStats[s]["nWatched"] / seasonStats[s]["nFilms"]
+    seasonStats[s]['runtime'] = seasonStats[s]['runtime'] / seasonStats[s]["nFilms"]
+    seasonStats[s]['imdb'] = seasonStats[s]['imdb'] / seasonStats[s]["nFilms"]
+    seasonStats[s]['rt'] = seasonStats[s]['rt'] / seasonStats[s]["nFilms"]
+    seasonStats[s]['year'] = seasonStats[s]['year'] / seasonStats[s]["nFilms"]
+
+    // Calculate watched stats
+    totName = "Watched"
+    s = totName
+    seasonStats[totName] = {}
+    data.forEach(row => {
+        if (row["Watched"] === "True") {
+            seasonStats[totName]["nFilms"] = (seasonStats[totName]["nFilms"] || 0) + 1;
+            if (row["Watched"] === "True") {
+                seasonStats[totName]["nWatched"] = (seasonStats[totName]["nWatched"] || 0) + 1;
+            }
+            else {
+                seasonStats[totName]["nUnwatched"] = (seasonStats[totName]["nUnwatched"] || 0) + 1;
+            }
+            seasonStats[totName]["runtime"] = (seasonStats[totName]["runtime"] || 0) + row["Runtime"];
+            seasonStats[totName]["imdb"] = (seasonStats[totName]["imdb"] || 0) + row["IMDb"];
+            seasonStats[totName]["rt"] = (seasonStats[totName]["rt"] || 0) + row["RT"];
+            seasonStats[totName]["year"] = (seasonStats[totName]["year"] || 0) + row["Year"];
+        }
+
+    });
+
+    seasonStats[s]['complete'] = 100 * seasonStats[s]["nWatched"] / seasonStats[s]["nFilms"]
+    seasonStats[s]['runtime'] = seasonStats[s]['runtime'] / seasonStats[s]["nFilms"]
+    seasonStats[s]['imdb'] = seasonStats[s]['imdb'] / seasonStats[s]["nFilms"]
+    seasonStats[s]['rt'] = seasonStats[s]['rt'] / seasonStats[s]["nFilms"]
+    seasonStats[s]['year'] = seasonStats[s]['year'] / seasonStats[s]["nFilms"]
+
+
+
     // Calculate total count
-    let totName = "Total"
+    totName = "Total"
+    s = totName
     seasonStats[totName] = {}
     data.forEach(row => {
         seasonStats[totName]["nFilms"] = (seasonStats[totName]["nFilms"] || 0) + 1;
@@ -91,7 +153,7 @@ function processCSV(data) {
         seasonStats[totName]["year"] = (seasonStats[totName]["year"] || 0) + row["Year"];
 
     });
-    let s = totName
+
     seasonStats[s]['complete'] = 100 * seasonStats[s]["nWatched"] / seasonStats[s]["nFilms"]
     seasonStats[s]['runtime'] = seasonStats[s]['runtime'] / seasonStats[s]["nFilms"]
     seasonStats[s]['imdb'] = seasonStats[s]['imdb'] / seasonStats[s]["nFilms"]
@@ -104,12 +166,12 @@ function processCSV(data) {
 
     let totalWatchedMins = 0
     data.forEach(row => {
-        if(row['Watched']==="True")
-        totalWatchedMins = totalWatchedMins + row["Runtime"];
+        if (row['Watched'] === "True")
+            totalWatchedMins = totalWatchedMins + row["Runtime"];
     })
     displayFooterStats(totalWatchedMins)
 }
-function displayFooterStats(tot){
+function displayFooterStats(tot) {
     const foot = document.querySelector("#footer");
     foot.innerHTML = `Total minutes watched: ${tot}`;
 }
