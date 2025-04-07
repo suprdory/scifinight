@@ -35,7 +35,7 @@ def get_scores(omdb_ratings):
 
 
 def get_omdb_imdb(imdb_id):
-    urlbase = f'http://www.omdbapi.com/?apikey=4d3ea296&i='
+    urlbase = f'http://www.omdbapi.com/?apikey={imdb_id}='
     url = urlbase+imdb_id
     response = requests.get(url)
     dict = json.loads(response.text)
@@ -120,22 +120,3 @@ df=df[keys]
 
 # %%
 df.to_csv('../scifi_data.csv')
-
-
-#%%
-# imdb_id='tt1663662'
-# url = f"https://api.themoviedb.org/3/find/{imdb_id}?external_source=imdb_id"
-
-# headers = {
-#     "accept": "application/json",
-#     "Authorization": "Bearer " + config['tmdb_auth'],
-# }
-# response = requests.get(url, headers=headers)
-# print(response)
-# out = json.loads(response.text)['movie_results']
-# out
-# if len(out) > 0:
-#     return out[0]
-# else:
-#     return None
-# %%

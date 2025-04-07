@@ -40,7 +40,7 @@ function processCSV(data) {
 
 
     const seasonStats = {};
-    const nSeasons = 10
+    const nSeasons = 11
     for (let s = 1; s <= nSeasons; s++) {
         seasonStats[s] = {}
         seasonStats[s]['nFilms'] = 0;
