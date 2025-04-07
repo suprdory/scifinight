@@ -35,7 +35,7 @@ def get_scores(omdb_ratings):
 
 
 def get_omdb_imdb(imdb_id):
-    urlbase = f'http://www.omdbapi.com/?apikey={omdb_api_key}='
+    urlbase = f'http://www.omdbapi.com/?apikey=4d3ea296&i='
     url = urlbase+imdb_id
     response = requests.get(url)
     dict = json.loads(response.text)
@@ -46,8 +46,8 @@ def get_tmdb_imdb(imdb_id):
     url = f"https://api.themoviedb.org/3/find/{imdb_id}?external_source=imdb_id"
 
     headers = {
-        "accept": "application/json",
-        "Authorization": config['tmdb_auth']
+    "accept": "application/json",
+    "Authorization": "Bearer " + config['tmdb_auth'],
     }
     response = requests.get(url, headers=headers)
     out = json.loads(response.text)['movie_results']
@@ -59,7 +59,8 @@ def get_tmdb_imdb(imdb_id):
 def buildFilmDat(imdbID, season):
     omdbDat = get_omdb_imdb(imdbID)
     tmdbDat = get_tmdb_imdb(imdbID)
-
+    # print(omdbDat)
+    # print(tmdbDat)
     imdb_link = 'https://www.imdb.com/title/' + omdbDat['imdbID']
     runtime = int(omdbDat['Runtime'][:-4])
 
@@ -91,7 +92,7 @@ def buildFilmDat(imdbID, season):
 #%%
 config = dotenv_values(".env")
 omdb_api_key = config['omdb_api_key']
-df_old = pd.read_csv('scifi_data_arx.csv').iloc[:, 1:]
+df_old = pd.read_csv('../scifi_data.csv').iloc[:, 1:]
 newData = pd.read_csv('to_add.csv')
 
 filmDats = []
@@ -101,6 +102,8 @@ for i, film in newData.iterrows():
     print(film['Title'], omdbDat['Title'])
 
 df_new = pd.DataFrame(filmDats)
+df_new
+
 
 # %%
 df = pd.concat((df_new, df_old))
@@ -108,6 +111,31 @@ df = df.reset_index(drop=True)
 df = df.sort_values("Title")
 df.Watched = df.Watched == 1
 
+#%%
+keys=['Title','Watched', 'Season', 'imdbID', 'Year', 'Rated', 'Director', 'Actors', 'Language',
+       'Plot', 'IMDb_link', 'Runtime', 'BoxOffice', 'IMDb', 'RT', 'Meta',
+       'poster_path', 'backdrop_path', ]
+
+df=df[keys]
+
 # %%
 df.to_csv('../scifi_data.csv')
 
+
+#%%
+# imdb_id='tt1663662'
+# url = f"https://api.themoviedb.org/3/find/{imdb_id}?external_source=imdb_id"
+
+# headers = {
+#     "accept": "application/json",
+#     "Authorization": "Bearer " + config['tmdb_auth'],
+# }
+# response = requests.get(url, headers=headers)
+# print(response)
+# out = json.loads(response.text)['movie_results']
+# out
+# if len(out) > 0:
+#     return out[0]
+# else:
+#     return None
+# %%
