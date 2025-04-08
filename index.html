@@ -34,7 +34,7 @@
             <option value="RT">Rotten Tomatoes</option>
             <option value="Metacritic">Metacritic</option>
             <option value="Boxoffice">Box Office</option>
-            
+
           </select>
         </div>
         <div class="control-group">
@@ -44,6 +44,10 @@
             <option value="watched">Watched</option>
             <option value="unwatched">Unwatched</option>
           </select>
+        </div>
+        <div class="control-group">
+          <label for="search">Search:</label>
+            <input type="text" id="search" onkeyup="searchFilter()" onclick="this.select();">
         </div>
       </div>
       <div class="film-list scroll">

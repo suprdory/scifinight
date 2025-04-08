@@ -156,6 +156,32 @@ document.getElementById('filter-options').addEventListener('change', () => {
     displayFilms(filteredFilms);
 });
 
+function searchFilter(){
+    const term = document.getElementById('search').value.toLowerCase()
+    // console.log(term)
+
+
+    // First prioritize matches that start with the search term
+    const exactMatches = filmsData.filter(
+        (film) =>
+            film.Title.toLowerCase().startsWith(term)
+
+    );
+
+    // Then get partial matches that include the search term (but don't start with it)
+    const partialMatches = filmsData.filter(
+        (film) =>
+            film.Title.toLowerCase().includes(term) &&
+            !(
+                film.Title.toLowerCase().startsWith(term)
+            )
+    );
+
+    const allMatches = [...exactMatches, ...partialMatches]; // Combine results
+
+    displayFilms(allMatches);
+}
+
 
 function rightPanelHome() {
 
