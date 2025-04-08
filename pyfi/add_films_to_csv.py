@@ -110,14 +110,14 @@ df = pd.concat((df_new, df_old))
 df = df.reset_index(drop=True)
 df = df.sort_values("Title")
 df.Watched = df.Watched == 1
-
+df
 #%%
 keys=['Title','Watched', 'Season', 'imdbID', 'Year', 'Rated', 'Director', 'Actors', 'Language',
        'Plot', 'IMDb_link', 'Runtime', 'BoxOffice', 'IMDb', 'RT', 'Meta',
        'poster_path', 'backdrop_path', ]
 
 df=df[keys]
-
+df
 # %%
 df.to_csv('../scifi_data.csv')
 
