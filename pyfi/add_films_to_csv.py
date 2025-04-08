@@ -35,7 +35,7 @@ def get_scores(omdb_ratings):
 
 
 def get_omdb_imdb(imdb_id):
-    urlbase = f'http://www.omdbapi.com/?apikey={imdb_id}='
+    urlbase = f'http://www.omdbapi.com/?apikey={omdb_api_key}&i='
     url = urlbase+imdb_id
     response = requests.get(url)
     dict = json.loads(response.text)
@@ -59,7 +59,7 @@ def get_tmdb_imdb(imdb_id):
 def buildFilmDat(imdbID, season):
     omdbDat = get_omdb_imdb(imdbID)
     tmdbDat = get_tmdb_imdb(imdbID)
-    # print(omdbDat)
+    print(omdbDat)
     # print(tmdbDat)
     imdb_link = 'https://www.imdb.com/title/' + omdbDat['imdbID']
     runtime = int(omdbDat['Runtime'][:-4])
@@ -120,3 +120,5 @@ df=df[keys]
 
 # %%
 df.to_csv('../scifi_data.csv')
+
+# %%
