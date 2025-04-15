@@ -187,3 +187,18 @@ body {
         font-size: 12px;
     }
 }  */
+
+#season-checkboxes label {
+    display: inline-block;
+    margin: 4px 8px;
+    cursor: pointer;
+}
+
+#season-checkboxes {
+    margin-top: 1em;
+}
+
+#season-checkboxes button {
+    margin: 0 4px 8px 0;
+    padding: 4px 8px;
+}

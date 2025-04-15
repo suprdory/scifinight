@@ -8,25 +8,77 @@ let titleSection = document.getElementById('title');
 
 let cb = ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#f7f7f7", "#d1e5f0", "#92c5de", "#4393c3", "#2166ac", "#053061"]
 
+document.getElementById('select-all-seasons').addEventListener('click', () => {
+    document.querySelectorAll('#season-checkbox-list input[type="checkbox"]').forEach(cb => {
+        cb.checked = true;
+    });
+});
+
+document.getElementById('select-none-seasons').addEventListener('click', () => {
+    document.querySelectorAll('#season-checkbox-list input[type="checkbox"]').forEach(cb => {
+        cb.checked = false;
+    });
+});
+
 // Fetch films from films.json
 fetch('films.json')
     .then(response => response.json())
     .then(data => {
         films = data;
         // startVote()
+        populateSeasonCheckboxes(films);
     })
     .catch(error => console.error('Error loading films:', error));
 
+function populateSeasonCheckboxes(films) {
+    const seasonSet = new Set(films.map(film => film.Season));
+    const listContainer = document.getElementById('season-checkbox-list');
+    listContainer.innerHTML = ''; // Clear old list
+
+    Array.from(seasonSet).sort((a, b) => a - b).forEach(season => {
+        const label = document.createElement('label');
+        label.style.marginRight = '10px';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.value = season;
+        checkbox.checked = true; // Default: all selected
+
+        label.appendChild(checkbox);
+        label.append(` Season ${season}`);
+        listContainer.appendChild(label);
+    });
+}
+
+
 // Filter films based on the selected Watched filter
+// function filterFilms(films) {
+//     let watchedFilter = document.getElementById('watched-filter').value;
+//     if (watchedFilter === 'all') {
+//         return films;
+//     } else if (watchedFilter === 'watched') {
+//         return films.filter(film => film.Watched === true);
+//     } else {
+//         return films.filter(film => film.Watched === false);
+//     }
+// }
+
 function filterFilms(films) {
-    let watchedFilter = document.getElementById('watched-filter').value;
-    if (watchedFilter === 'all') {
-        return films;
-    } else if (watchedFilter === 'watched') {
-        return films.filter(film => film.Watched === true);
-    } else {
-        return films.filter(film => film.Watched === false);
-    }
+    const watchedFilter = document.getElementById('watched-filter').value;
+    const seasonCheckboxes = document.querySelectorAll('#season-checkboxes input[type="checkbox"]');
+    const selectedSeasons = Array.from(seasonCheckboxes)
+        .filter(cb => cb.checked)
+        .map(cb => Number(cb.value));
+
+    return films.filter(film => {
+        const watchedMatch = watchedFilter === 'all' ||
+            (watchedFilter === 'watched' && film.Watched === true) ||
+            (watchedFilter === 'unwatched' && film.Watched === false);
+
+        const seasonMatch = selectedSeasons.length === 0 || selectedSeasons.includes(film.Season);
+
+        return watchedMatch && seasonMatch;
+    });
 }
 
 // Shuffle array utility function
@@ -157,6 +209,8 @@ function startVote(){
         alert("No films match the selected criteria.");
     }
 }
+
+
 
 // Start the game and apply the filter when clicked
 startButton.addEventListener('click', () => {
