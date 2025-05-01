@@ -137,6 +137,7 @@ function loadFilms() {
             filmsData = data; // Store loaded data globally
             const sortedFilms = sortFilms(filmsData, document.getElementById('sort-options').value);
             const filteredFilms = filterFilms(sortedFilms, document.getElementById('filter-options').value);
+            
             displayFilms(filteredFilms); // Display sorted and filtered films
             processURL();
         })
@@ -198,7 +199,7 @@ function rightPanelHome() {
     const rightPanel = document.getElementById('right-panel');
     rightPanel.style.display = 'flex';
     const filmTitle = document.getElementById('film-title');
-    filmTitle.innerHTML = `<h2>Welcome to Sci-fi Night!</h2>`
+    filmTitle.innerHTML = `<h2>Welcome to <font color="grey"><del>Sci-fi</del></font> Van-tru Night!</h2>`
     const filmDetails = document.getElementById('film-details');
     filmDetails.innerHTML = `<p></p><a href='stats.html'>Stats</a>`
     filmDetails.innerHTML = filmDetails.innerHTML+`<p></p><a href='vote.html'>Vote!</a>`

@@ -1,4 +1,5 @@
 let films = [];
+let vtfilms = [];
 let remainingFilms = [];
 let progressElement = document.getElementById('progress');
 let filmContainer = document.getElementById('film-container');
@@ -19,16 +20,51 @@ document.getElementById('select-none-seasons').addEventListener('click', () => {
         cb.checked = false;
     });
 });
+function addVanTruField(films, vtfilms) {
+    vtfilms.forEach(vtfilm => {
+        // console.log(vtfilm.imdbID)
+        const item = films.find(obj => obj.imdbID === vtfilm.imdbID);
+        if (item) {
+            item.vantru = true;
+        }
 
+
+    }
+    )
+    films.forEach(film=>{
+        if (film.vantru){
+
+        }
+        else{
+            film.vantru=false
+        }
+    })
+    // console.log(films)
+}
 // Fetch films from films.json
 fetch('films.json')
     .then(response => response.json())
     .then(data => {
         films = data;
+        fetch('films-vantru.json')
+            .then(response => response.json())
+            .then(data => {
+                vtfilms = data;
+                // startVote()
+                addVanTruField(films, vtfilms);
+            })
+            .catch(error => console.error('Error loading films:', error));
         // startVote()
         populateSeasonCheckboxes(films);
+        // console.log(films)
     })
     .catch(error => console.error('Error loading films:', error));
+
+
+
+
+
+
 
 function populateSeasonCheckboxes(films) {
     const seasonSet = new Set(films.map(film => film.Season));
@@ -42,12 +78,27 @@ function populateSeasonCheckboxes(films) {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.value = season;
-        checkbox.checked = true; // Default: all selected
+        // checkbox.checked = true; // Default: all selected
+        checkbox.checked = false; // Default: all selected
 
         label.appendChild(checkbox);
         label.append(` Season ${season}`);
         listContainer.appendChild(label);
     });
+
+    // Add vantru box
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.value = "vantru";
+    checkbox.checked = true; // Default: all selected
+    checkbox.id = 'vantru'
+
+    const label = document.createElement('label');
+    label.style.marginRight = '10px';
+    label.appendChild(checkbox);
+    label.append(`Van-tru`);
+    listContainer.appendChild(label);
+
 }
 
 
@@ -70,6 +121,9 @@ function filterFilms(films) {
         .filter(cb => cb.checked)
         .map(cb => Number(cb.value));
 
+    const vantruCB = document.getElementById('vantru').checked
+    // console.log("vantruCB",vantruCB)
+
     return films.filter(film => {
         const watchedMatch = watchedFilter === 'all' ||
             (watchedFilter === 'watched' && film.Watched === true) ||
@@ -77,7 +131,10 @@ function filterFilms(films) {
 
         const seasonMatch = selectedSeasons.length === 0 || selectedSeasons.includes(film.Season);
 
-        return watchedMatch && seasonMatch;
+        const vanTruMatch = film.vantru == vantruCB;
+        // console.log(film.vantru)
+
+        return watchedMatch && (seasonMatch || vanTruMatch);
     });
 }
 
@@ -109,9 +166,9 @@ function displayFilmGroups() {
 
     // Update progress
     let remainingDecisions = Math.ceil(Math.log2(remainingFilms.length));
-    progressElement.textContent = `< ${remainingDecisions+1} decisions, ${remainingFilms.length} films remaining`;
+    progressElement.textContent = `< ${remainingDecisions + 1} decisions, ${remainingFilms.length} films remaining`;
 
-    
+
 }
 
 // Create the film group element and display additional info (year and runtime)
@@ -122,31 +179,31 @@ function createGroupElement(group, groupId) {
     groupElement.id = groupId;
 
     // Display each film with its title, year, and runtime
-//     groupElement.innerHTML = group.map(film => `
-//     <strong style="color:${cb[11-parseInt(film.IMDb*11/10)]};">${film.Title}</strong> (${film.Year})
-//     ${film.Runtime} mins
-//   `).join('<br>');
+    //     groupElement.innerHTML = group.map(film => `
+    //     <strong style="color:${cb[11-parseInt(film.IMDb*11/10)]};">${film.Title}</strong> (${film.Year})
+    //     ${film.Runtime} mins
+    //   `).join('<br>');
 
     group.forEach(film => {
-        let card=document.createElement('div');
+        let card = document.createElement('div');
         card.classList.add("film-card")
         let title = document.createElement('h3');
         title.classList.add('film-title')
-        title.innerText=film.Title
-        title.style.color = cb[11 - parseInt(film.IMDb * 11 / 10)]
+        title.innerText = film.Title
+        title.style.color = cb[parseInt(5 - (film.IMDb - 5) * 1.4)]
         // title.style.color = cb[10]
         card.appendChild(title)
 
-        let filmDetails=document.createElement('div')
+        let filmDetails = document.createElement('div')
         filmDetails.classList.add('film-details')
 
         let filmYear = document.createElement('span')
         filmYear.classList.add('film-year')
-        filmYear.innerText=film.Year
-        
+        filmYear.innerText = film.Year
+
         let filmRuntime = document.createElement('span')
         filmRuntime.classList.add('film-runtime')
-        filmRuntime.innerText=film.Runtime + " m"
+        filmRuntime.innerText = film.Runtime + " m"
 
         filmDetails.appendChild(filmYear)
         filmDetails.appendChild(filmRuntime)
@@ -161,7 +218,7 @@ function createGroupElement(group, groupId) {
     groupElement.addEventListener('click', () => {
         eliminateGroup(groupId);
     });
-    groupElement.style.display="flex"
+    groupElement.style.display = "flex"
 
     return groupElement;
 }
@@ -194,7 +251,7 @@ function showFinalFilm() {
     startButton.textContent = "Re-vote";
 }
 
-function startVote(){
+function startVote() {
     remainingFilms = filterFilms(films); // Apply the Watched filter
 
     // Remove filter section to free up space
@@ -216,4 +273,3 @@ function startVote(){
 startButton.addEventListener('click', () => {
     startVote()
 });
-
