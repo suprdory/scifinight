@@ -190,7 +190,7 @@ function createGroupElement(group, groupId) {
         let title = document.createElement('h3');
         title.classList.add('film-title')
         title.innerText = film.Title
-        title.style.color = cb[parseInt(5 - (film.IMDb - 5) * 1.4)]
+        title.style.color = cb[parseInt(6 - (film.IMDb - 5) * 1.4)]
         // title.style.color = cb[10]
         card.appendChild(title)
 
