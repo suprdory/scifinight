@@ -561,7 +561,7 @@
     },
     {
         "Title": "Battle Beyond the Stars",
-        "Watched": false,
+        "Watched": true,
         "Season": 11.0,
         "imdbID": "tt0080421",
         "Year": 1980,
