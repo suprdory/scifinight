@@ -23,10 +23,10 @@ films_remaining = []  # Films still in the game
 eliminated_films = []  # Films that have been eliminated
 
 # Serve the frontend HTML
-@app.get("/")
-async def get():
-    with open("static/index.html") as f:
-        return HTMLResponse(f.read())
+# @app.get("/")
+# async def get():
+#     with open("static/index.html") as f:
+#         return HTMLResponse(f.read())
 
 # Handle WebSocket connections
 @app.websocket("/ws")
@@ -97,4 +97,5 @@ async def broadcast_state():
 
 # Run the FastAPI app with uvicorn
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=8006, reload=True)
+    
