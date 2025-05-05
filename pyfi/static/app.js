@@ -1,5 +1,5 @@
 /* app.js */
-const backendUrl = "ws://meow.suprdory.com:8006/ws";
+const backendUrl = "wss://meow.suprdory.com:8006/ws";
 const ws = new WebSocket(backendUrl);
 
 const joinScreen = document.getElementById("join-screen");
