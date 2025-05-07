@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Vote Session</title>
+    <link rel="stylesheet" href="/vote/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Host a Vote</h1>
+    </header>
+    <main>
+        <!-- <button id="create-session">Create Voting Session</button> -->
+        <div id="session-link"></div>
+        <button id="start-vote">Start Vote</button>
+        <div id="film-select" style="display: none;">
+            <label for="season-filter">Select Seasons:</label><br>
+            <select id="season-filter" multiple>
+                <option value="1">Season 1</option>
+                <option value="2">Season 2</option>
+                <option value="3">Season 3</option>
+                <option value="4">Season 4</option>
+                <option value="5">Season 5</option>
+                <option value="6">Season 6</option>
+                <option value="7">Season 7</option>
+                <option value="8">Season 8</option>
+                <option value="9">Season 9</option>
+                <option value="10">Season 10</option>
+                <option selected="selected" value="11">Season 11</option>
+            </select>
+            <br><br>
+            <label for="watched-filter">Watched Status:</label><br>
+            <select id="watched-filter">
+                <option value="all">All</option>
+                <option value="watched">Watched</option>
+                <option selected="selected" value="unwatched">Unwatched</option>
+            </select>
+            <br><br>
+            <ul id="film-list"></ul>
+
+        </div>
+
+        <div id="waiting-area" style="display: none;">
+            <h2>Players Joined:</h2>
+            <ul id="player-list"></ul>
+        </div>
+    </main>
+    <script src="/vote/host.js"></script>
+</body>
+
+</html>
