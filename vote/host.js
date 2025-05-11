@@ -84,8 +84,9 @@ ws.onclose = () => {
     console.warn("⚠️ WebSocket closed.");
     wsReady = false;
 };
-
-sessionLink.innerHTML = `Share this link: <a href="/vote/player.html?code=${sessionCode}" target="_blank">Join Vote</a>`;
+let currentUrl=window.location
+log(currentUrl)
+sessionLink.innerHTML = `Share this link: <a href="../vote/player.html?code=${sessionCode}" target="_blank">Join Vote</a>`;
 filmSelectSection.style.display = 'block';
 waitingArea.style.display = 'block';
 
