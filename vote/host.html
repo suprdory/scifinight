@@ -2,53 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Host Vote Session</title>
-    <link rel="stylesheet" href="../vote/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Vote - Host</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="host.js"></script>
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Host a Vote</h1>
-    </header>
-    <main>
-        <!-- <button id="create-session">Create Voting Session</button> -->
-        <div id="session-link"></div>
-        <button id="start-vote">Start Vote</button>
-        <div id="film-select" style="display: none;">
-            <label for="season-filter">Select Seasons:</label><br>
-            <select id="season-filter" multiple>
-                <option value="1">Season 1</option>
-                <option value="2">Season 2</option>
-                <option value="3">Season 3</option>
-                <option value="4">Season 4</option>
-                <option value="5">Season 5</option>
-                <option value="6">Season 6</option>
-                <option value="7">Season 7</option>
-                <option value="8">Season 8</option>
-                <option value="9">Season 9</option>
-                <option value="10">Season 10</option>
-                <option selected="selected" value="11">Season 11</option>
-            </select>
-            <br><br>
-            <label for="watched-filter">Watched Status:</label><br>
+    <h1>Host a Film Vote</h1>
+
+    <section id="session">
+        <p><strong>Session link:</strong> <span id="session-link"></span></p>
+        <button id="copy-link-btn">Copy Link</button>
+    </section>
+
+    <section id="join-as-host">
+        <h2>Your Info</h2>
+        <input type="text" id="host-name" placeholder="Enter your name" />
+        <button id="host-join-btn">Join as Player</button>
+    </section>
+
+    <section id="filters">
+        <h2>Film Filters</h2>
+        <div>
+            <label for="watched-filter">Watched status:</label>
             <select id="watched-filter">
                 <option value="all">All</option>
                 <option value="watched">Watched</option>
-                <option selected="selected" value="unwatched">Unwatched</option>
+                <option value="unwatched">Unwatched</option>
             </select>
-            <br><br>
-            <ul id="film-list"></ul>
-
         </div>
-
-        <div id="waiting-area" style="display: none;">
-            <h2>Players Joined:</h2>
-            <ul id="player-list"></ul>
+        <div>
+            <strong>Seasons:</strong>
+            <div id="season-buttons" style="margin-top: 0.5rem;"></div>
+            <button id="select-all-seasons">Select All</button>
+            <button id="select-none-seasons">Select None</button>
         </div>
-    </main>
-    <script src="../vote/host.js"></script>
+    </section>
+
+    <section id="film-select">
+        <h2>Selected Films</h2>
+        <ul id="film-list"></ul>
+    </section>
+
+    <section id="waiting-area">
+        <h2>Players</h2>
+        <ul id="player-list"></ul>
+    </section>
+
+    <button id="start-vote">Start Vote</button>
 </body>
 
 </html>

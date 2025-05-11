@@ -14,66 +14,43 @@ function generateCode(length = 6) {
 const backendUrl = "wss://meow.suprdory.com:8006/ws";
 
 // Elements
-const createBtn = document.getElementById('create-session');
-const seasonFilter = document.getElementById('season-filter');
-const watchedFilter = document.getElementById('watched-filter');
 const sessionLink = document.getElementById('session-link');
+const copyLinkBtn = document.getElementById('copy-link-btn');
+
 const filmList = document.getElementById('film-list');
-const startVoteBtn = document.getElementById('start-vote');
 const filmSelectSection = document.getElementById('film-select');
-const waitingArea = document.getElementById('waiting-area');
+const startVoteBtn = document.getElementById('start-vote');
+
+const seasonButtonsContainer = document.getElementById('season-buttons');
+const watchedFilter = document.getElementById('watched-filter');
+const selectAllBtn = document.getElementById('select-all-seasons');
+const selectNoneBtn = document.getElementById('select-none-seasons');
+
 const playerList = document.getElementById('player-list');
+const nameInput = document.getElementById('host-name');
+const joinBtn = document.getElementById('host-join-btn');
 
 let allFilms = [];
 let selectedFilms = [];
 let sessionCode = '';
 let ws;
 let wsReady = false;
+let selectedSeasons = new Set();
 
-// Fetch films from server
-fetch('../films.json')
-    .then(res => res.json())
-    .then(data => {
-        allFilms = data;
-        updateFilmDisplay();
-    });
-
-// Update films shown based on filters
-function updateFilmDisplay() {
-    const selectedSeasons = Array.from(seasonFilter.selectedOptions).map(o => parseInt(o.value));
-    const watched = watchedFilter.value;
-
-    selectedFilms = allFilms.filter(film => {
-        const seasonMatch = selectedSeasons.includes(film.Season);
-        const watchedMatch = watched === 'all' || (watched === 'watched' && film.Watched) || (watched === 'unwatched' && !film.Watched);
-        return seasonMatch && watchedMatch;
-    });
-
-    filmList.innerHTML = selectedFilms.map(f => `<li>${f.Title} (${f.Year})</li>`).join('');
-}
-
-seasonFilter.addEventListener('change', updateFilmDisplay);
-watchedFilter.addEventListener('change', updateFilmDisplay);
-
-// Create session and connect WebSocket
+// --- WebSocket setup ---
 sessionCode = generateCode();
 ws = new WebSocket(`${backendUrl}/${sessionCode}`);
 
 ws.onopen = () => {
     wsReady = true;
-    console.log("✅ WebSocket connection opened.");
-
-    // Test ping
+    log("✅ WebSocket open");
     ws.send(JSON.stringify({ type: "ping" }));
 };
 
 ws.onmessage = (event) => {
     const state = JSON.parse(event.data);
-    console.log("📩 WebSocket message received:", state);
-
-    if (state.players) {
-        playerList.innerHTML = state.players.map(p => `<li>${p}</li>`).join('');
-    }
+    log("📩 Message from server:", state);
+    renderPlayers(state.players);
 };
 
 ws.onerror = (err) => {
@@ -81,37 +58,131 @@ ws.onerror = (err) => {
 };
 
 ws.onclose = () => {
-    console.warn("⚠️ WebSocket closed.");
+    console.warn("⚠️ WebSocket closed");
     wsReady = false;
 };
-let currentUrl=window.location
-log(currentUrl)
-sessionLink.innerHTML = `Share this link: <a href="../vote/player.html?code=${sessionCode}" target="_blank">Join Vote</a>`;
-filmSelectSection.style.display = 'block';
-waitingArea.style.display = 'block';
 
-// Send start vote message
+// --- Link Sharing ---
+const fullUrl = `${window.location.origin}/vote/player.html?code=${sessionCode}`;
+sessionLink.textContent = fullUrl;
+
+copyLinkBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(fullUrl).then(() => {
+        copyLinkBtn.textContent = "Copied!";
+        setTimeout(() => (copyLinkBtn.textContent = "Copy Link"), 2000);
+    });
+});
+
+// --- Fetch Films ---
+fetch('../films.json')
+    .then(res => res.json())
+    .then(data => {
+        allFilms = data;
+        const seasons = [...new Set(allFilms.map(f => f.Season))].sort((a, b) => a - b);
+        seasons.forEach(season => {
+            const btn = document.createElement('button');
+            btn.textContent = `S${season}`;
+            btn.classList.add('season-toggle');
+            btn.dataset.season = season;
+            btn.addEventListener('click', () => {
+                if (selectedSeasons.has(season)) {
+                    selectedSeasons.delete(season);
+                    btn.classList.remove('selected');
+                } else {
+                    selectedSeasons.add(season);
+                    btn.classList.add('selected');
+                }
+                updateFilmDisplay();
+            });
+            seasonButtonsContainer.appendChild(btn);
+        });
+        selectedSeasons = new Set(seasons); // initially all selected
+        document.querySelectorAll('.season-toggle').forEach(btn => btn.classList.add('selected'));
+        updateFilmDisplay();
+    });
+
+// --- Filter Helpers ---
+selectAllBtn.addEventListener('click', () => {
+    selectedSeasons = new Set([...seasonButtonsContainer.querySelectorAll('button')].map(b => parseInt(b.dataset.season)));
+    document.querySelectorAll('.season-toggle').forEach(btn => btn.classList.add('selected'));
+    updateFilmDisplay();
+});
+
+selectNoneBtn.addEventListener('click', () => {
+    selectedSeasons.clear();
+    document.querySelectorAll('.season-toggle').forEach(btn => btn.classList.remove('selected'));
+    updateFilmDisplay();
+});
+
+watchedFilter.addEventListener('change', updateFilmDisplay);
+
+// --- Update Film List ---
+function updateFilmDisplay() {
+    const watched = watchedFilter.value;
+    selectedFilms = allFilms.filter(film => {
+        const seasonMatch = selectedSeasons.has(film.Season);
+        const watchedMatch =
+            watched === 'all' ||
+            (watched === 'watched' && film.Watched) ||
+            (watched === 'unwatched' && !film.Watched);
+        return seasonMatch && watchedMatch;
+    });
+
+    filmList.innerHTML = selectedFilms.map(f => `<li>${f.Title} (${f.Year})</li>`).join('');
+}
+
+// --- Host joins vote ---
+joinBtn.addEventListener('click', () => {
+    const name = nameInput.value.trim();
+    if (!name || !wsReady) return;
+    ws.send(JSON.stringify({ type: 'join', name }));
+    nameInput.disabled = true;
+    joinBtn.disabled = true;
+});
+
+// --- Player rendering and reordering ---
+function renderPlayers(players) {
+    playerList.innerHTML = '';
+    players.forEach(name => {
+        const li = document.createElement('li');
+        li.textContent = name;
+        li.draggable = true;
+        li.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData("text/plain", name);
+        });
+        li.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+        li.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const from = e.dataTransfer.getData("text/plain");
+            const to = name;
+            reorderPlayers(from, to);
+        });
+        playerList.appendChild(li);
+    });
+}
+
+function reorderPlayers(fromName, toName) {
+    const items = Array.from(playerList.children).map(li => li.textContent);
+    const fromIndex = items.indexOf(fromName);
+    const toIndex = items.indexOf(toName);
+    if (fromIndex >= 0 && toIndex >= 0) {
+        items.splice(toIndex, 0, items.splice(fromIndex, 1)[0]);
+        renderPlayers(items);
+        // You might send this new order to the server if desired
+    }
+}
+
+// --- Start Vote ---
 startVoteBtn.addEventListener('click', () => {
     if (!wsReady) {
-        console.warn("WebSocket is not open. Cannot send start message.");
+        alert("WebSocket not ready");
         return;
     }
-
     if (selectedFilms.length < 2) {
-        alert("Select at least two films to start the vote.");
+        alert("Select at least two films to vote on.");
         return;
     }
-
-    const message = {
-        type: 'start',
-        films: selectedFilms
-    };
-
-    console.log("🚀 Sending start message:", message);
-
-    try {
-        ws.send(JSON.stringify(message));
-    } catch (err) {
-        console.error("❌ Failed to send start message:", err);
-    }
+    ws.send(JSON.stringify({ type: 'start', films: selectedFilms }));
 });
