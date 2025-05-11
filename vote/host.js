@@ -31,7 +31,7 @@ let ws;
 let wsReady = false;
 
 // Fetch films from server
-fetch('/films.json')
+fetch('../films.json')
     .then(res => res.json())
     .then(data => {
         allFilms = data;
