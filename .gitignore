@@ -1,2 +1,3 @@
 pyfi/.venv/
 pyfi/.env
+pyfi/__pycache__/
