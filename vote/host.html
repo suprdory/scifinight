@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Film Vote - Host</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="host.js"></script>
+    <script type="module" src="host.js"></script>
     <style>
 
     </style>
@@ -26,6 +26,11 @@
         <button id="host-join-btn">Join as Player</button>
     </section>
 
+    <section id="waiting-area">
+        <h2>Players</h2>
+        <ul id="player-list"></ul>
+    </section>
+    <button id="start-vote">Start Vote</button>
     <section id="filters">
         <h2>Film Filters</h2>
         <div>
@@ -49,12 +54,9 @@
         <ul id="film-list"></ul>
     </section>
 
-    <section id="waiting-area">
-        <h2>Players</h2>
-        <ul id="player-list"></ul>
-    </section>
 
-    <button id="start-vote">Start Vote</button>
+
+
 </body>
 
 </html>

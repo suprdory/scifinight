@@ -66,6 +66,19 @@ async def websocket_endpoint(websocket: WebSocket, session_code: str):
                         session["current_turn"] = (
                             session["current_turn"] + 1) % len(session["players"])
                     await broadcast_state(session_code)
+            elif data["type"] == "reorder":
+                new_order = data["order"]
+                reordered_players = []
+
+                # Preserve websocket associations based on name
+                name_to_ws = {p["name"]: p["ws"] for p in session["players"]}
+                for name in new_order:
+                    if name in name_to_ws:
+                        reordered_players.append({"name": name, "ws": name_to_ws[name]})
+
+                session["players"] = reordered_players
+                session["current_turn"] = 0  # reset to first in new order
+                await broadcast_state(session_code)
 
     except WebSocketDisconnect:
         # Remove client and update players

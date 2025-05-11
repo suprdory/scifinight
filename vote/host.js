@@ -63,11 +63,16 @@ ws.onclose = () => {
 };
 
 // --- Link Sharing ---
-const fullUrl = `${window.location.origin}/vote/player.html?code=${sessionCode}`;
-sessionLink.textContent = fullUrl;
+
+log(window.location)
+const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
+const sessionLinkUrl = `${basePath}/player.html?code=${sessionCode}`;
+
+// const fullUrl = `${window.location.origin}/vote/player.html?code=${sessionCode}`;
+sessionLink.textContent = sessionLinkUrl;
 
 copyLinkBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText(fullUrl).then(() => {
+    navigator.clipboard.writeText(sessionLinkUrl).then(() => {
         copyLinkBtn.textContent = "Copied!";
         setTimeout(() => (copyLinkBtn.textContent = "Copy Link"), 2000);
     });
@@ -170,7 +175,14 @@ function reorderPlayers(fromName, toName) {
     if (fromIndex >= 0 && toIndex >= 0) {
         items.splice(toIndex, 0, items.splice(fromIndex, 1)[0]);
         renderPlayers(items);
-        // You might send this new order to the server if desired
+    }
+    // You might send this new order to the server if desired
+    log(items)
+    if (wsReady) {
+        ws.send(JSON.stringify({
+            type: "reorder",
+            order: items
+        }));
     }
 }
 
