@@ -149,12 +149,13 @@ function showFilmDetails(film, state) {
   const details = document.createElement("div");
   details.classList.add("film-details");
   details.innerHTML = `
-    <h2>${film.Title}</h2>
-    <p><strong>Year:</strong> ${film.Year}</p>
+    <h2>${film.Title} (${film.Year})</h2>
     <p><strong>Runtime:</strong> ${film.Runtime}</p>
+    <p><strong>Plot:</strong> ${film.Plot !== null ? film.Plot : "N/A"}</p>
     <p><strong>IMDb:</strong> ${film.IMDb !== null ? film.IMDb : "N/A"}</p>
     <p><strong>RT:</strong> ${film.RT !== null ? film.RT : "N/A"}</p>
     <p><strong>Box Office:</strong> ${film.BoxOffice !== null ? `$${(film.BoxOffice / 1_000_000).toFixed(1)}M` : "N/A"}</p>
+    <p><strong>Actors:</strong> ${film.Actors}</p>
     <p><strong>Director:</strong> ${film.Director}</p>
     <p><strong>Language:</strong> ${film.Language}</p>
     <p><strong>Season:</strong> ${film.Season}</p>
