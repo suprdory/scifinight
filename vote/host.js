@@ -101,8 +101,14 @@ fetch('../films.json')
             });
             seasonButtonsContainer.appendChild(btn);
         });
-        selectedSeasons = new Set(seasons); // initially all selected
-        document.querySelectorAll('.season-toggle').forEach(btn => btn.classList.add('selected'));
+        selectedSeasons = new Set([10, 11]); // initially only seasons 10 and 11 selected
+        document.querySelectorAll('.season-toggle').forEach(btn => {
+            if (selectedSeasons.has(parseInt(btn.dataset.season))) {
+                btn.classList.add('selected');
+            } else {
+                btn.classList.remove('selected');
+            }
+        });
         updateFilmDisplay();
     });
 
@@ -132,6 +138,9 @@ function updateFilmDisplay() {
             (watched === 'unwatched' && !film.Watched);
         return seasonMatch && watchedMatch;
     });
+
+    const selectedCount = selectedFilms.length;
+    filmList.previousElementSibling.textContent = `Selected Films (${selectedCount})`;
 
     filmList.innerHTML = selectedFilms.map(f => `<li>${f.Title} (${f.Year})</li>`).join('');
 }

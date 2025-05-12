@@ -33,11 +33,20 @@
         .clickable:hover {
             background-color: #333;
         }
+        .sortable {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #00bcd4;
+}
+
+.sortable:hover {
+    color: #03a9f4;
+}
     </style>
 </head>
 
 <body>
-    <h1>Join Film Vote</h1>
+    <h1 id="join-header">Join Film Vote</h1>
     <label for="name">Enter your name:</label>
     <input type="text" id="name" placeholder="Your name" />
     <button id="join-btn">Join</button>
