@@ -48,10 +48,16 @@ tr {
     border-bottom: 1px solid #333;
 }
 
+.clickable {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
 /* Styling for disabled eliminate button */
 .eliminate[disabled] {
   cursor: not-allowed;
   opacity: 0.5;
+  background-color: #999;
 }
 
 /* Help text styling for reconnection information */
@@ -60,4 +66,256 @@ tr {
     color: #aaa;
     margin-top: 0.5rem;
     font-style: italic;
+}
+
+/* Button styling to match host view */
+button {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    padding: 0.5rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #333;
+    border-color: #666;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Join button styling */
+#join-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+}
+
+#join-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Back to list button styling */
+.back-to-list {
+    background-color: #2196F3;
+}
+
+.back-to-list:hover {
+    background-color: #1976D2;
+}
+
+/* Player header styling */
+#player-header {
+    color: #f0f0f0; /* Revert to white color for player welcome */
+    font-weight: bold;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Eliminate button styling */
+.eliminate {
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+}
+
+.eliminate:hover {
+    background-color: #d32f2f;
+}
+
+/* Winner announcement styling */
+.winner-announcement {
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #222 0%, #333 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    animation: winner-glow 2s infinite alternate;
+}
+
+@keyframes winner-glow {
+    from { box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); }
+    to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.9); }
+}
+
+.winning-film {
+    padding: 15px;
+}
+
+.winning-film h1 {
+    color: #e50914;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.winning-film h2 {
+    color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.winning-film h3 {
+    margin-top: 0;
+    color: #ccc;
+}
+
+/* Trophy emoji animation */
+.winner-announcement h2 {
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 28px;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 50/50 Voting Style Styling */
+.voting-explanation {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(33, 150, 243, 0.15);
+    border-left: 4px solid #2196F3;
+    border-radius: 4px;
+}
+
+.voting-explanation h3 {
+    margin-top: 0;
+    color: #2196F3;
+}
+
+.groups-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .groups-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .film-group {
+        width: 48%;
+    }
+}
+
+.film-group {
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.film-group h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.film-group ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style-type: none;
+}
+
+.film-group ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.film-group ul li:last-child {
+    border-bottom: none;
+}
+
+.group-a {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(76, 175, 80, 0.05) 100%);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.group-a:hover {
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
+}
+
+.group-b {
+    background: linear-gradient(135deg, rgba(244, 67, 54, 0.15) 0%, rgba(244, 67, 54, 0.05) 100%);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.group-b:hover {
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.3);
+}
+
+.eliminate-group {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.group-a .eliminate-group {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.group-a .eliminate-group:hover {
+    background-color: #388e3c;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.group-b .eliminate-group {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.group-b .eliminate-group:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+}
+
+/* Voting mode indicator */
+.voting-mode-indicator {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(33, 150, 243, 0.2);
+    border: 1px solid #2196F3;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.voting-mode-hybrid {
+    background-color: rgba(156, 39, 176, 0.2);
+    border-color: #9c27b0;
+}
+
+.voting-mode-fiftyfifty {
+    background-color: rgba(255, 152, 0, 0.2);
+    border-color: #ff9800;
 }

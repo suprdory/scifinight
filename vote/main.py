@@ -37,7 +37,12 @@ async def websocket_endpoint(websocket: WebSocket, session_code: str):
             "eliminated_films": [],
             "current_turn": 0,
             "started": False,
-            "player_ids": {}  # Map of player names to unique IDs
+            "player_ids": {},  # Map of player names to unique IDs
+            "winner": None,    # Will hold the winning film when only one remains
+            "vote_style": "one-by-one",  # Default voting style
+            "hybrid_threshold": 10,      # Default threshold for hybrid mode
+            "group_a": [],     # For 50/50 voting: first group of films
+            "group_b": []      # For 50/50 voting: second group of films
         }
         # Send the host their ID immediately
         await websocket.send_json({"type": "player_id", "id": host_id})
@@ -121,23 +126,81 @@ async def websocket_endpoint(websocket: WebSocket, session_code: str):
                 
             elif data["type"] == "start":
                 if websocket == session["host"]["ws"]:  # Updated host reference
+                    # Get voting style settings from the data
+                    vote_style = data.get("vote_style", "one-by-one")
+                    hybrid_threshold = int(data.get("hybrid_threshold", 10))
+                    
+                    # Update session with voting style settings
+                    session["vote_style"] = vote_style
+                    session["hybrid_threshold"] = hybrid_threshold
+                    
                     # Shuffle films and start session
-                    session["films_remaining"] = random.sample(
-                        data["films"], len(data["films"]))
+                    all_films = random.sample(data["films"], len(data["films"]))
+                    session["films_remaining"] = all_films
                     session["eliminated_films"] = []
                     session["current_turn"] = 0
                     session["started"] = True
+                    
+                    # If using 50/50 or hybrid voting style, split films into two groups initially
+                    if vote_style in ["fifty-fifty", "hybrid"]:
+                        mid_point = len(all_films) // 2
+                        session["group_a"] = all_films[:mid_point]
+                        session["group_b"] = all_films[mid_point:]
+                    
+                    print(f"Starting vote with style: {vote_style}" + 
+                          (f", threshold: {hybrid_threshold}" if vote_style == "hybrid" else ""))
+                    
                     await broadcast_state(session_code)
 
             elif data["type"] == "eliminate":
                 if session["started"] and session["players"][session["current_turn"]]["ws"] == websocket:
-                    film_to_remove = data["film"]
-                    session["films_remaining"] = [
-                        f for f in session["films_remaining"] if f["Title"] != film_to_remove]
-                    session["eliminated_films"].append(film_to_remove)
-                    if len(session["films_remaining"]) > 1:
+                    vote_style = session["vote_style"]
+                    
+                    # Handle one-by-one elimination style
+                    if vote_style == "one-by-one" or (vote_style == "hybrid" and len(session["films_remaining"]) <= session["hybrid_threshold"]):
+                        film_to_remove = data["film"]
+                        session["films_remaining"] = [
+                            f for f in session["films_remaining"] if f["Title"] != film_to_remove]
+                        session["eliminated_films"].append(film_to_remove)
+                        
+                    # Handle 50/50 elimination style
+                    elif vote_style == "fifty-fifty" or (vote_style == "hybrid" and len(session["films_remaining"]) > session["hybrid_threshold"]):
+                        # Get which group to eliminate (A or B)
+                        group_to_eliminate = data.get("group", "")
+                        
+                        if group_to_eliminate == "A":
+                            # Add all Group A films to eliminated list
+                            for film in session["group_a"]:
+                                session["eliminated_films"].append(film)
+                            # Keep only Group B films
+                            session["films_remaining"] = session["group_b"]
+                        elif group_to_eliminate == "B":
+                            # Add all Group B films to eliminated list
+                            for film in session["group_b"]:
+                                session["eliminated_films"].append(film)
+                            # Keep only Group A films
+                            session["films_remaining"] = session["group_a"]
+                        
+                        # If in hybrid mode and now below threshold, transition to one-by-one style
+                        if vote_style == "hybrid" and len(session["films_remaining"]) <= session["hybrid_threshold"]:
+                            print(f"Hybrid mode transitioning to one-by-one elimination with {len(session['films_remaining'])} films remaining")
+                        # Otherwise, prepare new 50/50 groups for next round
+                        elif len(session["films_remaining"]) > 2:  # Only split if more than 2 films
+                            # Reshuffle and split into new groups
+                            random.shuffle(session["films_remaining"])
+                            mid_point = len(session["films_remaining"]) // 2
+                            session["group_a"] = session["films_remaining"][:mid_point]
+                            session["group_b"] = session["films_remaining"][mid_point:]
+                    
+                    # Check if we have a winner (only one film left)
+                    if len(session["films_remaining"]) == 1:
+                        session["winner"] = session["films_remaining"][0]
+                        print(f"We have a winner: {session['winner']['Title']}")
+                    elif len(session["films_remaining"]) > 1:
+                        # Advance to next player regardless of voting style
                         session["current_turn"] = (
                             session["current_turn"] + 1) % len(session["players"])
+                    
                     await broadcast_state(session_code)
                     
             elif data["type"] == "reorder":
@@ -250,7 +313,13 @@ async def broadcast_state(session_code):
         "currentPlayer": current_player,
         "current_turn": session["current_turn"],  # Include current turn index
         "started": session["started"],
-        "connected_players": [p["name"] for p in session["players"] if p["ws"] is not None]
+        "connected_players": [p["name"] for p in session["players"] if p["ws"] is not None],
+        "winner": session.get("winner"),  # Include winner information if available
+        "has_winner": session.get("winner") is not None,
+        "vote_style": session.get("vote_style", "one-by-one"),  # Voting style
+        "hybrid_threshold": session.get("hybrid_threshold", 10),  # Hybrid threshold
+        "group_a": session.get("group_a", []),  # Group A films for 50/50 voting
+        "group_b": session.get("group_b", [])   # Group B films for 50/50 voting
     }
     
     # Log state for debugging

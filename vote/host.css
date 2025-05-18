@@ -43,6 +43,54 @@ li {
     font-style: italic;
 }
 
+/* Voting Style Section */
+#voting-style {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #9c27b0;
+}
+
+#voting-style h2 {
+    margin-top: 0;
+    color: #9c27b0;
+}
+
+#voting-style select {
+    width: 100%;
+    max-width: 300px;
+}
+
+#hybrid-settings {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(156, 39, 176, 0.1);
+    border-radius: 4px;
+}
+
+#hybrid-threshold {
+    width: 60px;
+    text-align: center;
+}
+
+/* Start Vote Button */
+#start-vote {
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+#start-vote:hover {
+    background-color: #1976D2;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.5);
+}
+
 /* Player view button styling */
 .player-view-btn {
     background-color: #388e3c !important;
@@ -63,6 +111,38 @@ li {
 .player-view-btn::before {
     content: "🎮 ";
     margin-right: 5px;
+}
+
+/* Winner section styling */
+.winner-section {
+    text-align: center;
+    background: linear-gradient(135deg, #222 0%, #333 100%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    animation: winner-pulse 2s infinite alternate;
+}
+        
+@keyframes winner-pulse {
+    from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+    to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.9); }
+}
+        
+.winning-film h1 {
+    margin-top: 10px;
+    color: #e50914;
+    font-size: 32px;
+}
+        
+.winning-film h3 {
+    margin-top: 0;
+    color: #ccc;
+}
+
+.winning-film p {
+    margin: 10px 0;
+    line-height: 1.4;
 }
 
 /* Vote Status Section Styling */

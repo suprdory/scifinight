@@ -6,6 +6,7 @@ const log = console.log;
 const urlParams = new URLSearchParams(window.location.search);
 const sessionCode = urlParams.get("code");
 let playerId = urlParams.get("pid");
+const nameFromUrl = urlParams.get("name");
 
 const backendUrl = "wss://meow.suprdory.com:8006/ws";
 let ws;
@@ -35,19 +36,19 @@ function initWebSocket() {
     log("WebSocket connection established");
     status.textContent = "Connected to session";
     
-    // Get the name from URL if available (important for reconnection)
-    const nameFromUrl = urlParams.get("name");
+    // If we have a name from the URL and no player name yet, use it
     if (nameFromUrl && !playerName) {
       playerName = nameFromUrl;
       nameInput.value = nameFromUrl;
+      log("Using name from URL:", playerName);
     }
     
     // If we have a player ID from the URL, attempt to reconnect
-    if (playerId && playerName) {
-      log("Auto-reconnecting with player ID:", playerId, "and name:", playerName);
+    if (playerId) {
+      log("Auto-reconnecting with player ID:", playerId, playerName ? `and name: ${playerName}` : "");
       ws.send(JSON.stringify({ 
         type: "join", 
-        name: playerName, 
+        name: playerName || "", // Send current name if available
         player_id: playerId 
       }));
       votingSection.style.display = "block";
@@ -88,7 +89,7 @@ function initWebSocket() {
         playerId = data.id;
         log("Received player ID:", playerId);
         
-        // Update URL with player ID and ensure name is also in URL for easier reconnection
+        // Update URL with player ID and keep name for better user experience
         const newUrl = new URL(window.location);
         newUrl.searchParams.set("pid", playerId);
         if (playerName) {
@@ -126,7 +127,7 @@ function initWebSocket() {
         }, 3000);
         
         status.textContent = `Reconnected as ${playerName}`;
-        status.style.color = "#4CAF50"; // Green color for success
+        status.style.color = "#f0f0f0"; // White color for normal status
         votingSection.style.display = "block";
         hideJoinElements();
         
@@ -252,8 +253,9 @@ function initWebSocket() {
         films = data.filmsRemaining;
         currentPlayer = data.currentPlayer;
         
-        // Update UI
+        // Update UI with white styling (default)
         playerHeader.textContent = `Welcome, ${playerName}`;
+        // Let CSS handle the color (white)
         updateFilmList(data);
       }
     }
@@ -302,8 +304,30 @@ joinBtn.addEventListener("click", () => {
       player_id: playerId // Include ID if we have one from a previous session
     }));
     
+    // Show "Joining session..." with default white styling
     status.textContent = "Joining session...";
-    status.style.color = ""; // Reset color
+    status.style.color = "#f0f0f0"; // White color for regular status
+    
+    // Create a welcome notification for all users
+    const welcomeNotification = document.createElement('div');
+    welcomeNotification.style.position = 'fixed';
+    welcomeNotification.style.top = '10px';
+    welcomeNotification.style.right = '10px';
+    welcomeNotification.style.backgroundColor = '#4CAF50'; // Green
+    welcomeNotification.style.color = 'white';
+    welcomeNotification.style.padding = '10px 15px';
+    welcomeNotification.style.borderRadius = '5px';
+    welcomeNotification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+    welcomeNotification.style.zIndex = '1000';
+    welcomeNotification.textContent = `Welcome, ${playerName}!`;
+    document.body.appendChild(welcomeNotification);
+    
+    // Fade out notification after a few seconds
+    setTimeout(() => {
+      welcomeNotification.style.transition = 'opacity 1s ease';
+      welcomeNotification.style.opacity = '0';
+      setTimeout(() => welcomeNotification.remove(), 1000);
+    }, 3000);
     
     votingSection.style.display = "block";
     hideJoinElements();
@@ -327,21 +351,180 @@ window.addEventListener('DOMContentLoaded', () => {
     // This ensures the WebSocket is ready when we attempt to reconnect
   }
   
-  // Display reconnection status if we have both ID and name
+  // Display reconnection status
   if (playerId && playerName) {
     status.textContent = "Reconnecting...";
-    status.style.color = "#ff9800"; // Orange color to indicate reconnecting state
+    status.style.color = "#ff9800"; // Orange color for reconnection state
   }
 });
+
+// Show 50/50 voting groups
+function show5050Groups(state) {
+  filmList.innerHTML = "";
+  
+  // Create container for the two groups
+  const groupsContainer = document.createElement("div");
+  groupsContainer.className = "groups-container";
+  
+  // Add explanation for 50/50 voting
+  const explanation = document.createElement("div");
+  explanation.className = "voting-explanation";
+  
+  // Customize the explanation based on voting style
+  const voteStyle = state.vote_style || "fifty-fifty";
+  const isHybrid = voteStyle === "hybrid";
+  const hybridThreshold = state.hybrid_threshold || 10;
+  const filmsCount = state.filmsRemaining.length;
+  
+  if (isHybrid) {
+    explanation.innerHTML = `
+      <h3>50/50 Elimination Round (Hybrid Mode)</h3>
+      <p>Choose which group of films to eliminate. The other group will continue to the next round.</p>
+      <p><strong>Note:</strong> When ${hybridThreshold} films remain, voting will switch to one-by-one elimination.</p>
+    `;
+  } else {
+    explanation.innerHTML = `
+      <h3>50/50 Elimination Round</h3>
+      <p>Choose which group of films to eliminate. The other group will continue to the next round.</p>
+    `;
+  }
+  groupsContainer.appendChild(explanation);
+  
+  // Create Group A
+  const groupA = document.createElement("div");
+  groupA.className = "film-group group-a";
+  
+  // Create Group B
+  const groupB = document.createElement("div");
+  groupB.className = "film-group group-b";
+  
+  // Add headers for each group
+  groupA.innerHTML = `<h3>Group A (${state.group_a.length} films)</h3>`;
+  groupB.innerHTML = `<h3>Group B (${state.group_b.length} films)</h3>`;
+  
+  // Create film lists for each group
+  const listA = document.createElement("ul");
+  state.group_a.forEach(film => {
+    const li = document.createElement("li");
+    li.textContent = `${film.Title} (${film.Year})`;
+    listA.appendChild(li);
+  });
+  groupA.appendChild(listA);
+  
+  const listB = document.createElement("ul");
+  state.group_b.forEach(film => {
+    const li = document.createElement("li");
+    li.textContent = `${film.Title} (${film.Year})`;
+    listB.appendChild(li);
+  });
+  groupB.appendChild(listB);
+  
+  // Add elimination buttons
+  if (playerName === state.currentPlayer) {
+    // Button for Group A
+    const eliminateABtn = document.createElement("button");
+    eliminateABtn.className = "eliminate-group";
+    eliminateABtn.textContent = "Eliminate Group A";
+    eliminateABtn.addEventListener("click", () => {
+      ws.send(JSON.stringify({ type: "eliminate", group: "A" }));
+    });
+    groupA.appendChild(eliminateABtn);
+    
+    // Button for Group B
+    const eliminateBBtn = document.createElement("button");
+    eliminateBBtn.className = "eliminate-group";
+    eliminateBBtn.textContent = "Eliminate Group B";
+    eliminateBBtn.addEventListener("click", () => {
+      ws.send(JSON.stringify({ type: "eliminate", group: "B" }));
+    });
+    groupB.appendChild(eliminateBBtn);
+  }
+  
+  groupsContainer.appendChild(groupA);
+  groupsContainer.appendChild(groupB);
+  filmList.appendChild(groupsContainer);
+}
 
 // Update the list of films
 function updateFilmList(state) {
   filmList.innerHTML = "";
 
   if (state.started) {
-    status.textContent = `Current turn: ${state.currentPlayer}`;
+    // Check if we have a winner
+    if (state.has_winner && state.winner) {
+      status.textContent = `We have a winner!`;
+      
+      // Create winner announcement
+      const winnerAnnouncement = document.createElement('div');
+      winnerAnnouncement.className = 'winner-announcement';
+      winnerAnnouncement.innerHTML = `
+        <h2>🏆 The Winning Film Is 🏆</h2>
+        <div class="winning-film">
+          <h1>${state.winner.Title}</h1>
+          <h3>(${state.winner.Year})</h3>
+          <p>${state.winner.Plot}</p>
+          <p>Directed by: ${state.winner.Director}</p>
+          <p>Runtime: ${state.winner.Runtime} minutes</p>
+          <p>IMDb: ${state.winner.IMDb || 'N/A'} | Rotten Tomatoes: ${state.winner.RT || 'N/A'}</p>
+        </div>
+      `;
+      filmList.appendChild(winnerAnnouncement);
+      
+      // The CSS is now in player.css so no need for inline styles
+      
+      return; // Exit early, no need to show the films table
+    }
+    
+    // Regular vote in progress display
+    let statusText = `Current turn: ${state.currentPlayer}`;
+    
+    // Add voting mode indicator
+    const voteStyle = state.vote_style || "one-by-one";
+    const isHybrid = voteStyle === "hybrid";
+    const isFiftyFifty = voteStyle === "fifty-fifty";
+    const hybridThreshold = state.hybrid_threshold || 10;
+    const filmsCount = state.filmsRemaining.length;
+    
+    // Create voting mode indicator
+    const voteModeIndicator = document.createElement('span');
+    voteModeIndicator.className = 'voting-mode-indicator';
+    
+    if (isFiftyFifty) {
+      voteModeIndicator.textContent = '50/50 Mode';
+      voteModeIndicator.classList.add('voting-mode-fiftyfifty');
+    } else if (isHybrid) {
+      if (filmsCount <= hybridThreshold) {
+        voteModeIndicator.textContent = 'Hybrid Mode: One-by-One Phase';
+      } else {
+        voteModeIndicator.textContent = 'Hybrid Mode: 50/50 Phase';
+      }
+      voteModeIndicator.classList.add('voting-mode-hybrid');
+      voteModeIndicator.title = `Will switch to one-by-one elimination when ${hybridThreshold} or fewer films remain`;
+    } else {
+      voteModeIndicator.textContent = 'One-by-One Mode';
+    }
+    
+    // Set the status text
+    status.textContent = statusText;
+    status.appendChild(voteModeIndicator);
+    
+    // Set the color based on whether it's this player's turn
     if (playerName === state.currentPlayer) {
-      status.textContent += " (Your turn!)";
+      status.insertBefore(document.createTextNode(" (Your turn!)"), voteModeIndicator);
+      status.style.color = "#4CAF50"; // Green color when it's the player's turn
+      status.style.fontWeight = "bold";
+    } else {
+      status.style.color = "#f0f0f0"; // White color for others' turns
+      status.style.fontWeight = "normal";
+    }
+    
+    // Determine if we're in 50/50 mode (either directly or via hybrid)
+    const using5050 = isFiftyFifty || (isHybrid && filmsCount > hybridThreshold);
+    
+    if (using5050) {
+      // Display 50/50 groups for all players, but only current player can vote
+      show5050Groups(state);
+      return; // Exit early, we're showing groups instead of the film list
     }
 
     // Create a table for displaying films

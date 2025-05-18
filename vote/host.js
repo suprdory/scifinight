@@ -49,6 +49,11 @@ function initializeApp() {
     const filmList = getElement('film-list');
     const filmSelectSection = getElement('film-select');
     const startVoteBtn = getElement('start-vote');
+    
+    // Voting style elements
+    const voteStyleSelect = getElement('vote-style');
+    const hybridSettings = getElement('hybrid-settings');
+    const hybridThreshold = getElement('hybrid-threshold');
 
     const seasonButtonsContainer = getElement('season-buttons');
     const watchedFilter = getElement('watched-filter');
@@ -231,6 +236,50 @@ function initializeApp() {
                     } else {
                         filmsRemainingEl.style.color = "";
                         filmsRemainingEl.style.fontWeight = "normal";
+                    }
+                }
+                
+                // Check for winner and display it
+                if (data.has_winner && data.winner) {
+                    // Create a winner announcement that stands out
+                    const winnerSection = document.createElement('div');
+                    winnerSection.id = 'winner-section';
+                    winnerSection.className = 'winner-section';
+                    
+                    // Create the winner announcement content
+                    winnerSection.innerHTML = `
+                        <h2>🏆 We Have a Winner! 🏆</h2>
+                        <div class="winning-film">
+                            <h1>${data.winner.Title}</h1>
+                            <h3>(${data.winner.Year})</h3>
+                            <p>${data.winner.Plot}</p>
+                            <p><strong>Director:</strong> ${data.winner.Director}</p>
+                            <p><strong>Runtime:</strong> ${data.winner.Runtime}</p>
+                            <p><strong>IMDb:</strong> ${data.winner.IMDb || 'N/A'} | <strong>Rotten Tomatoes:</strong> ${data.winner.RT || 'N/A'}</p>
+                        </div>
+                    `;
+                    
+                    // CSS is now in host.css so no need for inline styles
+                    
+                    // Replace current turn display with winner announcement
+                    const statusPanel = document.getElementById('vote-status');
+                    
+                    // Only add if it doesn't already exist
+                    if (statusPanel && !document.getElementById('winner-section')) {
+                        const existingWinnerSection = document.getElementById('winner-section');
+                        if (existingWinnerSection) {
+                            existingWinnerSection.remove();
+                        }
+                        
+                        // Find a good place to insert it
+                        const insertBeforeElement = document.querySelector('#vote-status .player-list') || 
+                                                   document.querySelector('#vote-status h2') ||
+                                                   statusPanel.firstChild;
+                                                   
+                        statusPanel.insertBefore(winnerSection, insertBeforeElement);
+                                                   
+                        // Update status text to indicate voting is complete
+                        if (voteStateEl) voteStateEl.textContent = "Vote Complete - We Have a Winner!";
                     }
                 }
             } else {
@@ -630,6 +679,7 @@ function initializeApp() {
                         const data = JSON.parse(event.data);
                         if (data.type === "player_id" && !data.is_host) {
                             // This is the host's player ID (not host ID)
+                            // Include name in URL for better user experience
                             const playerUrl = `${basePath}/player.html?code=${sessionCode}&name=${encodeURIComponent(name)}&pid=${data.id}`;
                             
                             // Update the button's URL with the correct player ID
@@ -647,7 +697,7 @@ function initializeApp() {
                 // Add temporary listener for player_id message
                 ws.addEventListener('message', hostPlayerListener);
                 
-                // Initial URL without player ID (will be updated when we receive player_id)
+                // Initial URL without player ID but with name (will be updated when we receive player_id)
                 const playerUrl = `${basePath}/player.html?code=${sessionCode}&name=${encodeURIComponent(name)}`;
                 
                 // Set up click event to open new tab with player view
@@ -905,6 +955,28 @@ function initializeApp() {
         }
     }
 
+    // --- Voting Style Selection ---
+    // Using the variables already defined at the top of the file with getElement()
+    
+    // Show/hide hybrid threshold settings based on voting style
+    if (voteStyleSelect && hybridSettings) {
+        // Set initial state
+        if (voteStyleSelect.value === 'hybrid') {
+            hybridSettings.style.display = 'block';
+        } else {
+            hybridSettings.style.display = 'none';
+        }
+        
+        // Add change listener
+        voteStyleSelect.addEventListener('change', () => {
+            if (voteStyleSelect.value === 'hybrid') {
+                hybridSettings.style.display = 'block';
+            } else {
+                hybridSettings.style.display = 'none';
+            }
+        });
+    }
+    
     // --- Start Vote ---
     if (startVoteBtn) {
         startVoteBtn.addEventListener('click', () => {
@@ -918,8 +990,22 @@ function initializeApp() {
                 return;
             }
             
-            console.log("Starting vote with", selectedFilms.length, "films");
-            ws.send(JSON.stringify({ type: 'start', films: selectedFilms }));
+            // Get voting style settings
+            const voteStyle = voteStyleSelect ? voteStyleSelect.value : 'one-by-one';
+            const threshold = (voteStyle === 'hybrid' && hybridThreshold) 
+                ? parseInt(hybridThreshold.value) || 10 
+                : 10;
+            
+            console.log(`Starting vote with ${selectedFilms.length} films, style: ${voteStyle}` + 
+                  (voteStyle === 'hybrid' ? `, threshold: ${threshold}` : ''));
+            
+            // Send start command with films and voting style
+            ws.send(JSON.stringify({ 
+                type: 'start', 
+                films: selectedFilms,
+                vote_style: voteStyle,
+                hybrid_threshold: threshold
+            }));
         });
     } else {
         console.warn("Start vote button not available");
