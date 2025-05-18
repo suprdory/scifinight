@@ -43,6 +43,28 @@ li {
     font-style: italic;
 }
 
+/* Player view button styling */
+.player-view-btn {
+    background-color: #388e3c !important;
+    color: white !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.player-view-btn:hover {
+    background-color: #2e7d32 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.player-view-btn::before {
+    content: "🎮 ";
+    margin-right: 5px;
+}
+
 /* Vote Status Section Styling */
 #vote-status {
     background-color: #1e1e1e;

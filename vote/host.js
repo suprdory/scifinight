@@ -45,7 +45,6 @@ function initializeApp() {
 
     // Elements
     const sessionLink = getElement('session-link');
-    const copyLinkBtn = getElement('copy-link-btn');
 
     const filmList = getElement('film-list');
     const filmSelectSection = getElement('film-select');
@@ -71,8 +70,7 @@ function initializeApp() {
 
     // Log which elements were successfully found
     console.log("DOM elements loaded:", {
-        sessionLink: !!sessionLink, 
-        copyLinkBtn: !!copyLinkBtn,
+        sessionLink: !!sessionLink,
         filmList: !!filmList,
         playerList: !!playerList
     });
@@ -278,6 +276,19 @@ function initializeApp() {
         // Safely set the session link text
         if (sessionLink) {
             sessionLink.textContent = sessionLinkUrl;
+            
+            // Set up the copy button for the session link (player join URL)
+            const copySessionLinkBtn = document.getElementById('copy-session-link-btn');
+            if (copySessionLinkBtn) {
+                copySessionLinkBtn.addEventListener('click', () => {
+                    navigator.clipboard.writeText(sessionLinkUrl).then(() => {
+                        copySessionLinkBtn.textContent = "Copied!";
+                        setTimeout(() => (copySessionLinkBtn.textContent = "Copy"), 2000);
+                    }).catch(err => {
+                        console.error("Could not copy text: ", err);
+                    });
+                });
+            }
         } else {
             console.warn("Session link element not available");
         }
@@ -290,35 +301,11 @@ function initializeApp() {
         }
         window.history.replaceState({}, '', newUrl);
         
-        // Display host reconnection link if we have a host ID
+        // No need to display host reconnection link - users can copy from the URL bar if needed
+        // We still set the URL parameters for host ID for proper reconnection
         if (hostId) {
-            const sessionElement = document.getElementById('session');
-            if (sessionElement) {
-                const hostReconnectionLink = document.createElement('p');
-                hostReconnectionLink.innerHTML = `<strong>Host reconnection link:</strong> <span id="host-link">${basePath}/host.html?code=${sessionCode}&hid=${hostId}</span> <button id="copy-host-link-btn">Copy</button>`;
-                sessionElement.appendChild(hostReconnectionLink);
-                
-                // Add important notice about bookmarking the page
-                const importantNotice = document.createElement('p');
-                importantNotice.className = 'help-text';
-                importantNotice.innerHTML = '<strong>Important:</strong> Bookmark this page or copy the link above to reconnect as host if disconnected.';
-                sessionElement.appendChild(importantNotice);
-                
-                const copyHostLinkBtn = document.getElementById('copy-host-link-btn');
-                if (copyHostLinkBtn) {
-                    copyHostLinkBtn.addEventListener('click', () => {
-                        const hostLinkElement = document.getElementById('host-link');
-                        if (hostLinkElement) {
-                            navigator.clipboard.writeText(hostLinkElement.textContent).then(() => {
-                                copyHostLinkBtn.textContent = "Copied!";
-                                setTimeout(() => (copyHostLinkBtn.textContent = "Copy"), 2000);
-                            });
-                        }
-                    });
-                }
-            } else {
-                console.warn("Session element not found, can't add host reconnection link");
-            }
+            // URL is already updated with hostId in the code above
+            console.log("Host ID set in URL parameters for reconnection");
         }
         
         initWebSocket();
@@ -402,32 +389,8 @@ function initializeApp() {
                             newUrl.searchParams.set("hid", hostId);
                             window.history.replaceState({}, '', newUrl);
                             
-                            // Create host reconnection link safely
-                            const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
-                            const sessionElement = document.getElementById('session');
-                            
-                            if (sessionElement && !document.getElementById('host-link')) {
-                                const hostReconnectionLink = document.createElement('p');
-                                hostReconnectionLink.innerHTML = `<strong>Host reconnection link:</strong> <span id="host-link">${basePath}/host.html?code=${sessionCode}&hid=${hostId}</span> <button id="copy-host-link-btn">Copy</button>`;
-                                
-                                sessionElement.appendChild(hostReconnectionLink);
-                                
-                                // Safely add event listener to copy button
-                                const copyHostLinkBtn = document.getElementById('copy-host-link-btn');
-                                if (copyHostLinkBtn) {
-                                    copyHostLinkBtn.addEventListener('click', () => {
-                                        const hostLinkElement = document.getElementById('host-link');
-                                        if (hostLinkElement) {
-                                            navigator.clipboard.writeText(hostLinkElement.textContent).then(() => {
-                                                copyHostLinkBtn.textContent = "Copied!";
-                                                setTimeout(() => (copyHostLinkBtn.textContent = "Copy"), 2000);
-                                            });
-                                        }
-                                    });
-                                }
-                            } else {
-                                console.warn("Session element not found or host link already exists");
-                            }
+                            // No need for host reconnection link display - URL parameters are set automatically
+                            console.log("Host ID updated in URL, ready for reconnection if needed");
                         } else if (data.type === "state_update") {
                             // Always attempt to render regardless of DOM state
                             // The renderPlayers function will handle any DOM readiness issues
@@ -538,17 +501,8 @@ function initializeApp() {
         nameInput.value = nameFromUrl;
     }
 
-    // --- Link Sharing ---
-    if (copyLinkBtn && sessionLink) {
-        copyLinkBtn.addEventListener('click', () => {
-            navigator.clipboard.writeText(sessionLink.textContent).then(() => {
-                copyLinkBtn.textContent = "Copied!";
-                setTimeout(() => (copyLinkBtn.textContent = "Copy Link"), 2000);
-            });
-        });
-    } else {
-        console.warn("Copy link button or session link not available");
-    }
+    // --- Link Sharing removed --- 
+    // No copy link buttons are needed as URLs can be copied directly from the browser
     
     // --- Set up kick player functionality ---
     if (kickPlayerBtn && playerKickSelect) {
@@ -653,6 +607,100 @@ function initializeApp() {
             ws.send(JSON.stringify({ type: 'join', name }));
             nameInput.disabled = true;
             joinBtn.disabled = true;
+            
+            // Create "Open Player View" button after host has joined as a player
+            const joinSection = document.getElementById('join-as-host');
+            if (joinSection) {
+                // Create a container for the player view button
+                const playerViewContainer = document.createElement('div');
+                playerViewContainer.style.marginTop = '10px';
+                
+                // Create the button to open player view
+                const openPlayerViewBtn = document.createElement('button');
+                openPlayerViewBtn.textContent = 'Open My Player View';
+                openPlayerViewBtn.className = 'player-view-btn';
+                openPlayerViewBtn.title = 'Open your player voting screen in a new tab';
+                
+                // Create the URL for the player view with the same session code and player name
+                const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
+                
+                // Listen for player_id messages to get the host's player ID for linking
+                const hostPlayerListener = (event) => {
+                    try {
+                        const data = JSON.parse(event.data);
+                        if (data.type === "player_id" && !data.is_host) {
+                            // This is the host's player ID (not host ID)
+                            const playerUrl = `${basePath}/player.html?code=${sessionCode}&name=${encodeURIComponent(name)}&pid=${data.id}`;
+                            
+                            // Update the button's URL with the correct player ID
+                            openPlayerViewBtn.setAttribute('data-player-url', playerUrl);
+                            console.log("Updated player view URL with player ID:", data.id);
+                            
+                            // Remove the listener as we've captured what we needed
+                            ws.removeEventListener('message', hostPlayerListener);
+                        }
+                    } catch (e) {
+                        console.error("Error in host player listener:", e);
+                    }
+                };
+                
+                // Add temporary listener for player_id message
+                ws.addEventListener('message', hostPlayerListener);
+                
+                // Initial URL without player ID (will be updated when we receive player_id)
+                const playerUrl = `${basePath}/player.html?code=${sessionCode}&name=${encodeURIComponent(name)}`;
+                
+                // Set up click event to open new tab with player view
+                openPlayerViewBtn.addEventListener('click', () => {
+                    // Use the updated URL if available, otherwise fall back to the initial URL
+                    const finalUrl = openPlayerViewBtn.getAttribute('data-player-url') || playerUrl;
+                    const newTab = window.open(finalUrl, '_blank');
+                    
+                    // Update button state to show it was clicked
+                    openPlayerViewBtn.textContent = 'Player View Opened';
+                    openPlayerViewBtn.style.opacity = '0.8';
+                    
+                    // Store that the view was opened in session storage
+                    sessionStorage.setItem('playerViewOpened', 'true');
+                    
+                    // Focus on the new tab
+                    if (newTab) {
+                        newTab.focus();
+                    }
+                    
+                    // Show a brief notification
+                    const notification = document.createElement('div');
+                    notification.textContent = 'Player view opened in new tab';
+                    notification.style.position = 'fixed';
+                    notification.style.bottom = '20px';
+                    notification.style.right = '20px';
+                    notification.style.padding = '10px 15px';
+                    notification.style.backgroundColor = '#388e3c';
+                    notification.style.color = 'white';
+                    notification.style.borderRadius = '5px';
+                    notification.style.zIndex = '1000';
+                    document.body.appendChild(notification);
+                    
+                    // Fade out notification
+                    setTimeout(() => {
+                        notification.style.transition = 'opacity 1s ease';
+                        notification.style.opacity = '0';
+                        setTimeout(() => notification.remove(), 1000);
+                    }, 3000);
+                });
+                
+                // Add the button to the container
+                playerViewContainer.appendChild(openPlayerViewBtn);
+                
+                // Add explanatory text
+                const explanationText = document.createElement('p');
+                explanationText.textContent = 'Use this button to open your player voting screen in a new tab.';
+                explanationText.className = 'help-text';
+                playerViewContainer.appendChild(explanationText);
+                
+                // Add the container to the join section
+                joinSection.appendChild(playerViewContainer);
+            }
         });
     } else {
         console.warn("Join button or name input not available");
