@@ -47,3 +47,17 @@ tr {
     padding: 0.5rem;
     border-bottom: 1px solid #333;
 }
+
+/* Styling for disabled eliminate button */
+.eliminate[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Help text styling for reconnection information */
+.help-text {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+    font-style: italic;
+}

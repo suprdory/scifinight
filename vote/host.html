@@ -16,6 +16,7 @@
     <section id="session">
         <p><strong>Session link:</strong> <span id="session-link"></span></p>
         <button id="copy-link-btn">Copy Link</button>
+        <p class="help-text">Bookmark this page to reconnect as host if disconnected. The URL contains all necessary information.</p>
     </section>
 
     <section id="join-as-host">
@@ -28,6 +29,28 @@
         <h2>Players</h2>
         <ul id="player-list"></ul>
     </section>
+    
+    <!-- Vote Status Section -->
+    <section id="vote-status" class="hidden">
+        <h2>Vote Status</h2>
+        <div class="status-container">
+            <p><strong>Status:</strong> <span id="vote-state">Waiting to start</span></p>
+            <p><strong>Current Player:</strong> <span id="current-player">N/A</span></p>
+            <p><strong>Films Remaining:</strong> <span id="films-remaining">0</span></p>
+            <p><strong>Elapsed Time:</strong> <span id="elapsed-time">00:00:00</span></p>
+        </div>
+        
+        <div class="player-management">
+            <h3>Player Management</h3>
+            <div class="player-kick-container">
+                <select id="player-kick-select">
+                    <option value="">Select player to kick...</option>
+                </select>
+                <button id="kick-player-btn">Kick Player</button>
+            </div>
+        </div>
+    </section>
+    
     <button id="start-vote">Start Vote</button>
     <section id="filters">
         <h2>Film Filters</h2>
