@@ -279,3 +279,9 @@ a{
   text-decoration-line: underline;
   font-weight: bold;
 }
+
+.estimated-date {
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.9em;
+}
