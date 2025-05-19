@@ -133,6 +133,13 @@ body {
   background-color: #333;
 }
 
+.film-list li.error {
+  color: #ff6b6b;
+  padding: 10px;
+  text-align: center;
+  cursor: default;
+}
+
 .right-panel h2 {
   margin-bottom: 15px;
   color: #fff;
