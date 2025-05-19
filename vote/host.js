@@ -70,8 +70,6 @@ function initializeApp() {
     const currentPlayerEl = getElement('current-player');
     const filmsRemainingEl = getElement('films-remaining');
     const elapsedTimeEl = getElement('elapsed-time');
-    const playerKickSelect = getElement('player-kick-select');
-    const kickPlayerBtn = getElement('kick-player-btn');
 
     // Log which elements were successfully found
     console.log("DOM elements loaded:", {
@@ -286,33 +284,6 @@ function initializeApp() {
                 if (voteStateEl) voteStateEl.textContent = "Waiting to start";
                 voteStatusSection.classList.add('hidden');
             }
-        }
-        
-        // Update the player kick dropdown
-        updateKickPlayerDropdown(data.players || []);
-    }
-    
-    // Function to update the player kick dropdown
-    function updateKickPlayerDropdown(players) {
-        if (!playerKickSelect) return;
-        
-        // Save the currently selected value
-        const selectedValue = playerKickSelect.value;
-        
-        // Clear the dropdown
-        playerKickSelect.innerHTML = '<option value="">Select player to kick...</option>';
-        
-        // Add each player as an option
-        players.forEach(player => {
-            const option = document.createElement('option');
-            option.value = player;
-            option.textContent = player;
-            playerKickSelect.appendChild(option);
-        });
-        
-        // Restore the selected value if it still exists
-        if (selectedValue && players.includes(selectedValue)) {
-            playerKickSelect.value = selectedValue;
         }
     }
 
@@ -552,20 +523,6 @@ function initializeApp() {
 
     // --- Link Sharing removed --- 
     // No copy link buttons are needed as URLs can be copied directly from the browser
-    
-    // --- Set up kick player functionality ---
-    if (kickPlayerBtn && playerKickSelect) {
-        kickPlayerBtn.addEventListener('click', () => {
-            const selectedPlayer = playerKickSelect.value;
-            if (selectedPlayer) {
-                kickPlayer(selectedPlayer);
-            } else {
-                alert("Please select a player to kick");
-            }
-        });
-    } else {
-        console.warn("Kick player button or dropdown not available");
-    }
 
     // --- Fetch Films ---
     fetch('../films.json')
@@ -942,12 +899,6 @@ function initializeApp() {
                         setTimeout(() => feedbackToast.remove(), 500);
                     }, 3000);
                 }, 1000);
-                
-                // Reset the player kick dropdown if it was used
-                const playerKickSelect = document.getElementById('player-kick-select');
-                if (playerKickSelect && playerKickSelect.value === playerName) {
-                    playerKickSelect.value = "";
-                }
             } else {
                 console.warn("WebSocket not ready, can't send kick message");
                 alert("Connection issue. Please try again when connected.");

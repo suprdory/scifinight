@@ -160,57 +160,10 @@ function initWebSocket() {
         
         // Handle being kicked from the session
         status.textContent = data.message || "You have been kicked from the session";
-        status.style.color = "#f44336"; // Red color
-        status.style.fontWeight = "bold";
+        status.style.color = "#f44336";        status.style.fontWeight = "bold";
         
         // Hide voting section
         votingSection.style.display = "none";
-        
-        // Fade out the notification after a few seconds
-        setTimeout(() => {
-          kickedNotification.style.transition = 'opacity 1s ease';
-          kickedNotification.style.opacity = '0';
-          setTimeout(() => kickedNotification.remove(), 1000);
-        }, 3000);
-        
-        // Show rejoin option after a short time
-        setTimeout(() => {
-          // Reset UI
-          document.getElementById("join-header").style.display = "block";
-          nameInput.style.display = "block";
-          joinBtn.style.display = "block";
-          
-          const nameLabel = document.querySelector("label[for='name']");
-          if (nameLabel) {
-            nameLabel.style.display = "block";
-          }
-          
-          // Clear the name input to encourage a new name
-          nameInput.value = "";
-          
-          status.textContent = "You were removed from the session by the host. You may rejoin with a different name.";
-          status.style.color = "#ff9800"; // Orange warning color
-          status.style.fontWeight = "normal";
-          
-          // Add a rejoin button for better UX
-          const rejoinContainer = document.createElement('div');
-          rejoinContainer.style.marginTop = '10px';
-          rejoinContainer.innerHTML = '<p>Please enter a new name to rejoin the session.</p>';
-          
-          // Insert the container before the join button
-          joinBtn.parentNode.insertBefore(rejoinContainer, joinBtn);
-          
-          // Put focus on the name input for quick reentry
-          nameInput.focus();
-          
-          // Clear player ID to ensure they join as a new player
-          playerId = null;
-          
-          // Update URL to remove player ID
-          const newUrl = new URL(window.location);
-          newUrl.searchParams.delete("pid");
-          window.history.replaceState({}, '', newUrl);
-        }, 3000); // Reduced from 5000ms to 3000ms for better UX
         
         return;
       } else if (data.type === "error") {

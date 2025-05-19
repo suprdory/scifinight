@@ -286,32 +286,6 @@ li {
     margin: 0.5rem 0;
 }
 
-/* Player management styling */
-.player-management h3 {
-    margin-top: 1rem;
-}
-
-.player-kick-container {
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-}
-
-#player-kick-select {
-    flex-grow: 1;
-    margin-right: 0.5rem;
-    background-color: #2a2a2a;
-}
-
-#kick-player-btn {
-    background-color: #d32f2f;
-    color: white;
-}
-
-#kick-player-btn:hover {
-    background-color: #b71c1c;
-}
-
 /* Player list styling */
 #player-list li {
     display: flex;
