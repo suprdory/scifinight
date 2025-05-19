@@ -351,9 +351,58 @@ function show5050Groups(state) {
   const groupB = document.createElement("div");
   groupB.className = "film-group group-b";
   
-  // Add headers for each group
-  groupA.innerHTML = `<h3>Group A (${state.group_a.length} films)</h3>`;
-  groupB.innerHTML = `<h3>Group B (${state.group_b.length} films)</h3>`;
+  // Calculate average metrics for Group A
+  const avgRuntimeA = state.group_a.reduce((sum, film) => sum + parseInt(film.Runtime || 0), 0) / 
+                      (state.group_a.length || 1);
+  const avgImdbA = state.group_a.reduce((sum, film) => {
+    // Only add films with valid IMDb scores to the calculation
+    return sum + (film.IMDb !== null && film.IMDb !== undefined ? parseFloat(film.IMDb) : 0);
+  }, 0) / (state.group_a.filter(film => film.IMDb !== null && film.IMDb !== undefined).length || 1);
+  const avgRtA = state.group_a.reduce((sum, film) => {
+    // Only add films with valid RT scores to the calculation
+    return sum + (film.RT !== null && film.RT !== undefined ? parseFloat(film.RT) : 0);
+  }, 0) / (state.group_a.filter(film => film.RT !== null && film.RT !== undefined).length || 1);
+  const avgYearA = state.group_a.reduce((sum, film) => {
+    // Only add films with valid Year values to the calculation
+    return sum + (film.Year !== null && film.Year !== undefined ? parseInt(film.Year) : 0);
+  }, 0) / (state.group_a.filter(film => film.Year !== null && film.Year !== undefined).length || 1);
+  
+  // Calculate average metrics for Group B
+  const avgRuntimeB = state.group_b.reduce((sum, film) => sum + parseInt(film.Runtime || 0), 0) / 
+                      (state.group_b.length || 1);
+  const avgImdbB = state.group_b.reduce((sum, film) => {
+    // Only add films with valid IMDb scores to the calculation
+    return sum + (film.IMDb !== null && film.IMDb !== undefined ? parseFloat(film.IMDb) : 0);
+  }, 0) / (state.group_b.filter(film => film.IMDb !== null && film.IMDb !== undefined).length || 1);
+  const avgRtB = state.group_b.reduce((sum, film) => {
+    // Only add films with valid RT scores to the calculation
+    return sum + (film.RT !== null && film.RT !== undefined ? parseFloat(film.RT) : 0);
+  }, 0) / (state.group_b.filter(film => film.RT !== null && film.RT !== undefined).length || 1);
+  const avgYearB = state.group_b.reduce((sum, film) => {
+    // Only add films with valid Year values to the calculation
+    return sum + (film.Year !== null && film.Year !== undefined ? parseInt(film.Year) : 0);
+  }, 0) / (state.group_b.filter(film => film.Year !== null && film.Year !== undefined).length || 1);
+  
+  // Add headers for each group with film count and average metrics
+  groupA.innerHTML = `
+    <h3>Group A (${state.group_a.length} films)</h3>
+    <div class="group-stats">
+      <span>Avg. Runtime: ${Math.round(avgRuntimeA)} mins</span>
+      <span>Avg. IMDb: ${avgImdbA.toFixed(1)}/10</span>
+      <span>Avg. RT: ${Math.round(avgRtA)}%</span>
+      <span>Avg. Year: ${Math.round(avgYearA)}</span>
+    </div>
+  `;
+  
+  groupB.innerHTML = `
+    <h3>Group B (${state.group_b.length} films)</h3>
+    <div class="group-stats">
+      <span>Avg. Runtime: ${Math.round(avgRuntimeB)} mins</span>
+      <span>Avg. IMDb: ${avgImdbB.toFixed(1)}/10</span>
+      <span>Avg. RT: ${Math.round(avgRtB)}%</span>
+      <span>Avg. Year: ${Math.round(avgYearB)}</span>
+    </div>
+  `;
   
   // Create film lists for each group
   const listA = document.createElement("ul");

@@ -6,6 +6,57 @@ body {
     padding: 1rem;
 }
 
+/* Group container for 50/50 mode */
+.groups-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Voting explanation styling */
+.voting-explanation {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+/* Individual group styling */
+.film-group {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Group A specific styling */
+.group-a {
+    border-left: 4px solid #4CAF50; /* Green border */
+}
+
+/* Group B specific styling */
+.group-b {
+    border-left: 4px solid #2196F3; /* Blue border */
+}
+
+/* Group stats container */
+.group-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+/* Individual stat styling */
+.group-stats span {
+    padding: 4px 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+}
+
 /* Style form elements to match dark theme */
 input,
 button,
