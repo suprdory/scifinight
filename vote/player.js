@@ -406,15 +406,23 @@ function show5050Groups(state) {
   const listA = document.createElement("ul");
   state.group_a.forEach(film => {
     const li = document.createElement("li");
-    li.textContent = `${film.Title} (${film.Year})`;
+    li.textContent = `${film.Title} (${film.Year}) - ${film.Runtime} mins`; // Add "mins" after runtime
+    li.classList.add("clickable"); // Make the film item clickable
+    li.addEventListener("click", () => {
+      showFilmDetails(film, state); // Show details when clicked
+    });
     listA.appendChild(li);
   });
   groupA.appendChild(listA);
-  
+
   const listB = document.createElement("ul");
   state.group_b.forEach(film => {
     const li = document.createElement("li");
-    li.textContent = `${film.Title} (${film.Year})`;
+    li.textContent = `${film.Title} (${film.Year}) - ${film.Runtime} mins`; // Add "mins" after runtime
+    li.classList.add("clickable"); // Make the film item clickable
+    li.addEventListener("click", () => {
+      showFilmDetails(film, state); // Show details when clicked
+    });
     listB.appendChild(li);
   });
   groupB.appendChild(listB);
@@ -457,9 +465,14 @@ function updateFilmList(state) {
       // Create winner announcement
       const winnerAnnouncement = document.createElement('div');
       winnerAnnouncement.className = 'winner-announcement';
+
+      const posterPath = state.winner.poster_path ? `https://image.tmdb.org/t/p/w500${state.winner.poster_path}` : '';
+      const posterHTML = posterPath ? `<img src="${posterPath}" alt="${state.winner.Title} Poster" class="winning-film-poster">` : '';
+
       winnerAnnouncement.innerHTML = `
         <h2>🏆 The Winning Film Is 🏆</h2>
         <div class="winning-film">
+          ${posterHTML}
           <h1>${state.winner.Title}</h1>
           <h3>(${state.winner.Year})</h3>
           <p>${state.winner.Plot}</p>
@@ -608,9 +621,31 @@ function showFilmDetails(film, state) {
 
   const details = document.createElement("div");
   details.classList.add("film-details");
+
+  // Determine if we are in a 50/50 phase to conditionally show the eliminate button
+  const voteStyle = state.vote_style || "one-by-one"; // Default if not specified
+  const isHybrid = voteStyle === "hybrid";
+  const isFiftyFiftyDirect = voteStyle === "fifty-fifty";
+  const filmsCount = state.filmsRemaining ? state.filmsRemaining.length : 0; // Default to 0 if filmsRemaining is not there
+  const hybridThreshold = state.hybrid_threshold || 10; // Default hybrid threshold
+
+  const in5050Phase = isFiftyFiftyDirect || (isHybrid && filmsCount > hybridThreshold);
+
+  let buttonsHTML = '';
+  // Only add the "Vote to Eliminate" button if NOT in a 50/50 phase
+  if (!in5050Phase) {
+    const disabledAttribute = playerName !== state.currentPlayer ? "disabled" : "";
+    buttonsHTML += `<button class="eliminate" ${disabledAttribute}>Vote to Eliminate</button>`;
+  }
+  buttonsHTML += `<button class="back-to-list">Back to List</button>`;
+
+  const posterPath = film.poster_path ? `https://image.tmdb.org/t/p/w500${film.poster_path}` : '';
+  const posterHTML = posterPath ? `<img src="${posterPath}" alt="${film.Title} Poster" style="max-width: 150px; height: auto; margin-bottom: 10px; border-radius: 4px;">` : '';
+
   details.innerHTML = `
+    ${posterHTML}
     <h2>${film.Title} (${film.Year})</h2>
-    <p><strong>Runtime:</strong> ${film.Runtime}</p>
+    <p><strong>Runtime:</strong> ${film.Runtime} mins</p>
     <p><strong>Plot:</strong> ${film.Plot !== null ? film.Plot : "N/A"}</p>
     <p><strong>IMDb:</strong> ${film.IMDb !== null ? film.IMDb : "N/A"}</p>
     <p><strong>RT:</strong> ${film.RT !== null ? film.RT : "N/A"}</p>
@@ -619,20 +654,24 @@ function showFilmDetails(film, state) {
     <p><strong>Director:</strong> ${film.Director}</p>
     <p><strong>Language:</strong> ${film.Language}</p>
     <p><strong>Season:</strong> ${film.Season}</p>
-    <button class="eliminate" ${playerName !== state.currentPlayer ? "disabled" : ""}>Vote to Eliminate</button>
-    <button class="back-to-list">Back to List</button>
+    ${buttonsHTML}
   `;
 
-  // Add event listener to vote for elimination
-  const eliminateButton = details.querySelector(".eliminate");
-  if (playerName === state.currentPlayer) {
-    eliminateButton.addEventListener("click", () => {
-      ws.send(JSON.stringify({ type: "eliminate", film: film.Title }));
-    });
+  // Add event listener for the "Vote to Eliminate" button if it was added and it's the player's turn
+  if (!in5050Phase && playerName === state.currentPlayer) {
+    const eliminateButton = details.querySelector(".eliminate");
+    if (eliminateButton) { // Check if the button actually exists
+      eliminateButton.addEventListener("click", () => {
+        ws.send(JSON.stringify({ type: "eliminate", film: film.Title }));
+      });
+    }
   }
 
   // Add event listener to go back to the list
   details.querySelector(".back-to-list").addEventListener("click", () => {
+    // This call restores the list/groups based on the 'state' when details were opened.
+    // If groups appear to shuffle, it implies the underlying group data in the 'state'
+    // object might be changing, or the server is sending updates.
     updateFilmList(state);
   });
 

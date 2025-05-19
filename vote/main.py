@@ -184,13 +184,24 @@ async def websocket_endpoint(websocket: WebSocket, session_code: str):
                         # If in hybrid mode and now below threshold, transition to one-by-one style
                         if vote_style == "hybrid" and len(session["films_remaining"]) <= session["hybrid_threshold"]:
                             print(f"Hybrid mode transitioning to one-by-one elimination with {len(session['films_remaining'])} films remaining")
-                        # Otherwise, prepare new 50/50 groups for next round
-                        elif len(session["films_remaining"]) > 2:  # Only split if more than 2 films
-                            # Reshuffle and split into new groups
-                            random.shuffle(session["films_remaining"])
-                            mid_point = len(session["films_remaining"]) // 2
-                            session["group_a"] = session["films_remaining"][:mid_point]
-                            session["group_b"] = session["films_remaining"][mid_point:]
+                            # When transitioning to one-by-one, clear groups so client doesn't try to use stale ones
+                            session["group_a"] = []
+                            session["group_b"] = []
+                        # Otherwise, prepare new 50/50 groups for next round if applicable
+                        # This covers pure "fifty-fifty" mode and "hybrid" mode still in 50/50 phase
+                        elif vote_style == "fifty-fifty" or (vote_style == "hybrid" and len(session["films_remaining"]) > session["hybrid_threshold"]):
+                            if len(session["films_remaining"]) > 2:  # More than 2 films, split normally
+                                random.shuffle(session["films_remaining"])
+                                mid_point = len(session["films_remaining"]) // 2
+                                session["group_a"] = session["films_remaining"][:mid_point]
+                                session["group_b"] = session["films_remaining"][mid_point:]
+                            elif len(session["films_remaining"]) == 2: # Exactly 2 films, split into 1v1 groups
+                                # random.shuffle(session["films_remaining"]) # Optional: shuffle if order matters
+                                session["group_a"] = [session["films_remaining"][0]]
+                                session["group_b"] = [session["films_remaining"][1]]
+                            else: # 0 or 1 film remaining (winner state or empty), groups should be empty
+                                session["group_a"] = []
+                                session["group_b"] = []
                     
                     # Check if we have a winner (only one film left)
                     if len(session["films_remaining"]) == 1:

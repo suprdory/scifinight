@@ -1,0 +1,319 @@
+/* filepath: /home/suprdory/projectshdd/scifinight/vote/host.css */
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+input,
+button,
+select {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    padding: 0.5rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+/* Style number input buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    background-color: #333;
+    color: white;
+    opacity: 1;
+    border-left: 1px solid #444;
+    height: 40%;
+    margin-right: 5px;
+}
+
+/* Style scrollbars for webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #1a1a1a;
+}
+
+button {
+    cursor: pointer;
+}
+
+.season-toggle.selected {
+    background-color: #333;
+    border-color: #888;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #333;
+    cursor: move;
+}
+
+/* Help text styling for reconnection information */
+.help-text {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Voting Style Section */
+#voting-style {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #9c27b0;
+}
+
+#voting-style h2 {
+    margin-top: 0;
+    color: #9c27b0;
+}
+
+#voting-style select {
+    width: 100%;
+    max-width: 300px;
+    background-color: #2a2a2a;
+    border-color: rgba(156, 39, 176, 0.3);
+}
+
+#hybrid-settings {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(156, 39, 176, 0.1);
+    border-radius: 4px;
+}
+
+#hybrid-threshold {
+    width: 60px;
+    text-align: center;
+    background-color: #2a2a2a;
+    border-color: rgba(156, 39, 176, 0.3);
+}
+
+/* Start Vote Button */
+#start-vote {
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+#start-vote:hover {
+    background-color: #1976D2;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.5);
+}
+
+/* Player view button styling */
+.player-view-btn {
+    background-color: #388e3c !important;
+    color: white !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.player-view-btn:hover {
+    background-color: #2e7d32 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.player-view-btn::before {
+    content: "🎮 ";
+    margin-right: 5px;
+}
+
+/* Winner section styling */
+.winner-section {
+    text-align: center;
+    background: linear-gradient(135deg, #222 0%, #333 100%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    animation: winner-pulse 2s infinite alternate;
+}
+        
+@keyframes winner-pulse {
+    from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+    to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.9); }
+}
+        
+.winning-film h1 {
+    margin-top: 10px;
+    color: #e50914;
+    font-size: 32px;
+}
+        
+.winning-film h3 {
+    margin-top: 0;
+    color: #ccc;
+}
+
+.winning-film p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+/* Vote Status Section Styling */
+#vote-status {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+#vote-status.hidden {
+    display: none;
+}
+
+.status-container {
+    margin-bottom: 1rem;
+}
+
+.status-container p {
+    margin: 0.5rem 0;
+}
+
+/* Player management styling */
+.player-management h3 {
+    margin-top: 1rem;
+}
+
+.player-kick-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+#player-kick-select {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+    background-color: #2a2a2a;
+}
+
+#kick-player-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+#kick-player-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Player list styling */
+#player-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#player-list li:hover {
+    background-color: #252525;
+}
+
+.player-name {
+    font-weight: normal;
+}
+
+.current-player {
+    font-weight: bold !important;
+    color: #4CAF50;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+}
+
+.kick-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.kick-btn:hover {
+    background-color: #b71c1c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Season buttons styling */
+#season-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.season-toggle {
+    min-width: 40px;
+    text-align: center;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    margin: 0.25rem;
+    border-radius: 4px;
+}
+
+input[type="text"], input[type="number"] {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: white;
+}
+
+/* Style the select elements */
+select {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 2rem;
+}
