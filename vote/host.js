@@ -524,39 +524,116 @@ function initializeApp() {
     // --- Link Sharing removed --- 
     // No copy link buttons are needed as URLs can be copied directly from the browser
 
-    // --- Fetch Films ---
-    fetch('../films.json')
-        .then(res => res.json())
-        .then(data => {
-            allFilms = data;
-            const seasons = [...new Set(allFilms.map(f => f.Season))].sort((a, b) => a - b);
+    // --- Fetch Films and Watched Status ---
+    Promise.all([
+        fetch('../films.json').then(res => {
+            if (!res.ok) throw new Error('Failed to load films.json');
+            return res.json();
+        }),
+        fetch('../watched_films.csv').then(res => {
+            if (!res.ok) {
+                console.warn('Failed to load watched_films.csv. Proceeding without watched status.');
+                return null;
+            }
+            return res.text();
+        }).catch(error => {
+            console.warn('Error fetching watched_films.csv:', error.message, '. Proceeding without watched status.');
+            return null;
+        })
+    ])
+    .then(([filmsData, watchedCsvText]) => {
+        if (!filmsData) {
+             console.error("filmsData is undefined after fetch. This indicates a problem with loading films.json.");
+             allFilms = [];
+             setupSeasonsAndDisplay();
+             return;
+        }
+
+        const watchedImdbIds = new Set();
+        if (watchedCsvText) {
+            try {
+                const lines = watchedCsvText.trim().split(/\r\n|\n/);
+                if (lines.length > 1) {
+                    const header = lines[0].split(',').map(h => h.trim().toLowerCase());
+                    const imdbIDIndex = header.indexOf('imdbid');
+
+                    if (imdbIDIndex !== -1) {
+                        for (let i = 1; i < lines.length; i++) {
+                            const values = lines[i].split(',');
+                            if (values[imdbIDIndex]) {
+                                watchedImdbIds.add(String(values[imdbIDIndex].trim()));
+                            }
+                        }
+                        console.log("Successfully parsed watched_films.csv and extracted", watchedImdbIds.size, "watched IMDb IDs.");
+                    } else {
+                        console.warn("Could not find 'imdbID' column in watched_films.csv header. Proceeding as if no films are watched.");
+                    }
+                } else {
+                    console.warn("watched_films.csv is empty or has no data rows. Proceeding as if no films are watched.");
+                }
+            } catch (e) {
+                console.error("Error manually parsing watched_films.csv:", e.message);
+                // Proceed with empty watchedImdbIds
+            }
+        }
+
+        allFilms = filmsData.map(film => ({
+            ...film,
+            Watched: film.imdbID ? watchedImdbIds.has(String(film.imdbID)) : false
+        }));
+        
+        console.log("Processed allFilms, example of first film's watched status:", allFilms.length > 0 ? allFilms[0].Watched : 'N/A');
+        setupSeasonsAndDisplay();
+    })
+    .catch(error => {
+        console.error("CRITICAL: Error fetching or processing film data:", error.message);
+        allFilms = [];
+        setupSeasonsAndDisplay();
+    });
+
+    // This function sets up season buttons and triggers the initial display.
+    // It relies on the global `allFilms` variable being populated.
+    function setupSeasonsAndDisplay() {
+        const seasons = allFilms.length > 0 ? [...new Set(allFilms.map(f => f.Season))].sort((a, b) => a - b) : [];
+        
+        if (seasonButtonsContainer) {
+            seasonButtonsContainer.innerHTML = ''; // Clear previous buttons
             seasons.forEach(season => {
                 const btn = document.createElement('button');
                 btn.textContent = `S${season}`;
                 btn.classList.add('season-toggle');
-                btn.dataset.season = season;
+                btn.dataset.season = String(season); // Store as string, parse when using
                 btn.addEventListener('click', () => {
-                    if (selectedSeasons.has(season)) {
-                        selectedSeasons.delete(season);
+                    const seasonNum = parseInt(btn.dataset.season);
+                    if (selectedSeasons.has(seasonNum)) {
+                        selectedSeasons.delete(seasonNum);
                         btn.classList.remove('selected');
                     } else {
-                        selectedSeasons.add(season);
+                        selectedSeasons.add(seasonNum);
                         btn.classList.add('selected');
                     }
                     updateFilmDisplay();
                 });
                 seasonButtonsContainer.appendChild(btn);
             });
-            selectedSeasons = new Set([10, 11]); // initially only seasons 10 and 11 selected
+
+            selectedSeasons = new Set(); 
+            const defaultSeasons = [10, 11]; 
+            defaultSeasons.forEach(s => selectedSeasons.add(s));
+
             document.querySelectorAll('.season-toggle').forEach(btn => {
-                if (selectedSeasons.has(parseInt(btn.dataset.season))) {
+                const seasonNum = parseInt(btn.dataset.season);
+                if (selectedSeasons.has(seasonNum)) {
                     btn.classList.add('selected');
                 } else {
                     btn.classList.remove('selected');
                 }
             });
-            updateFilmDisplay();
-        });
+        } else {
+            console.warn("seasonButtonsContainer element not found. Cannot create season buttons.");
+        }
+        updateFilmDisplay();
+    }
 
     // --- Filter Helpers ---
     selectAllBtn.addEventListener('click', () => {
