@@ -109,7 +109,7 @@ function processCSV(data, watchedImdbIds) {
         }
     }
 
-    let totName = "Unwatched";
+    let totName = "Not";
     let s = totName;
     seasonStats[totName] = { nFilms: 0, nWatched: 0, nUnwatched: 0, runtime: 0, imdb: 0, rt: 0, year: 0, complete: 0 };
 
