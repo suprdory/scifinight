@@ -535,7 +535,7 @@ function rightPanelHome() {
 
     const filmDetails = document.getElementById('film-details');
     filmDetails.innerHTML = `<p></p><a href='stats.html'>Stats</a>`;
-    filmDetails.innerHTML = filmDetails.innerHTML + `<p></p><a href='vote.html'>Vote!</a>`;
+    filmDetails.innerHTML = filmDetails.innerHTML + `<p></p><a href='vote/index.html'>Vote!</a>`;
 }
 
 // Run this when the DOM is fully loaded
