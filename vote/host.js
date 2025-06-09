@@ -618,7 +618,8 @@ function initializeApp() {
             });
 
             selectedSeasons = new Set(); 
-            const defaultSeasons = [10, 11]; 
+            // const defaultSeasons = [10, 11]; 
+            const defaultSeasons = [1,2,3,4,5,6,7,8,9,10, 11]; 
             defaultSeasons.forEach(s => selectedSeasons.add(s));
 
             document.querySelectorAll('.season-toggle').forEach(btn => {
