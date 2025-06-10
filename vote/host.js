@@ -146,24 +146,37 @@ function initializeApp() {
         console.log("Updating vote status with data:", data);
         
         if (voteStatusSection) {
-            // Show the vote status section if vote has started
             if (data.started) {
                 voteStatusSection.classList.remove('hidden');
                 
-                // Set vote state and highlight it
                 if (voteStateEl) {
                     voteStateEl.textContent = "In progress";
                     voteStateEl.style.color = "#4CAF50"; // Green color to indicate active vote
                     voteStateEl.style.fontWeight = "bold";
                 }
                 
-                // Track if we just started
-                if (!voteStarted) {
-                    voteStarted = true;
+                const isNewStartForClient = !voteStarted; // True if client is just now seeing vote as started
+
+                // Handle voteStartTime
+                if (data.vote_start_time) {
+                    const serverStartTime = new Date(data.vote_start_time);
+                    if (isNewStartForClient || !voteStartTime || voteStartTime.getTime() !== serverStartTime.getTime()) {
+                        voteStartTime = serverStartTime;
+                        if (elapsedTimeInterval) clearInterval(elapsedTimeInterval);
+                        elapsedTimeInterval = setInterval(updateElapsedTime, 1000);
+                        updateElapsedTime(); // Immediately update display
+                    }
+                } else if (isNewStartForClient) {
+                    // Fallback if server doesn't send start time, and it's a new start for client
                     voteStartTime = new Date();
-                    
-                    // Start the elapsed time counter
+                    if (elapsedTimeInterval) clearInterval(elapsedTimeInterval);
                     elapsedTimeInterval = setInterval(updateElapsedTime, 1000);
+                    updateElapsedTime();
+                }
+                // If !isNewStartForClient and no data.vote_start_time, client retains existing voteStartTime and interval.
+
+                if (isNewStartForClient) {
+                    voteStarted = true; // Set this after handling voteStartTime and related UI
                     
                     // Highlight the vote status section to draw attention to it
                     if (voteStatusSection) {
@@ -171,15 +184,11 @@ function initializeApp() {
                         voteStatusSection.style.boxShadow = "0 0 10px rgba(76, 175, 80, 0.3)"; // Subtle glow
                     }
                     
-                    // Hide the player joining elements once vote starts
+                    // Hide/disable elements relevant to pre-vote state
                     if (nameInput) nameInput.disabled = true;
                     if (joinBtn) joinBtn.disabled = true;
-                    
-                    // Hide the film selection once vote starts
                     if (filmSelectSection) filmSelectSection.style.display = 'none';
                     if (startVoteBtn) startVoteBtn.style.display = 'none';
-                    
-                    // Hide filters once vote starts
                     const filtersSection = document.getElementById('filters');
                     if (filtersSection) filtersSection.style.display = 'none';
                     
@@ -192,14 +201,12 @@ function initializeApp() {
                     votingStartedNotice.style.textAlign = 'center';
                     votingStartedNotice.textContent = 'Voting has started! No new players can join now.';
                     
-                    // Insert the notice after the vote status section
                     if (voteStatusSection.nextSibling) {
                         voteStatusSection.parentNode.insertBefore(votingStartedNotice, voteStatusSection.nextSibling);
                     } else {
                         voteStatusSection.parentNode.appendChild(votingStartedNotice);
                     }
                     
-                    // Fade out the notice after a few seconds
                     setTimeout(() => {
                         votingStartedNotice.style.transition = 'opacity 1s ease';
                         votingStartedNotice.style.opacity = '0';
@@ -283,6 +290,31 @@ function initializeApp() {
             } else {
                 if (voteStateEl) voteStateEl.textContent = "Waiting to start";
                 voteStatusSection.classList.add('hidden');
+                voteStarted = false; // Reset client's voteStarted state
+                if (elapsedTimeInterval) {
+                    clearInterval(elapsedTimeInterval);
+                    elapsedTimeInterval = null;
+                }
+                voteStartTime = null;
+                if (elapsedTimeEl) {
+                    elapsedTimeEl.textContent = "00:00"; // Reset timer display
+                    elapsedTimeEl.style.color = ""; // Reset color
+                    elapsedTimeEl.style.animation = "none"; // Reset animation
+                    elapsedTimeEl.title = ""; // Clear tooltip
+                }
+
+                // Re-enable/show elements for pre-vote state
+                if (nameInput) nameInput.disabled = false;
+                if (joinBtn) joinBtn.disabled = false;
+                if (filmSelectSection) filmSelectSection.style.display = 'block'; // Or its original display value
+                if (startVoteBtn) startVoteBtn.style.display = 'block'; // Or its original display value
+                const filtersSection = document.getElementById('filters');
+                if (filtersSection) filtersSection.style.display = 'block'; // Or its original display value
+                 // Clear any winner display
+                const existingWinnerSection = document.getElementById('winner-section');
+                if (existingWinnerSection) {
+                    existingWinnerSection.remove();
+                }
             }
         }
     }
@@ -400,17 +432,61 @@ function initializeApp() {
                     if (data.type) {
                         if (data.type === "reconnect_success" && data.is_host) {
                             log("Successfully reconnected as host");
+                            // Confirm hostId if provided by server during reconnect
+                            if (data.host_id && hostId !== data.host_id) {
+                                console.warn(`Reconnected with host ID ${hostId}, but server confirmation is ${data.host_id}. Updating to server's version.`);
+                                hostId = data.host_id;
+                                const newUrl = new URL(window.location);
+                                newUrl.searchParams.set("hid", hostId);
+                                window.history.replaceState({}, '', newUrl);
+                            }
                         } else if (data.type === "player_id") {
-                            // Store host ID if we don't have one yet
-                            hostId = data.id;
-                            
-                            // Update URL with host ID for easy debugging
-                            const newUrl = new URL(window.location);
-                            newUrl.searchParams.set("hid", hostId);
-                            window.history.replaceState({}, '', newUrl);
-                            
-                            // No need for host reconnection link display - URL parameters are set automatically
-                            console.log("Host ID updated in URL, ready for reconnection if needed");
+                            if (data.is_host && data.id) {
+                                // This message explicitly identifies the host of the session.
+                                if (!hostId) {
+                                    hostId = data.id;
+                                    console.log(`Host ID assigned by server: ${hostId}`);
+                                    const newUrl = new URL(window.location);
+                                    // Only update URL if hid isn't already there or differs
+                                    if (newUrl.searchParams.get("hid") !== hostId) {
+                                        newUrl.searchParams.set("hid", hostId);
+                                        window.history.replaceState({}, '', newUrl);
+                                        console.log("Host ID set in URL from server's is_host message.");
+                                    }
+                                } else if (hostId !== data.id) {
+                                    // hostId was already set (e.g., from URL or previous is_host message),
+                                    // but server sent a new one with is_host:true.
+                                    // This implies the server is authoritative for the host's session ID.
+                                    console.warn(`Host ID changing from '${hostId}' to '${data.id}' based on server's is_host message.`);
+                                    hostId = data.id;
+                                    const newUrl = new URL(window.location);
+                                    newUrl.searchParams.set("hid", hostId); // Ensure URL reflects the authoritative hid
+                                    window.history.replaceState({}, '', newUrl);
+                                    console.log("Host ID updated in URL to server's authoritative ID.");
+                                } else {
+                                    // hostId already set and matches, confirmation.
+                                    console.log(`Host ID ${hostId} confirmed by server's is_host message.`);
+                                }
+                            } else if (!hostId && data.id && typeof data.is_host === 'undefined') {
+                                // Fallback: if hostId is not set at all (not from URL, not from a previous is_host message)
+                                // AND this player_id message doesn't have an is_host flag (legacy or ambiguous).
+                                // We might cautiously assume this *could* be the initial host ID.
+                                // This is less safe than an explicit is_host: true.
+                                console.warn(`Host ID not set, and received player_id (id: ${data.id}) without is_host flag. Tentatively assigning as Host ID.`);
+                                hostId = data.id;
+                                const newUrl = new URL(window.location);
+                                if (newUrl.searchParams.get("hid") !== hostId) {
+                                    newUrl.searchParams.set("hid", hostId);
+                                    window.history.replaceState({}, '', newUrl);
+                                    console.log("Tentative Host ID set in URL.");
+                                }
+                            } else {
+                                // This is a player_id for a regular player (data.is_host is false),
+                                // or hostId is already set and this message is not an authoritative is_host update.
+                                // So, we do not update the session `hostId`.
+                                // The host's player-specific ID is handled by `hostPlayerListener` for the "Open Player View" button.
+                                console.log(`Received player ID (id: ${data.id}, name: ${data.name || 'N/A'}, is_host: ${data.is_host}). Not updating session hostId ('${hostId || 'not set'}').`);
+                            }
                         } else if (data.type === "state_update") {
                             // Always attempt to render regardless of DOM state
                             // The renderPlayers function will handle any DOM readiness issues
