@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Vote - Host</title>
+    <link rel="stylesheet" href="host.css" />
+    <script type="module" src="host.js"></script>
+
+</head>
+
+<body>
+    <h1>Host a Film Vote</h1>
+
+    <section id="session">
+        <p><strong>Session link:</strong> <span id="session-link"></span> <button id="copy-session-link-btn">Copy</button></p>
+        <!-- <p class="help-text">Bookmark this page to reconnect as host if disconnected. The URL contains all necessary information.</p> -->
+    </section>
+
+    <section id="join-as-host">
+        <h2>Your Info</h2>
+        <input type="text" id="host-name" placeholder="Enter your name" />
+        <button id="host-join-btn">Join as Player</button>
+    </section>
+
+    <section id="waiting-area">
+        <h2>Players</h2>
+        <ul id="player-list"></ul>
+    </section>
+    
+    <!-- Vote Status Section -->
+    <section id="vote-status" class="hidden">
+        <h2>Vote Status</h2>
+        <div class="status-container">
+            <p><strong>Status:</strong> <span id="vote-state">Waiting to start</span></p>
+            <p><strong>Current Player:</strong> <span id="current-player">N/A</span></p>
+            <p><strong>Films Remaining:</strong> <span id="films-remaining">0</span></p>
+            <p><strong>Elapsed Time:</strong> <span id="elapsed-time">00:00:00</span></p>
+        </div>
+        
+    </section>
+    
+    <section id="voting-style">
+        <h2>Voting Style</h2>
+        <div>
+            <label for="vote-style">Select voting style:</label>
+            <select id="vote-style">
+                <option value="one-by-one" selected>One-by-one elimination</option>
+                <option value="fifty-fifty">50/50 elimination</option>
+                <option value="hybrid" selected>Hybrid (50/50 then one-by-one)</option>
+            </select>
+        </div>
+        <div id="hybrid-settings" style="margin-top: 0.5rem; display: none;">
+            <label for="hybrid-threshold">Switch to one-by-one when films remaining:</label>
+            <input type="number" id="hybrid-threshold" min="2" max="20" value="10">
+        </div>
+    </section>
+    
+    <button id="start-vote">Start Vote</button>
+    <section id="filters">
+        <h2>Film Filters</h2>
+        <div>
+            <label for="watched-filter">Watched status:</label>
+            <select id="watched-filter">
+                <option value="all">All</option>
+                <option value="watched">Watched</option>
+                <option selected value="unwatched">Unwatched</option>
+            </select>
+        </div>
+        <div>
+            <strong>Seasons:</strong>
+            <div id="season-buttons" style="margin-top: 0.5rem;"></div>
+            <button id="select-all-seasons">Select All</button>
+            <button id="select-none-seasons">Select None</button>
+        </div>
+    </section>
+
+    <section id="film-select">
+        <h2>Selected Films</h2>
+        <ul id="film-list"></ul>
+    </section>
+
+</body>
+
+</html>

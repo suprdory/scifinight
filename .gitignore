@@ -1,2 +1,6 @@
 pyfi/.venv/
 pyfi/.env
+pyfi/__pycache__/
+vote/__pycache__/
+.env
+

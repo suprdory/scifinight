@@ -1,0 +1,503 @@
+/* Styling for player.html */
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+/* Group container for 50/50 mode */
+.groups-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Voting explanation styling */
+.voting-explanation {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+/* Individual group styling */
+.film-group {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Group A specific styling */
+.group-a {
+    border-left: 4px solid #4CAF50; /* Green border */
+}
+
+/* Group B specific styling */
+.group-b {
+    border-left: 4px solid #2196F3; /* Blue border */
+}
+
+/* Group stats container */
+.group-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+/* Individual stat styling */
+.group-stats span {
+    padding: 4px 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Style form elements to match dark theme */
+input,
+button,
+select,
+textarea {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    padding: 0.5rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    border-radius: 4px;
+}
+
+/* Enhanced styling for text inputs */
+input[type="text"], 
+input[type="number"], 
+input[type="email"], 
+input[type="password"], 
+textarea {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: white;
+    padding: 0.6rem;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+textarea:focus {
+    border-color: #2196F3;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(33, 150, 243, 0.3);
+    background-color: #333;
+}
+
+/* Style the select elements */
+select {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 2rem;
+}
+
+/* Style number input buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    background-color: #333;
+    color: white;
+    opacity: 1;
+    border-left: 1px solid #444;
+    height: 40%;
+    margin-right: 5px;
+}
+
+/* Style scrollbars for webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #1a1a1a;
+}
+
+/* Adjust the layout to align the film list with other elements */
+#film-list {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    border-bottom: 1px solid #444;
+}
+
+/* Ensure proper styling for the film table */
+#film-list table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#film-list table thead th {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 2px solid #444;
+}
+
+#film-list table tbody tr {
+  border-bottom: 1px solid #333;
+}
+
+#film-list table tbody tr:last-child {
+  border-bottom: none;
+}
+
+#film-list table tbody td {
+  padding: 0.5rem;
+}
+
+#film-list table tbody tr:hover {
+  background-color: #1e1e1e;
+}
+
+tr {
+    padding: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Styling for disabled eliminate button */
+.eliminate[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: #999;
+}
+
+/* Help text styling for reconnection information */
+.help-text {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Button styling to match host view */
+button {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    padding: 0.5rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #333;
+    border-color: #666;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Join button styling */
+#join-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+}
+
+#join-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Style the name input field */
+#name {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: white;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+/* Back to list button styling */
+.back-to-list {
+    background-color: #2196F3;
+}
+
+.back-to-list:hover {
+    background-color: #1976D2;
+}
+
+/* Player header styling */
+#player-header {
+    color: #f0f0f0; /* Revert to white color for player welcome */
+    font-weight: bold;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Eliminate button styling */
+.eliminate {
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+}
+
+.eliminate:hover {
+    background-color: #d32f2f;
+}
+
+/* Winner announcement styling */
+.winner-announcement {
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #222 0%, #333 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    animation: winner-glow 2s infinite alternate;
+}
+
+@keyframes winner-glow {
+    from { box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); }
+    to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.9); }
+}
+
+.winning-film {
+    padding: 15px;
+}
+
+.winning-film h1 {
+    color: #e50914;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.winning-film h2 {
+    color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.winning-film h3 {
+    margin-top: 0;
+    color: #ccc;
+}
+
+.winning-film-poster {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Trophy emoji animation */
+.winner-announcement h2 {
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 28px;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 50/50 Voting Style Styling */
+.voting-explanation {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(33, 150, 243, 0.15);
+    border-left: 4px solid #2196F3;
+    border-radius: 4px;
+}
+
+.voting-explanation h3 {
+    margin-top: 0;
+    color: #2196F3;
+}
+
+.groups-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .groups-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .film-group {
+        width: 48%;
+    }
+}
+
+.film-group {
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.film-group h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.film-group ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style-type: none;
+}
+
+.film-group ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.film-group ul li:last-child {
+    border-bottom: none;
+}
+
+.group-a {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(76, 175, 80, 0.05) 100%);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.group-a:hover {
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
+}
+
+.group-b {
+    background: linear-gradient(135deg, rgba(244, 67, 54, 0.15) 0%, rgba(244, 67, 54, 0.05) 100%);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.group-b:hover {
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.3);
+}
+
+.eliminate-group {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.group-a .eliminate-group {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.group-a .eliminate-group:hover {
+    background-color: #388e3c;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.group-b .eliminate-group {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.group-b .eliminate-group:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+}
+
+/* Voting mode indicator */
+.voting-mode-indicator {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: rgba(33, 150, 243, 0.15);
+    border: 1px solid #2196F3;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.voting-mode-indicator:hover {
+    background-color: rgba(33, 150, 243, 0.2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.voting-mode-hybrid {
+    background-color: rgba(156, 39, 176, 0.15);
+    border-color: #9c27b0;
+    color: #e1bee7;
+}
+
+.voting-mode-hybrid:hover {
+    background-color: rgba(156, 39, 176, 0.2);
+    color: white;
+}
+
+.voting-mode-fiftyfifty {
+    background-color: rgba(255, 152, 0, 0.15);
+    border-color: #ff9800;
+    color: #ffe0b2;
+}
+
+.voting-mode-fiftyfifty:hover {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: white;
+}

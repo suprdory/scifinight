@@ -41,7 +41,7 @@ def get_omdb_imdb(imdb_id):
     dict = json.loads(response.text)
     return dict
 
-
+#%%
 def get_tmdb_imdb(imdb_id):
     url = f"https://api.themoviedb.org/3/find/{imdb_id}?external_source=imdb_id"
 
@@ -50,11 +50,15 @@ def get_tmdb_imdb(imdb_id):
     "Authorization": "Bearer " + config['tmdb_auth'],
     }
     response = requests.get(url, headers=headers)
-    out = json.loads(response.text)['movie_results']
+    out = json.loads(response.text)
+    # print(out)
+    out=out['movie_results']
     if len(out) > 0:
         return out[0]
     else:
         return None
+    
+#%%
 
 def buildFilmDat(imdbID, season):
     omdbDat = get_omdb_imdb(imdbID)
@@ -92,8 +96,8 @@ def buildFilmDat(imdbID, season):
 #%%
 config = dotenv_values(".env")
 omdb_api_key = config['omdb_api_key']
-df_old = pd.read_csv('../scifi_data.csv').iloc[:, 1:]
-newData = pd.read_csv('to_add.csv')
+df_old = pd.read_csv('scifi_data.csv').iloc[:, 1:]
+newData = pd.read_csv('pyfi/to_add.csv')
 
 filmDats = []
 for i, film in newData.iterrows():
@@ -112,13 +116,13 @@ df = df.sort_values("Title")
 df.Watched = df.Watched == 1
 df
 #%%
-keys=['Title','Watched', 'Season', 'imdbID', 'Year', 'Rated', 'Director', 'Actors', 'Language',
+keys=['Title', 'Season', 'imdbID', 'Year', 'Rated', 'Director', 'Actors', 'Language',
        'Plot', 'IMDb_link', 'Runtime', 'BoxOffice', 'IMDb', 'RT', 'Meta',
        'poster_path', 'backdrop_path', ]
 
 df=df[keys]
 df
 # %%
-df.to_csv('../scifi_data.csv')
+df.to_csv('scifi_data.csv')
 
 # %%
