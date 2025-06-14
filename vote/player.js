@@ -28,6 +28,10 @@ let films = [];
 // Move currentSort outside the function to persist its state
 let currentSort = { key: null, ascending: true };
 
+// Added at the top of the file
+let lastStateForFilmListUpdate = null;
+let isFilmDetailsViewCurrentlyActive = false;
+
 // Initialize WebSocket connection
 function initWebSocket() {
   ws = new WebSocket(`${backendUrl}/${sessionCode}`);
@@ -309,6 +313,12 @@ window.addEventListener('DOMContentLoaded', () => {
     status.textContent = "Reconnecting...";
     status.style.color = "#ff9800"; // Orange color for reconnection state
   }
+
+  if (window.location.hash === "#film-details") {
+    // Clean up hash on initial load if it's present, and ensure consistent state
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+  isFilmDetailsViewCurrentlyActive = false;
 });
 
 // Show 50/50 voting groups
@@ -615,34 +625,39 @@ function updateFilmList(state) {
   } else {
     status.textContent = "Waiting for host to start the vote...";
   }
+
+  isFilmDetailsViewCurrentlyActive = false; // We are now showing the list/groups, not details
+  if (window.location.hash === "#film-details") {
+    // If updateFilmList is called (e.g. by server update) while hash was #film-details, clean it.
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
 }
 
 // Show detailed view of a film
 function showFilmDetails(film, state) {
-  filmList.innerHTML = "";
+  lastStateForFilmListUpdate = state; // Store the state for restoring the list view
+
+  filmList.innerHTML = ""; // Clear the current view (film list, groups, etc.)
 
   const details = document.createElement("div");
   details.classList.add("film-details");
 
-  // Determine if we are in a 50/50 phase to conditionally show the eliminate button
-  const voteStyle = state.vote_style || "one-by-one"; // Default if not specified
-  const isHybrid = voteStyle === "hybrid";
-  const isFiftyFiftyDirect = voteStyle === "fifty-fifty";
-  const filmsCount = state.filmsRemaining ? state.filmsRemaining.length : 0; // Default to 0 if filmsRemaining is not there
-  const hybridThreshold = state.hybrid_threshold || 10; // Default hybrid threshold
-
-  const in5050Phase = isFiftyFiftyDirect || (isHybrid && filmsCount > hybridThreshold);
+  const posterPath = film.poster_path ? `https://image.tmdb.org/t/p/w500${film.poster_path}` : '';
+  const posterHTML = posterPath ? `<img src="${posterPath}" alt="${film.Title} Poster" style="max-width: 150px; height: auto; margin-bottom: 10px; border-radius: 4px;">` : '';
 
   let buttonsHTML = '';
-  // Only add the "Vote to Eliminate" button if NOT in a 50/50 phase
+  const voteStyle = state.vote_style || "one-by-one";
+  const isHybrid = voteStyle === "hybrid";
+  const isFiftyFiftyDirect = voteStyle === "fifty-fifty";
+  const filmsCount = state.filmsRemaining ? state.filmsRemaining.length : 0;
+  const hybridThreshold = state.hybrid_threshold || 10;
+  const in5050Phase = isFiftyFiftyDirect || (isHybrid && filmsCount > hybridThreshold);
+
   if (!in5050Phase) {
     const disabledAttribute = playerName !== state.currentPlayer ? "disabled" : "";
     buttonsHTML += `<button class="eliminate" ${disabledAttribute}>Vote to Eliminate</button>`;
   }
-  buttonsHTML += `<button class="back-to-list">Back to List</button>`;
-
-  const posterPath = film.poster_path ? `https://image.tmdb.org/t/p/w500${film.poster_path}` : '';
-  const posterHTML = posterPath ? `<img src="${posterPath}" alt="${film.Title} Poster" style="max-width: 150px; height: auto; margin-bottom: 10px; border-radius: 4px;">` : '';
+  buttonsHTML += `<button class="back-to-list-btn">Back to List</button>`;
 
   details.innerHTML = `
     ${posterHTML}
@@ -659,23 +674,53 @@ function showFilmDetails(film, state) {
     ${buttonsHTML}
   `;
 
-  // Add event listener for the "Vote to Eliminate" button if it was added and it's the player's turn
+  // Add event listener for the "Vote to Eliminate" button
   if (!in5050Phase && playerName === state.currentPlayer) {
     const eliminateButton = details.querySelector(".eliminate");
-    if (eliminateButton) { // Check if the button actually exists
+    if (eliminateButton) {
       eliminateButton.addEventListener("click", () => {
         ws.send(JSON.stringify({ type: "eliminate", film: film.Title }));
       });
     }
   }
 
-  // Add event listener to go back to the list
-  details.querySelector(".back-to-list").addEventListener("click", () => {
-    // This call restores the list/groups based on the 'state' when details were opened.
-    // If groups appear to shuffle, it implies the underlying group data in the 'state'
-    // object might be changing, or the server is sending updates.
-    updateFilmList(state);
-  });
+  // Modify the "Back to List" button's event listener
+  const backButton = details.querySelector(".back-to-list-btn");
+  if (backButton) {
+    backButton.addEventListener("click", () => {
+      history.back(); // Use browser history to go back, triggering popstate
+    });
+  }
 
   filmList.appendChild(details);
+
+  // If not already in a film details history state (checked by hash), push one.
+  if (window.location.hash !== "#film-details") {
+    history.pushState({ filmDetailsActive: true }, "Film Details", "#film-details");
+  }
+  isFilmDetailsViewCurrentlyActive = true;
 }
+
+// Add this new event listener at a global scope in player.js
+window.addEventListener('popstate', (event) => {
+  const isCurrentlyAtFilmDetailsHash = window.location.hash === "#film-details";
+
+  if (isFilmDetailsViewCurrentlyActive && !isCurrentlyAtFilmDetailsHash) {
+    // Handles BACK button press when in film details view:
+    // Flag was true (we were in details), but hash is now gone.
+    isFilmDetailsViewCurrentlyActive = false; // Reset flag
+    if (lastStateForFilmListUpdate) {
+      updateFilmList(lastStateForFilmListUpdate); // Restore the film list view
+    }
+  } else if (!isFilmDetailsViewCurrentlyActive && isCurrentlyAtFilmDetailsHash && event.state && event.state.filmDetailsActive) {
+    // Handles FORWARD button press into a #film-details state:
+    // Flag was false, but hash is #film-details and history state matches.
+    // This case is harder to restore perfectly without the specific 'film' object.
+    // Safest is to revert to the list view to avoid an inconsistent UI.
+    isFilmDetailsViewCurrentlyActive = false; // Ensure flag is false as we can't reliably show details
+    history.replaceState(null, "", window.location.pathname + window.location.search); // Clean the hash
+    if (lastStateForFilmListUpdate) {
+      updateFilmList(lastStateForFilmListUpdate); // Show the film list
+    }
+  }
+});
