@@ -70,7 +70,7 @@ function processCSV(data, watchedImdbIds) {
     }
 
     const seasonStats = {};
-    const nSeasons = 11;
+    const nSeasons = 12;
     for (let s = 1; s <= nSeasons; s++) {
         seasonStats[s] = { nFilms: 0, nWatched: 0, nUnwatched: 0, runtime: 0, imdb: 0, rt: 0, year: 0, complete: 0 };
     }
