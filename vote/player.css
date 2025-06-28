@@ -501,3 +501,25 @@ button:active {
     background-color: rgba(255, 152, 0, 0.2);
     color: white;
 }
+
+/* Back button warning toast */
+.back-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    z-index: 1001;
+    animation: fadeInOut 2s forwards;
+    pointer-events: none; /* So it doesn't block clicks */
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
