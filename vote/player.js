@@ -321,6 +321,31 @@ window.addEventListener('DOMContentLoaded', () => {
   isFilmDetailsViewCurrentlyActive = false;
 });
 
+// Combined event listener for popstate to handle both film details and back navigation prevention
+window.addEventListener('popstate', (event) => {
+  const isAtFilmDetailsHash = window.location.hash === "#film-details";
+
+  if (isFilmDetailsViewCurrentlyActive && !isAtFilmDetailsHash) {
+    // Case 1: User pressed BACK from the film details view.
+    // Restore the main list view.
+    isFilmDetailsViewCurrentlyActive = false; // We are no longer in details view
+    if (lastStateForFilmListUpdate) {
+      updateFilmList(lastStateForFilmListUpdate);
+    }
+  } else if (!isFilmDetailsViewCurrentlyActive && isAtFilmDetailsHash && event.state && event.state.filmDetailsActive) {
+    // Case 2: User pressed FORWARD back into the film details view.
+    // This is complex to restore perfectly, so we revert to the list view for safety.
+    history.replaceState(null, "", window.location.pathname + window.location.search); // Clean the hash
+    if (lastStateForFilmListUpdate) {
+      updateFilmList(lastStateForFilmListUpdate);
+    }
+  } else if (!isFilmDetailsViewCurrentlyActive && !isAtFilmDetailsHash) {
+    // Case 3: User is on the main list/voting page and presses BACK.
+    // Prevent them from navigating away by pushing the current state back onto the history stack.
+    history.pushState(null, document.title, location.href);
+  }
+});
+
 // Show 50/50 voting groups
 function show5050Groups(state) {
   filmList.innerHTML = "";
@@ -701,26 +726,45 @@ function showFilmDetails(film, state) {
   isFilmDetailsViewCurrentlyActive = true;
 }
 
-// Add this new event listener at a global scope in player.js
-window.addEventListener('popstate', (event) => {
-  const isCurrentlyAtFilmDetailsHash = window.location.hash === "#film-details";
+// Keep track of the back button press for exit warning
+let backButtonOnce = false;
 
-  if (isFilmDetailsViewCurrentlyActive && !isCurrentlyAtFilmDetailsHash) {
-    // Handles BACK button press when in film details view:
-    // Flag was true (we were in details), but hash is now gone.
-    isFilmDetailsViewCurrentlyActive = false; // Reset flag
+// Replace the popstate listener to correctly handle back navigation
+window.addEventListener('popstate', (event) => {
+  // This listener now ONLY handles navigating back from the film details view.
+  if (isFilmDetailsViewCurrentlyActive && window.location.hash !== '#film-details') {
+    isFilmDetailsViewCurrentlyActive = false;
     if (lastStateForFilmListUpdate) {
-      updateFilmList(lastStateForFilmListUpdate); // Restore the film list view
+      updateFilmList(lastStateForFilmListUpdate);
     }
-  } else if (!isFilmDetailsViewCurrentlyActive && isCurrentlyAtFilmDetailsHash && event.state && event.state.filmDetailsActive) {
-    // Handles FORWARD button press into a #film-details state:
-    // Flag was false, but hash is #film-details and history state matches.
-    // This case is harder to restore perfectly without the specific 'film' object.
-    // Safest is to revert to the list view to avoid an inconsistent UI.
-    isFilmDetailsViewCurrentlyActive = false; // Ensure flag is false as we can't reliably show details
-    history.replaceState(null, "", window.location.pathname + window.location.search); // Clean the hash
-    if (lastStateForFilmListUpdate) {
-      updateFilmList(lastStateForFilmListUpdate); // Show the film list
-    }
+    return;
   }
+
+  // If not in film details, handle the back-to-exit logic
+  if (!backButtonOnce) {
+    backButtonOnce = true;
+    // Re-arm the history to catch the next back press
+    history.pushState({ noBack: true }, '');
+
+    // Show a warning toast
+    const toast = document.createElement('div');
+    toast.className = 'back-toast';
+    toast.textContent = 'Press back again to leave the vote';
+    document.body.appendChild(toast);
+
+    // Remove the toast and reset the flag after a delay
+    setTimeout(() => {
+      toast.remove();
+      backButtonOnce = false;
+    }, 2000); // 2-second window to press back again
+  } else {
+    // If back is pressed again within the timeout, the user will navigate away
+    // because we don't push a new state here.
+  }
+});
+
+// On initial load, push a state to the history.
+// This is the key to preventing back-navigation from exiting the page.
+window.addEventListener('load', () => {
+    history.pushState({ noBack: true }, '');
 });
