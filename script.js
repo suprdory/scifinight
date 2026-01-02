@@ -416,20 +416,34 @@ function displayFilms(films) {
     });
 }
 
-// Function to load films from JSON and populate the film list
+// Function to load films from CSV and populate the film list
 function loadFilms() {
-    // First fetch films.json
-    fetch('films.json')
+    // Fetch scifi_data.csv
+    fetch('scifi_data.csv')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-            return response.json();
+            return response.text();
         })
-        .then(data => {
-            filmsData = data;
-            console.log('Films data loaded:', filmsData.length, 'films');
-            
+        .then(csvText => {
+            return new Promise((resolve, reject) => {
+                Papa.parse(csvText, {
+                    header: true,
+                    skipEmptyLines: true,
+                    dynamicTyping: true,
+                    complete: function(results) {
+                        filmsData = results.data;
+                        console.log('Films data loaded:', filmsData.length, 'films');
+                        resolve(filmsData);
+                    },
+                    error: function(error) {
+                        reject(error);
+                    }
+                });
+            });
+        })
+        .then(() => {
             // Then fetch watched_films.csv
             return loadWatchedFilmsCSV();
         })
@@ -505,14 +519,14 @@ function searchFilter(){
 
     const exactMatches = filmsData.filter(
         (film) =>
-            film.Title.toLowerCase().startsWith(term)
+            film.Title && String(film.Title).toLowerCase().startsWith(term)
     );
 
     const partialMatches = filmsData.filter(
         (film) =>
-            film.Title.toLowerCase().includes(term) &&
+            film.Title && String(film.Title).toLowerCase().includes(term) &&
             !(
-                film.Title.toLowerCase().startsWith(term)
+                String(film.Title).toLowerCase().startsWith(term)
             )
     );
 
