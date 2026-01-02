@@ -602,9 +602,9 @@ function initializeApp() {
 
     // --- Fetch Films and Watched Status ---
     Promise.all([
-        fetch('../films.json').then(res => {
-            if (!res.ok) throw new Error('Failed to load films.json');
-            return res.json();
+        fetch('../scifi_data.csv').then(res => {
+            if (!res.ok) throw new Error('Failed to load scifi_data.csv');
+            return res.text();
         }),
         fetch('../watched_films.csv').then(res => {
             if (!res.ok) {
@@ -617,9 +617,22 @@ function initializeApp() {
             return null;
         })
     ])
-    .then(([filmsData, watchedCsvText]) => {
-        if (!filmsData) {
-             console.error("filmsData is undefined after fetch. This indicates a problem with loading films.json.");
+    .then(([filmsCsvText, watchedCsvText]) => {
+        let filmsData = [];
+        
+        // Parse films CSV using PapaParse
+        if (filmsCsvText) {
+            const parseResult = Papa.parse(filmsCsvText, {
+                header: true,
+                skipEmptyLines: true,
+                dynamicTyping: true
+            });
+            filmsData = parseResult.data;
+            console.log('Films data loaded:', filmsData.length, 'films');
+        }
+        
+        if (!filmsData || filmsData.length === 0) {
+             console.error("filmsData is empty after parsing. This indicates a problem with loading scifi_data.csv.");
              allFilms = [];
              setupSeasonsAndDisplay();
              return;

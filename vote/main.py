@@ -2,6 +2,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 import json
 import random
 import string  # For generating short IDs
+import csv
 
 # from fastapi.staticfiles import StaticFiles
 # from fastapi.responses import HTMLResponse
@@ -14,9 +15,10 @@ app = FastAPI()
 def generate_short_id(length=6):
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
 
-# Load all available films from JSON
-with open("../films.json") as f:
-    all_films = json.load(f)
+# Load all available films from CSV
+with open("../scifi_data.csv", newline='', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
+    all_films = list(reader)
 
 # Global dictionary to manage sessions by code
 sessions = {}
