@@ -396,6 +396,10 @@ function displayFilms(films) {
     const filmList = document.getElementById('films');
     filmList.innerHTML = '';
 
+    // Update film count
+    const filmCount = document.getElementById('film-count');
+    filmCount.textContent = `${films.length} of ${filmsData.length}`;
+
     if (films.length === 0) {
         const listItem = document.createElement('li');
         listItem.textContent = 'No films match the current filter';
@@ -534,8 +538,7 @@ function rightPanelHome() {
     filmTitle.innerHTML = `<h2>Welcome to Sci-fi Night!</h2>`;
 
     const filmDetails = document.getElementById('film-details');
-    filmDetails.innerHTML = `<p></p><a href='stats.html'>Stats</a>`;
-    filmDetails.innerHTML = filmDetails.innerHTML + `<p></p><a href='vote/index.html'>Vote!</a>`;
+    filmDetails.innerHTML = '';
 }
 
 // Run this when the DOM is fully loaded

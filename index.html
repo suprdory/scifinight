@@ -49,7 +49,7 @@
           <label for="filter-options">Filter:</label>
           <select id="filter-options">
             <option value="all">All</option>
-            <option value="watched">Watched</option>
+            <option value="watched" selected>Watched</option>
             <option value="unwatched">Unwatched</option>
           </select>
         </div>
@@ -58,6 +58,7 @@
           <input type="text" id="search" onkeyup="searchFilter()" onclick="this.select();">
         </div>
       </div>
+      <div class="film-count" id="film-count"></div>
       <div class="film-list scroll">
         <ul id="films">
           <!-- Films will be dynamically inserted here -->
@@ -67,6 +68,10 @@
 
     <!-- Film Info Panel -->
     <div class="right-panel" id="right-panel">
+      <div class="nav-buttons">
+        <a href="stats.html" class="nav-btn">Stats</a>
+        <a href="vote/index.html" class="nav-btn">Vote</a>
+      </div>
       <div id="backdrop-container">
         <div id="backdrop"></div>
         <!-- Backdrop -->
