@@ -111,8 +111,9 @@ df_new
 
 # %%
 df = pd.concat((df_new, df_old))
-df = df.reset_index(drop=True)
+# df = df.reset_index(drop=True)
 df = df.sort_values("Title")
+df = df.reset_index(drop=True)
 df.Watched = df.Watched == 1
 df
 #%%
